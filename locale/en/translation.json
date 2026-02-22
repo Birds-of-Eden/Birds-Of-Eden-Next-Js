@@ -950,6 +950,12 @@
       }
     ]
   },
+  "teamPage": {
+    "metadata": {
+      "title": "Meet Our Executive Team",
+      "description": "Discover the leaders driving Birds of Eden—our executive team and their expertise."
+    }
+  },
   "team": {
     "title": "Meet Our Executive Team",
     "roles": {

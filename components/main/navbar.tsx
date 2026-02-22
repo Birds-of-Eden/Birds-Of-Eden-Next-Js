@@ -27,7 +27,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { useRef, useState, RefObject } from "react";
+import { useEffect, useRef, useState, RefObject } from "react";
 import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { useOnClickOutside } from "usehooks-ts";
@@ -45,8 +45,14 @@ const Navbar = () => {
   const url = usePathname();
   const { theme, setTheme } = useTheme();
 
+  const [mounted, setMounted] = useState(false);
+
   const [showMenu, setShowMenu] = useState(false);
   const mobileRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleClickOutside = () => {
     setShowMenu(false);
@@ -659,7 +665,7 @@ const Navbar = () => {
                     theme == "light" ? setTheme("dark") : setTheme("light")
                   }
                 >
-                  {theme === "dark" ? (
+                  {mounted && theme === "dark" ? (
                     <BiSolidSun className="h-6 w-6 shrink-0" />
                   ) : (
                     <BiSolidMoon className="h-6 w-6 shrink-0" />
@@ -670,7 +676,7 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="flex items-center gap-4 xl:hidden">
-                {theme === "dark" ? (
+                {mounted && theme === "dark" ? (
                   <BiSolidSun
                     onClick={() => setTheme("light")}
                     className="cursor-pointer text-2xl"

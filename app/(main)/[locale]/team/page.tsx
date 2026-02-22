@@ -4,10 +4,20 @@ import TeamContent from "@/components/main/home/TeamContent";
 
 import type { Metadata } from "next";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations();
-  const title = t("teamPage.metadata.title");
-  const description = t("teamPage.metadata.description");
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  const title = t("teamPage.metadata.title", {
+    defaultValue: "Meet Our Executive Team",
+  });
+  const description = t("teamPage.metadata.description", {
+    defaultValue:
+      "Discover the leaders driving Birds of Eden—our executive team and their expertise.",
+  });
 
   return {
     title: title,
@@ -25,12 +35,7 @@ const TeamPage = async () => {
 
   return (
     <div>
-      <TeamContent
-        title={teamData.title}
-        members={teamData.members}
-        viewPortfolio={t("team.viewPortfolio")}
-        descriptionTitle={t("team.descriptionTitle")}
-      />
+      <TeamContent />
     </div>
   );
 };

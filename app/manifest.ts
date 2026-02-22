@@ -10,8 +10,8 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
   });
 
   return {
-    name: t("name"),
-    short_name: t("shortName"),
+    name: t("name", { defaultValue: "Birds Of Eden" }),
+    short_name: t("shortName", { defaultValue: "Birds Of Eden" }),
     icons: [
       {
         src: "/web-app-manifest-192x192.png",

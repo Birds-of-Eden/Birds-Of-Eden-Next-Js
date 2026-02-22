@@ -7,10 +7,17 @@ import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
   const { theme, setTheme } = useTheme();
   const t = useTranslations();
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <footer className="bg-slate-50 text-white dark:bg-[#334155]">
@@ -131,7 +138,7 @@ const Footer = () => {
           }
           className="mt-4 rounded-md border border-black px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black dark:border-white dark:focus:ring-white "
         >
-          {theme === "dark" ? (
+          {mounted && theme === "dark" ? (
             <BiSun className="text-xl text-black dark:text-white" />
           ) : (
             <BiMoon className="text-xl text-black dark:text-white" />
