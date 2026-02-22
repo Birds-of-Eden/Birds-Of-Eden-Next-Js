@@ -1,0 +1,105 @@
+{
+  "hero": {
+    "title": "Leadership crafted for measurable transformation.",
+    "subtitle": "Birds of Eden brings together ERP veterans, AI strategists, and hands-on delivery leads to guide every engagement.",
+    "description": "Our leadership team operates as a unified boardroom, translating complex software, hardware, and AI initiatives into clear outcomes for customers worldwide.",
+    "highlights": [
+      "ISO 9001 & ISO 27001 aligned delivery",
+      "Dedicated regional pods in APAC, EMEA, and North America",
+      "AI-native, low-code, and hardware vertical expertise"
+    ]
+  },
+  "stats": [
+    {
+      "label": "Projects shipped",
+      "value": "500+"
+    },
+    {
+      "label": "Markets served",
+      "value": "16+ countries"
+    },
+    {
+      "label": "Avg. tenure",
+      "value": "9 years"
+    },
+    {
+      "label": "Customer rating",
+      "value": "4.9/5"
+    }
+  ],
+  "members": [
+    {
+      "id": "talat",
+      "name": "Talat Mahmud",
+      "role": "Founder & CEO",
+      "image": "/assets/md_talat.png",
+      "quote": "I partner with clients to turn bold visions into disciplined delivery, with a sharp focus on ERP, AI, and resilience.",
+      "bio": "Talat Md. Tawfiq Elahi is the visionary leader and CEO of Birds of Eden Software Firm, a cutting-edge technology company focused on providing innovative software solutions. He also heads Adon Venture General Trading LLC, a dynamic enterprise with a broad scope in the international trading sector. With extensive expertise in business strategy, software development, and corporate management, Talat has played a key role in driving both companies towards growth and success. His leadership emphasizes innovation, client satisfaction, and a commitment to excellence, making him a trusted name in the industry. Under his guidance, Birds of Eden has delivered exceptional digital products while Adon Venture continues to thrive in the global marketplace.",
+      "metrics": [
+        {
+          "label": "ERP programs led",
+          "value": "120+"
+        },
+        {
+          "label": "Transformation budget",
+          "value": "$25M+"
+        }
+      ],
+      "pillars": [
+        "ERP strategy & governance",
+        "AI product roadmap",
+        "Global partner alliances"
+      ],
+      "gitlink": "https://github.com/Birds-of-Eden",
+      "portfolio": "https://talat-me.vercel.app/"
+    },
+    {
+      "id": "amenul",
+      "name": "Md. Aminur Islam",
+      "role": "Chief Technology Officer",
+      "image": "/assets/aminul_islam.jpg",
+      "quote": "We architect resilient platforms that combine clean backends, AI models, and industrial-grade hardware uplifts.",
+      "bio": "Md. Aminur Islam is the dynamic and forward-thinking CEO of Ann-Nahl, a pioneering company dedicated to transforming the digital landscape through innovative solutions. With a deep understanding of technology and a passion for driving change, Amenul has steered Ann-Nahl towards becoming a leader in the industry. Under his leadership, the company has expanded its reach, offering cutting-edge services and exceptional client experiences. Amenul’s commitment to innovation, strategic vision, and strong leadership continues to drive the success of Ann-Nahl, making him a key figure in shaping the future of the company and its industry.",
+      "metrics": [
+        {
+          "label": "Platforms shipped",
+          "value": "35"
+        },
+        {
+          "label": "CICD pipelines",
+          "value": "120+"
+        }
+      ],
+      "pillars": [
+        "Microservice & AI model governance",
+        "Security-first DevOps",
+        "Hardware integration controls"
+      ],
+      "linkedin": "https://www.linkedin.com/in/aminul-islam-abir/",
+      "portfolio": "https://aminul-me.vercel.app/"
+    },
+    {
+      "id": "anisur",
+      "name": "Mohammad Anisur Rahman",
+      "role": "Senior Consultant ( Business Development )",
+      "image": "/assets/Mohammad Anisur Rahaman.jpg",
+      "quote": "I build strategic partnerships that transform opportunities into long-term growth and measurable impact.",
+      "bio": "Anisur leads business development, strategic partnerships, and global market expansion initiatives. He focuses on identifying growth opportunities, nurturing enterprise relationships, and driving sustainable revenue strategies across regions.",
+      "metrics": [
+        {
+          "label": "Enterprise deals closed",
+          "value": "85+"
+        },
+        {
+          "label": "Markets expanded",
+          "value": "10+"
+        }
+      ],
+      "pillars": [
+        "Strategic partnerships",
+        "Market expansion",
+        "Enterprise negotiations"
+      ]
+    }
+  ]
+}

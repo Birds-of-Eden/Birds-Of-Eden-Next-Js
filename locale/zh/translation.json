@@ -1,6 +1,4 @@
 {
-  "name": "Birds of Eden",
-  "shortName": "BirdsOfEden",
   "navbar": {
     "home": "首页",
     "about": "关于我们",
@@ -36,12 +34,18 @@
     "financial": "金融机构",
     "corporate": "企业解决方案",
     "ecommerce": "电子商务",
-    "hardware": "硬件产品",
+    "hardware": "硬件",
+    "hardwareProducts": "硬件产品",
+    "exploreHardware": "探索我们广泛的硬件产品系列。",
+    "hardwareCategories": "硬件类别",
+    "laptop": "笔记本电脑",
+    "printer": "打印机",
+    "keyboard": "键盘",
+    "mouse": "鼠标",
     "drones": "无人机",
     "career": "职业",
     "language": "语言"
   },
-
   "home": {
     "hero": {
       "title": "伊甸园之鸟",
@@ -56,10 +60,22 @@
     },
     "service": {
       "stats": [
-        { "value": "5+", "label": "客户" },
-        { "value": "10+", "label": "项目" },
-        { "value": "1k+", "label": "订阅者" },
-        { "value": "5+", "label": "客户" }
+        {
+          "value": "5+",
+          "label": "客户"
+        },
+        {
+          "value": "10+",
+          "label": "项目"
+        },
+        {
+          "value": "1k+",
+          "label": "订阅者"
+        },
+        {
+          "value": "5+",
+          "label": "客户"
+        }
       ]
     },
     "erpProjects": {
@@ -112,10 +128,6 @@
       "learnMore": "了解更多"
     },
     "ormDetails": {
-      "metadata": {
-        "title": "在线声誉管理（ORM）详情 | 伊甸园之鸟",
-        "description": "了解伊甸园之鸟如何通过我们的在线声誉管理服务增强和保护您的在线声誉。"
-      },
       "title": "在线声誉管理详情",
       "description": "在线声誉管理（ORM）对于维护积极的品牌形象至关重要。它包括监控、影响和管理您的在线声誉。以下是更深入的了解：",
       "keyAspectsTitle": "在线声誉管理的关键方面",
@@ -146,10 +158,6 @@
       "contactUs": "联系我们"
     },
     "dronePage": {
-      "metadata": {
-        "title": "无人机 | 伊甸园之鸟",
-        "description": "探索伊甸园之鸟的最新无人机技术和解决方案。"
-      },
       "title": "我们的最新技术",
       "viewCollections": "查看系列",
       "viewSpecs": "查看规格",
@@ -209,82 +217,141 @@
     },
     "projectGallery": {
       "title": "我们的项目",
-      "description": "发现我们突破技术界限并为客户创造有意义影响的创新解决方案。",
+      "description": "探索我们的创新解决方案，突破技术界限，为客户创造有意义的价值。",
       "modal": {
         "overview": "概述",
         "description": "描述",
-        "close": "关闭"
+        "close": "关闭",
+        "viewDemo": "查看演示"
       },
       "projects": [
         {
-          "title": "身份验证",
-          "description": "上传您的身份证明以进行交易验证。",
-          "image": "project_1.png"
+          "title": "孟加拉国天气政府项目",
+          "description": "高级天气分析平台。我们复杂的仪表板为孟加拉国提供精确清晰的全面天气洞察。",
+          "images": [
+            "BDW1.png",
+            "BDW2.png",
+            "BDW3.png"
+          ],
+          "deploymentUrl": "https://www.bmdcl17.com/"
         },
         {
-          "title": "股市概览",
-          "description": "查看涨幅最大的股票、跌幅最大的股票和详细的市场趋势。",
-          "image": "project_2.png"
+          "title": "伊斯兰宣教机构",
+          "description": "Islami Dawah 是一个使用 Next.js (App Router) + TypeScript 构建的应用程序，用于协调和报告伊斯兰宣教活动。它具有基于角色的仪表板（管理员、宣教员/大使、助理和用户）。",
+          "images": [
+            "ISD1.jpeg",
+            "ISD2.jpeg",
+            "ISD3.jpeg"
+          ],
+          "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
         },
         {
-          "title": "钱包和交易历史",
-          "description": "管理您的钱包并查看交易历史。",
-          "image": "project_3.png"
+          "title": "纽约搬家报价",
+          "description": "Moving Quote New York 提供纽约全境的端到端搬迁服务。该平台为客户匹配可靠的搬家公司，提供即时报价，实时跟踪搬迁进度，并提供全面的搬迁资源，确保无忧体验。",
+          "images": [
+            "MQT1.png",
+            "MQT2.png",
+            "MQT3.png"
+          ],
+          "deploymentUrl": "https://movingquotenewyork.com/"
         },
         {
-          "title": "电子商务平台",
-          "description": "用于图书购买的现代电子商务解决方案。",
-          "image": "project_4.png"
+          "title": "希尔福勒·福祖尔 — 书店",
+          "description": "Hilful Fuzul 是一个使用 Next.js (App Router) + TypeScript 构建的电子商务平台，专为图书和出版商定制。它包括用于管理产品、作者、出版商和订单的基于角色的管理界面；面向客户的店面，具有类别浏览、搜索、购物车和愿望清单功能；以及带有支付处理的结账流程。",
+          "images": [
+            "KG2.png",
+            "KG1.png",
+            "KG3.png"
+          ],
+          "deploymentUrl": "https://hilfulfujulbd.com/"
         },
         {
-          "title": "书店系列",
-          "description": "浏览和筛选大量书籍。",
-          "image": "project_5.png"
+          "title": "纽约搬家报价",
+          "description": "Moving Quote New York 提供纽约全境的端到端搬迁服务。该平台为客户匹配可靠的搬家公司，提供即时报价，实时跟踪搬迁进度，并提供全面的搬迁资源，确保无忧体验。",
+          "images": [
+            "MQN1.png",
+            "MQT2.png",
+            "MQT3.png"
+          ],
+          "deploymentUrl": "https://movingquotenewyork.com/"
         },
         {
-          "title": "仪表板分析",
-          "description": "具有分组条形图和折线图的数据可视化。",
-          "image": "project_6.png"
+          "title": "Net Reputation 任务管理系统",
+          "description": "Net Reputation 任务管理系统是一个使用 Next.js (App Router) + TypeScript 构建的平台，用于运行端到端的客户操作。它包括特定角色的仪表板（管理员、客户经理/CEO、代理、QC、数据录入、客户）、任务和 QC 工作流程，包含暂停原因和绩效评分。",
+          "images": [
+            "NR1.png",
+            "NR2.png",
+            "NR3.png"
+          ],
+          "deploymentUrl": "http://app.netreptask.com/"
         },
         {
-          "title": "声誉管理",
-          "description": "通过量身定制的服务控制您的声誉。",
-          "image": "project_7.png"
+          "title": "Reputation Prime",
+          "description": "Reputation Prime 任务管理系统是一个使用 Next.js (App Router) + TypeScript 构建的平台，用于运行端到端的客户操作。它包括特定角色的仪表板（管理员、客户经理/CEO、代理、QC、数据录入、客户）、任务和 QC 工作流程，包含暂停原因和绩效评分。",
+          "images": [
+            "RP1.png",
+            "RP2.png",
+            "RP3.png"
+          ],
+          "deploymentUrl": "https://reputationtask.com/"
         },
         {
-          "title": "产品展示",
-          "description": "详细的产品展示和促销横幅。",
-          "image": "project_9.png"
+          "title": "Gravionne - 提升健康、福祉与人性",
+          "description": "在 Gravionne，我们相信奢华与健康的交汇点，科学与人性的结合。我们的方法植根于精确性，以研究为指导，并受到人类巨大繁荣潜力的启发。",
+          "image": "GR1.png",
+          "deploymentUrl": "https://www.gravionne.com/"
         },
         {
-          "title": "定价和订阅",
-          "description": "满足不同用户需求的灵活定价计划。",
-          "image": "project_10.png"
+          "title": "AIBL 请假管理系统",
+          "description": "该项目是为 Al-Arafah Islami Bank PLC 开发的智能考勤管理系统，用于实时监控和管理员工出勤。系统提供一个动态仪表板，显示活跃员工总数、出勤、迟到、缺勤和值班员工数量及百分比洞察。",
+          "images": [
+            "AIBL1.jpeg",
+            "AIBL2.jpeg"
+          ],
+          "deploymentUrl": "https://aibl-plc.vercel.app/"
         },
         {
-          "title": "帐户联系人",
-          "description": "管理帐户联系人和用户权限。",
-          "image": "project_11.png"
+          "title": "生态监测系统",
+          "description": "EcoMonitor 是一个智能环境监测系统，提供实时天气洞察和分析。它通过交互式仪表板和可视化图表显示关键指标，如温度、湿度、风速、压力、紫外线指数和降水量。该平台具有趋势分析、动画数据可视化和系统警报（如高紫外线警告）功能，以支持主动决策。通过天气监测、水质跟踪、报告和用户管理等模块，EcoMonitor 在现代、用户友好的界面中确保准确的数据跟踪和高效的环境分析。",
+          "images": [
+            "EM1.jpeg",
+            "EM2.jpeg",
+            "EM3.jpeg",
+            "EM4.jpeg"
+          ],
+          "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
         },
         {
-          "title": "仪表板概览",
-          "description": "具有高级分析功能的综合仪表板。",
-          "image": "project_12.jpeg"
+          "title": "DNA 报告系统",
+          "description": "DNA Archive 是一个集中式实验室管理系统，用于跟踪案件、样本、报告、存储和用户活动。它提供实时分析、系统监控和简化的工作流程，以实现高效的法医数据管理。",
+          "images": [
+            "DNA1.png"
+          ],
+          "deploymentUrl": "https://dna-case-management.vercel.app/login"
         },
         {
-          "title": "搬家费用计算器",
-          "description": "使用直观的表格计算搬家费用。",
-          "image": "project_13.jpeg"
+          "title": "房地产管理系统",
+          "description": "该房地产公司平台旨在管理房源列表和用户互动，为管理员、经纪人和客户分配不同的角色。管理员可以监督所有操作，管理用户和房产；经纪人可以添加和管理自己的房源；而用户可以浏览、筛选和查询房产。系统确保安全的基于角色的访问、多语言支持以及所有相关方之间的顺畅沟通。",
+          "images": [
+            "RE1.png"
+          ],
+          "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
         },
         {
-          "title": "客户管理",
-          "description": "客户活动和参与度指标的概览。",
-          "image": "project_14.png"
+          "title": "PCO 培训",
+          "description": "PCO Training 是面向英国专业司机的专门平台。它提供全面的培训模块、模拟测试和认证准备，帮助司机满足法规要求并提高技能。",
+          "images": [
+            "PCO1.png"
+          ],
+          "deploymentUrl": "https://uk-driving-course.vercel.app/en"
         },
         {
-          "title": "行动摘要仪表板",
-          "description": "跟踪任务、活动和整体生产力。",
-          "image": "project_15.png"
+          "title": "欺诈检测系统",
+          "description": "该项目是一个欺诈审查和验证系统，旨在分析和验证商业评论活动。它显示详细的商家信息，包括位置地图、联系信息、评分和评论统计。该平台跟踪总评论数、评论者和人均平均评论数，以识别可疑模式。通过重新扫描、状态跟踪、PDF 导出和请求管理等功能，该系统有助于检测欺诈行为，确保数据真实性，并支持审查审核和合规方面的明智决策。",
+          "images": [
+            "FD1.jpeg"
+          ],
+          "deploymentUrl": "https://review.reputationtask.com/login"
         }
       ]
     },
@@ -295,77 +362,121 @@
           "name": "Ann-Nahl 软件",
           "description": "Ann-Nahl 软件为企业提供尖端的软件解决方案，专注于质量和客户满意度。",
           "logo": "ann-nahl.png",
-          "services": ["软件开发", "咨询", "定制解决方案"],
+          "services": [
+            "软件开发",
+            "咨询",
+            "定制解决方案"
+          ],
           "testimonial": "Ann-Nahl 软件改变了我们的运营方式，提供了根据我们的需求量身定制的高质量软件解决方案。"
         },
         {
           "name": "BuzzMoving",
           "description": "BuzzMoving 提供无缝的搬家体验，确保所有搬迁都得到细致和精确的处理。",
           "logo": "buzzmoving.png",
-          "services": ["住宅搬家", "商业搬家", "仓储服务"],
+          "services": [
+            "住宅搬家",
+            "商业搬家",
+            "仓储服务"
+          ],
           "testimonial": "BuzzMoving 让我们的搬迁轻松无压力。他们的团队高效、专业且可靠。"
         },
         {
           "name": "声誉至尊",
           "description": "声誉至尊通过战略声誉管理解决方案帮助企业建立和维护强大的在线声誉。",
           "logo": "repuprime.jpeg",
-          "services": ["声誉管理", "品牌监控", "危机处理"],
+          "services": [
+            "声誉管理",
+            "品牌监控",
+            "危机处理"
+          ],
           "testimonial": "声誉至尊在提升我们的品牌声誉和在线信誉方面发挥了至关重要的作用。"
         },
         {
           "name": "沙特阿拉伯卫生部",
           "description": "沙特阿拉伯卫生部提供医疗保健服务、政策和医疗法规，以提高公众健康。",
           "logo": "moh.png",
-          "services": ["公共卫生", "医疗服务", "医疗保健政策"],
+          "services": [
+            "公共卫生",
+            "医疗服务",
+            "医疗保健政策"
+          ],
           "testimonial": "卫生部极大地改善了我们获得医疗保健服务和医疗信息的途径。"
         },
         {
           "name": "人力资源和社会发展部",
           "description": "人力资源和社会发展部致力于建设一个赋权的社区和一个有吸引力的劳动力市场。",
           "logo": "HRSD.png",
-          "services": ["劳动政策", "社会发展", "就业支持"],
+          "services": [
+            "劳动政策",
+            "社会发展",
+            "就业支持"
+          ],
           "testimonial": "人力资源和社会发展部在创建一个更具活力和包容性的劳动力市场方面发挥了关键作用。"
         },
         {
           "name": "SDAIA（沙特数据与人工智能管理局）",
           "description": "SDAIA 致力于推进数据和人工智能解决方案，以推动沙特阿拉伯的数字化转型。",
           "logo": "sdaia.png",
-          "services": ["人工智能", "大数据", "数字化转型"],
+          "services": [
+            "人工智能",
+            "大数据",
+            "数字化转型"
+          ],
           "testimonial": "SDAIA 为该国人工智能和数据驱动的倡议的增长做出了重大贡献。"
         },
         {
           "name": "阿曼植物园",
           "description": "阿曼植物园展示了阿曼多样的植物生命，促进保护和教育。",
           "logo": "OBG.png",
-          "services": ["植物保护", "环境教育", "旅游"],
+          "services": [
+            "植物保护",
+            "环境教育",
+            "旅游"
+          ],
           "testimonial": "阿曼植物园为我们提供了沉浸在阿曼丰富生物多样性中的体验。"
         },
         {
           "name": "马斯喀特皇家歌剧院",
           "description": "马斯喀特皇家歌剧院是阿曼举办音乐和文化表演的首要场所，致力于推广卓越的艺术。",
           "logo": "ROHM.png",
-          "services": ["表演艺术", "文化活动", "音乐教育"],
+          "services": [
+            "表演艺术",
+            "文化活动",
+            "音乐教育"
+          ],
           "testimonial": "马斯喀特皇家歌剧院是一颗文化瑰宝，为阿曼带来了世界一流的表演。"
         },
         {
           "name": "孟加拉国政府",
           "description": "孟加拉国政府的官方门户网站为公民、企业和游客提供信息和服务。",
           "logo": "bangovt.png",
-          "services": ["政府服务", "公共行政", "电子政务"],
+          "services": [
+            "政府服务",
+            "公共行政",
+            "电子政务"
+          ],
           "testimonial": "孟加拉国政府门户网站在访问基本政府服务方面提供了无缝体验。"
         },
         {
           "name": "纽约搬家报价",
           "description": "纽约报价德克萨斯州提供有竞争力的保险报价，帮助个人和企业获得最佳保单。",
           "logo": "logo-png.png",
-          "services": ["保险报价", "财务规划", "风险评估"],
+          "services": [
+            "保险报价",
+            "财务规划",
+            "风险评估"
+          ],
           "testimonial": "纽约报价德克萨斯州帮助我们以无与伦比的价格找到了完美的保险计划。"
         },
         {
           "name": "德克萨斯州搬家",
           "description": "德克萨斯州搬家为全州的住宅和商业客户提供一流的搬迁服务。",
           "logo": "moving-texas.png",
-          "services": ["住宅搬家", "商业搬家", "仓储解决方案"],
+          "services": [
+            "住宅搬家",
+            "商业搬家",
+            "仓储解决方案"
+          ],
           "testimonial": "德克萨斯州搬家凭借其专业可靠的团队，使我们的搬迁顺利无忧。"
         }
       ]
@@ -436,14 +547,6 @@
       }
     ]
   },
-
-  "servicesPage": {
-    "metadata": {
-      "title": "我们的服务 | 伊甸园之鸟",
-      "description": "探索伊甸园之鸟提供的服务。"
-    }
-  },
-
   "services": {
     "showLess": "显示较少",
     "learnMore": "了解更多",
@@ -717,12 +820,8 @@
     }
   },
   "technologyList": {
-    "metadata": {
-      "title": "我们的技术 | 伊甸园之鸟",
-      "description": "探索伊甸园之鸟用于构建软件解决方案的技术。"
-    },
     "ourTechnology": "我们的技术",
-    "description": "在{companyName}，我们处于技术创新的前沿。我们的软件解决方案采用最新、最可靠的技术构建，以确保高性能、可扩展性和安全性。",
+    "description": "在{{companyName}}，我们处于技术创新的前沿。我们的软件解决方案采用最新、最可靠的技术构建，以确保高性能、可扩展性和安全性。",
     "frontendTechnologies": "前端技术",
     "backendTechnologies": "后端技术",
     "technologies": {
@@ -744,13 +843,6 @@
         "rust": "一种运行速度极快、防止段错误并保证线程安全的系统编程语言。",
         "laravel": "面向Web工匠的PHP框架，提供优雅的语法和强大的工具。"
       }
-    }
-  },
-
-  "productsPage": {
-    "metadata": {
-      "title": "我们的产品 | 伊甸园之鸟",
-      "description": "探索伊甸园之鸟提供的产品范围。"
     }
   },
   "products": {
@@ -796,12 +888,7 @@
     "backlinkMonitoring": "反向链接监控",
     "seoBoost": "通过我们的专家解决方案，提高客户的搜索引擎排名并推动更多自然流量。"
   },
-
   "JobPostPage": {
-    "metadata": {
-      "title": "职业机会 | 您的公司",
-      "description": "探索令人兴奋的职业机会，加入我们的团队。"
-    },
     "title": "加入我们的团队",
     "applyButton": "立即申请",
     "applyFor": "申请",
@@ -839,10 +926,6 @@
     ]
   },
   "aboutUs": {
-    "metadata": {
-      "title": "关于我们公司",
-      "description": "了解更多关于我们公司的历史、使命和价值观。"
-    },
     "title": "关于伊甸园之鸟",
     "header": "伊甸园之鸟是一家充满活力的软件公司，致力于创造创新解决方案，助力企业在数字时代蓬勃发展。",
     "missionTitle": "我们的使命",
@@ -862,16 +945,10 @@
         "role": "联合创始人兼首席执行官"
       },
       {
-        "name": "Md. Amenul Islam",
+        "name": "Md. Aminur Islam",
         "role": "首席技术官"
       }
     ]
-  },
-  "teamPage": {
-    "metadata": {
-      "title": "我们的团队 | 您的公司",
-      "description": "了解我们的团队成员和他们的角色。"
-    }
   },
   "team": {
     "title": "我们的执行团队",
@@ -888,20 +965,62 @@
         "description": "Talat Md. Tawfik Elahi 是一位富有远见的领导者，推动战略增长和卓越。他以具有前瞻性的方法，预测市场变化，并灵活应对挑战。他的领导力将战略和执行相结合，确保组织成功。"
       },
       {
-        "name": "Md. Amenul Islam",
+        "name": "Md. Aminur Islam",
         "role": "首席技术官",
         "portfolioLink": "https://talat-me.vercel.app/",
-        "description": "Md. Amenul Islam 是一位战略创新者，领导运营效率和增长。他将远见卓识与实际执行相结合，以实现业务目标。他的远见使组织能够在动态环境中适应和蓬勃发展。"
+        "description": "Md. Aminur Islam 是一位战略创新者，领导运营效率和增长。他将远见卓识与实际执行相结合，以实现业务目标。他的远见使组织能够在动态环境中适应和蓬勃发展。"
       }
     ],
     "descriptionTitle": "描述",
-    "viewPortfolio": "查看作品集"
+    "viewPortfolio": "查看作品集",
+    "leadershipLabel": "领导团队",
+    "clickToLearnMore": "点击了解更多",
+    "biographyLabel": "简介",
+    "areasOfExpertiseLabel": "专业领域",
+    "close": "关闭",
+    "social": {
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "github": "GitHub"
+    },
+    "leadershipHero": {
+      "title": "为可衡量的转型而打造的领导力。",
+      "subtitle": "Birds of Eden 汇聚 ERP 资深专家、AI 战略顾问与一线交付负责人，为每一次合作保驾护航。"
+    },
+    "membersById": {
+      "talat": {
+        "role": "创始人兼首席执行官",
+        "quote": "我与客户携手，将大胆愿景转化为严谨交付，并专注于 ERP、AI 与韧性建设。",
+        "bio": "Talat Mahmud 是 Birds of Eden 的富有远见的领导者与 CEO，专注于提供创新的软件解决方案，并推动企业持续增长。他在业务战略、软件开发与管理方面拥有丰富经验，强调创新、客户满意与卓越执行。",
+        "pillars": [
+          "ERP 战略与治理",
+          "AI 产品路线图",
+          "全球合作伙伴联盟"
+        ]
+      },
+      "amenul": {
+        "role": "首席技术官",
+        "quote": "我们架构高韧性平台，将清晰的后端、AI 模型与工业级硬件升级无缝融合。",
+        "bio": "Aminur Islam 负责平台工程、云运维与研发，专注打造可扩展、可靠的技术体系，并以安全与工程质量为核心推动交付。",
+        "pillars": [
+          "微服务与 AI 模型治理",
+          "安全优先 DevOps",
+          "硬件集成控制"
+        ]
+      },
+      "anisur": {
+        "role": "高级顾问（业务发展）",
+        "quote": "我建立战略合作伙伴关系，把机会转化为长期增长与可衡量的影响。",
+        "bio": "Anisur 负责业务发展、战略合作与全球市场拓展，聚焦识别增长机会、培育企业级合作关系，并推动跨区域的可持续营收策略。",
+        "pillars": [
+          "战略合作伙伴关系",
+          "市场拓展",
+          "企业谈判"
+        ]
+      }
+    }
   },
   "hardwareProducts": {
-    "metadata": {
-      "title": "配件 | 您的公司",
-      "description": "探索我们各种各样的硬件配件。"
-    },
     "premiumTech": {
       "title": "高级科技配件",
       "description": "使用高品质、专业级的科技配件增强您的工作空间。",
@@ -945,12 +1064,6 @@
       }
     ]
   },
-  "contactPage": {
-    "metadata": {
-      "title": "联系我们 | Birds Of Eden",
-      "description": "联系我们 Birds Of Eden 进行咨询、支持或合作机会。"
-    }
-  },
   "contact": {
     "contactUs": "联系我们",
     "name": "姓名",
@@ -965,7 +1078,6 @@
     "errorMessage": "发送信息时出错！",
     "errorAlert": "发送信息失败。"
   },
-
   "footer": {
     "companyDescription": "伊甸园之鸟是一家开拓性的软件公司，致力于将创新理念转化为现实。",
     "importantLinks": "重要链接",
@@ -974,5 +1086,45 @@
     "newsletter": "订阅我们的新闻通讯",
     "emailPlaceholder": "输入您的电子邮件",
     "copyright": "© 版权所有"
+  },
+  "keyboardPage": {
+    "all": "全部",
+    "switches": "开关",
+    "layout": "布局",
+    "connectivity": "连接",
+    "keycaps": "键帽",
+    "lighting": "灯光",
+    "deliveryTime": "3-5天"
+  },
+  "mousePage": {
+    "all": "全部",
+    "sensor": "传感器",
+    "dpi": "DPI",
+    "buttons": "按钮",
+    "connectivity": "连接",
+    "weight": "重量",
+    "deliveryTime": "3-5天"
+  },
+  "laptopPage": {
+    "all": "全部",
+    "cpu": "CPU",
+    "ram": "内存",
+    "storage": "存储",
+    "display": "显示器",
+    "battery": "电池",
+    "deliveryTime": "3-5天"
+  },
+  "printerPage": {
+    "all": "全部",
+    "type": "类型",
+    "speed": "速度",
+    "resolution": "分辨率",
+    "connectivity": "连接",
+    "dutyCycle": "工作周期",
+    "deliveryTime": "3-5天"
+  },
+  "modal": {
+    "nextProduct": "下一个产品",
+    "previousProduct": "上一个产品"
   }
 }

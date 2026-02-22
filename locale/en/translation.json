@@ -1,6 +1,4 @@
 {
-  "name": "Birds of Eden",
-  "shortName": "BirdsOfEden",
   "navbar": {
     "home": "Home",
     "about": "About Us",
@@ -36,12 +34,18 @@
     "financial": "Financial Institutions",
     "corporate": "Corporate Solutions",
     "ecommerce": "E-Commerce",
-    "hardware": "Hardware Products",
+    "hardware": "Hardware",
+    "hardwareProducts": "Hardware Products",
+    "exploreHardware": "Explore our wide range of hardware products.",
+    "hardwareCategories": "Hardware Categories",
+    "laptop": "Laptop",
+    "printer": "Printer",
+    "keyboard": "Keyboard",
+    "mouse": "Mouse",
     "drones": "Drones",
     "career": "Career",
     "language": "Language"
   },
-
   "home": {
     "hero": {
       "title": "BIRDS OF EDEN",
@@ -56,13 +60,24 @@
     },
     "service": {
       "stats": [
-        { "value": "5+", "label": "Clients" },
-        { "value": "10+", "label": "Projects" },
-        { "value": "1k+", "label": "Subscribers" },
-        { "value": "5+", "label": "Clients" }
+        {
+          "value": "5+",
+          "label": "Clients"
+        },
+        {
+          "value": "10+",
+          "label": "Projects"
+        },
+        {
+          "value": "1k+",
+          "label": "Subscribers"
+        },
+        {
+          "value": "5+",
+          "label": "Clients"
+        }
       ]
     },
-
     "erpProjects": {
       "title": "Our ERP Projects",
       "button": "Go Back",
@@ -93,7 +108,6 @@
         }
       ]
     },
-
     "ormSection": {
       "title": "AI Based Online Reputation and Back Office Management",
       "description": "Manage your online reputation to build trust, engage with your audience, and enhance your brand's image.",
@@ -114,10 +128,6 @@
       "learnMore": "Learn More"
     },
     "ormDetails": {
-      "metadata": {
-        "title": "Online Reputation Management (ORM) Details | Birds Of Eden",
-        "description": "Learn how Birds Of Eden can enhance and protect your online reputation with our ORM services."
-      },
       "title": "ORM Details",
       "description": "Online Reputation Management (ORM) is crucial for maintaining a positive brand image. It involves monitoring, influencing, and managing your online reputation. Here's a deeper look:",
       "keyAspectsTitle": "Key Aspects of ORM",
@@ -147,12 +157,7 @@
       "getStartedMessage": "Ready to turn your app idea into reality? Contact us today to get started!",
       "contactUs": "Contact Us"
     },
-
     "dronePage": {
-      "metadata": {
-        "title": "Drone Technology | Birds Of Eden",
-        "description": "Explore the latest drone technology and its applications in various industries."
-      },
       "title": "Our Latest Technology",
       "viewCollections": "View Collections",
       "viewSpecs": "View Specs",
@@ -216,78 +221,137 @@
       "modal": {
         "overview": "Overview",
         "description": "Description",
-        "close": "Close"
+        "close": "Close",
+        "viewDemo": "View Live"
       },
       "projects": [
         {
-          "title": "Identity Verification",
-          "description": "Upload a proof of your identity for trading verification.",
-          "image": "project_1.png"
+          "title": "BD Weather Govt. Project",
+          "description": "Advanced Weather Analytics Platform Our sophisticated dashboard provides comprehensive weather insights for Bangladesh with precision and clarity.",
+          "images": [
+            "BDW1.png",
+            "BDW2.png",
+            "BDW3.png"
+          ],
+          "deploymentUrl": "https://www.bmdcl17.com/"
         },
         {
-          "title": "Stock Market Overview",
-          "description": "View top gainers, top losers, and detailed market trends.",
-          "image": "project_2.png"
+          "title": "Islami Dawa Institute",
+          "description": "Islami Dawah is a Next.js (App Router) + TypeScript application for coordinating and reporting Islamic outreach activities. It features role-based dashboards (admin, dayi/ambassador, assistant, and user).",
+          "images": [
+            "ISD1.jpeg",
+            "ISD2.jpeg",
+            "ISD3.jpeg"
+          ],
+          "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
         },
         {
-          "title": "Wallet and Transaction History",
-          "description": "Manage your wallet and view transaction history.",
-          "image": "project_3.png"
+          "title": "Moving Quote New York",
+          "description": "Moving Quote New York provides end-to-end relocation services across NY. The platform matches customers with reliable movers, offers instant quotes, tracks moving progress in real-time, and provides comprehensive moving resources to ensure a stress-free experience.",
+          "images": [
+            "MQT1.png",
+            "MQT2.png",
+            "MQT3.png"
+          ],
+          "deploymentUrl": "https://movingquotenewyork.com/"
         },
         {
-          "title": "E-Commerce Platform",
-          "description": "Modern e-commerce solution for book purchases.",
-          "image": "project_4.png"
+          "title": "Hilful Fuzul — Book Shop",
+          "description": "Hilful Fuzul is a Next.js (App Router) + TypeScript e-commerce platform tailored for books and publishers. It includes role-based admin interfaces for managing products, writers, publishers, and orders; a customer-facing storefront with category browsing, search, cart and wishlist; and a checkout flow with payment processing. ",
+          "images": [
+            "KG2.png",
+            "KG1.png",
+            "KG3.png"
+          ],
+          "deploymentUrl": "https://hilfulfujulbd.com/"
         },
         {
-          "title": "Bookstore Collection",
-          "description": "Browse and filter a vast collection of books.",
-          "image": "project_5.png"
+          "title": "Moving Quote New York",
+          "description": "Moving Quote New York provides end-to-end relocation services across NY. The platform matches customers with reliable movers, offers instant quotes, tracks moving progress in real-time, and provides comprehensive moving resources to ensure a stress-free experience.",
+          "images": [
+            "MQN1.png",
+            "MQT2.png",
+            "MQT3.png"
+          ],
+          "deploymentUrl": "https://movingquotenewyork.com/"
         },
         {
-          "title": "Dashboard Analytics",
-          "description": "Data visualization with grouped bar and line charts.",
-          "image": "project_6.png"
+          "title": "Net Reputation Task Management System",
+          "description": "Net Reputation Task Management System is a Next.js (App Router) + TypeScript platform for running end-to-end client ops. It includes role-specific dashboards (admin, AM/CEO, agent, QC, data-entry, client), task & QC workflows with pause reasons and performance scoring.",
+          "images": [
+            "NR1.png",
+            "NR2.png",
+            "NR3.png"
+          ],
+          "deploymentUrl": "http://app.netreptask.com/"
         },
         {
-          "title": "Reputation Management",
-          "description": "Control your reputation with tailored services.",
-          "image": "project_7.png"
+          "title": "Reputation Prime",
+          "description": "Reputation Prime Task Management System is a Next.js (App Router) + TypeScript platform for running end-to-end client ops. It includes role-specific dashboards (admin, AM/CEO, agent, QC, data-entry, client), task & QC workflows with pause reasons and performance scoring.",
+          "images": [
+            "RP1.png",
+            "RP2.png",
+            "RP3.png"
+          ],
+          "deploymentUrl": "https://reputationtask.com/"
         },
         {
-          "title": "Product Showcase",
-          "description": "Detailed product display and promotional banners.",
-          "image": "project_9.png"
+          "title": "Gravionne - Elevating Health, Wellness & Humanity",
+          "description": "At Gravionne, we believe in the intersection of luxury and wellness, where science meets humanity. Our approach is rooted in precision, guided by research, and inspired by the profound potential of human flourishing.",
+          "image": "GR1.png",
+          "deploymentUrl": "https://www.gravionne.com/"
         },
         {
-          "title": "Pricing and Subscription",
-          "description": "Flexible pricing plans for different user needs.",
-          "image": "project_10.png"
+          "title": "AIBL Leave Management System",
+          "description": "This project is a Smart Attendance Management System developed for Al-Arafah Islami Bank PLC to monitor and manage employee attendance in real time. The system provides a dynamic dashboard displaying total active employees, present, late, absent, and on-duty staff with percentage insights.",
+          "images": [
+            "AIBL1.jpeg",
+            "AIBL2.jpeg"
+          ],
+          "deploymentUrl": "https://aibl-plc.vercel.app/"
         },
         {
-          "title": "Account Contacts",
-          "description": "Manage account contacts and user permissions.",
-          "image": "project_11.png"
+          "title": "Ecomonitor System",
+          "description": "EcoMonitor is a smart environmental monitoring system that provides real-time weather insights and analytics. It displays key metrics such as temperature, humidity, wind speed, pressure, UV index, and precipitation through interactive dashboards and visual charts. The platform features trend analysis, animated data visualization, and system alerts like high UV warnings to support proactive decision-making. With modules for weather monitoring, water quality tracking, reports, and user management, EcoMonitor ensures accurate data tracking and efficient environmental analysis in a modern, user-friendly interface.",
+          "images": [
+            "EM1.jpeg",
+            "EM2.jpeg",
+            "EM3.jpeg",
+            "EM4.jpeg"
+          ],
+          "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
         },
         {
-          "title": "Dashboard Overview",
-          "description": "Comprehensive dashboard with advanced analytics.",
-          "image": "project_12.jpeg"
+          "title": "DNA Report System",
+          "description": "DNA Archive is a centralized laboratory management system that tracks cases, samples, reports, storage, and user activity. It provides real-time analytics, system monitoring, and streamlined workflows for efficient forensic data management.",
+          "images": [
+            "DNA1.png"
+          ],
+          "deploymentUrl": "https://dna-case-management.vercel.app/login"
         },
         {
-          "title": "Moving Cost Calculator",
-          "description": "Calculate moving costs with an intuitive form.",
-          "image": "project_13.jpeg"
+          "title": "Real Estate Management System",
+          "description": "This real estate company platform is designed to manage property listings and user interactions with distinct roles for admins, agents, and clients. Admins can oversee all operations, manage users and properties; agents can add and manage their property listings; while users can browse, filter, and inquire about properties. The system ensures secure role-based access, multilingual support, and smooth communication between all parties involved.",
+          "images": [
+            "RE1.png"
+          ],
+          "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
         },
         {
-          "title": "Client Management",
-          "description": "Overview of client campaigns and engagement metrics.",
-          "image": "project_14.png"
+          "title": "PCO Training",
+          "description": "PCO Training is a specialized platform for professional drivers in the UK. It offers comprehensive training modules, practice tests, and certification preparation to help drivers meet regulatory requirements and improve their skills.",
+          "images": [
+            "PCO1.png"
+          ],
+          "deploymentUrl": "https://uk-driving-course.vercel.app/en"
         },
         {
-          "title": "Action Summary Dashboard",
-          "description": "Track tasks, activities, and overall productivity.",
-          "image": "project_15.png"
+          "title": "Fraud Detection System",
+          "description": "This project is a fraud review and verification system designed to analyze and validate business review activities. It displays detailed business profiles with location mapping, contact information, ratings, and review statistics. The platform tracks total reviews, reviewers, and average reviews per person to identify suspicious patterns. With features like rescan, status tracking, PDF export, and request management, the system helps detect fraudulent behavior, ensures data authenticity, and supports informed decision-making for review moderation and compliance.",
+          "images": [
+            "FD1.jpeg"
+          ],
+          "deploymentUrl": "https://review.reputationtask.com/login"
         }
       ]
     },
@@ -375,7 +439,11 @@
           "name": "Royal Opera House Muscat",
           "description": "The Royal Opera House Muscat is Oman's premier venue for musical and cultural performances, promoting artistic excellence.",
           "logo": "ROHM.png",
-          "services": ["Performing Arts", "Cultural Events", "Music Education"],
+          "services": [
+            "Performing Arts",
+            "Cultural Events",
+            "Music Education"
+          ],
           "testimonial": "The Royal Opera House Muscat is a cultural gem, bringing world-class performances to Oman."
         },
         {
@@ -450,7 +518,6 @@
     "partners": {
       "title": "Our Partners"
     },
-
     "privacyPolicy": [
       {
         "title": "Privacy Policy",
@@ -480,14 +547,6 @@
       }
     ]
   },
-
-  "servicesPage": {
-    "metadata": {
-      "title": "Our Services | Birds Of Eden",
-      "description": "Explore the range of services we offer at Birds Of Eden."
-    }
-  },
-
   "services": {
     "showLess": "Show Less",
     "learnMore": "Learn More",
@@ -553,7 +612,6 @@
         "text": "Optimizing Daily Operations with LLM-based Solutions - Drive down daily operational costs by implementing LLM-based solutions to support routine operations. This is additional text for the card that will be revealed when the button is clicked."
       }
     ],
-
     "ourServices": {
       "title": "Regular Services",
       "services": [
@@ -620,7 +678,6 @@
       ],
       "footer": "Partner with us to bring your iOS app ideas to life and leave a lasting impression on your users in the ever-growing iOS ecosystem."
     },
-
     "mobileApp": {
       "title": "Mobile App Solutions",
       "header": "BIRDS OF EDEN offers comprehensive mobile app solutions to empower your business with responsive and feature-rich applications across platforms.",
@@ -763,12 +820,8 @@
     }
   },
   "technologyList": {
-    "metadata": {
-      "title": "Our Technologies | Birds Of Eden",
-      "description": "Explore the technologies we use at Birds Of Eden to build our software solutions."
-    },
     "ourTechnology": "Our Technology",
-    "description": "At {companyName}, we are at the forefront of technological innovation. Our software solutions are built using the latest and most reliable technologies to ensure high performance, scalability, and security.",
+    "description": "At {{companyName}}, we are at the forefront of technological innovation. Our software solutions are built using the latest and most reliable technologies to ensure high performance, scalability, and security.",
     "frontendTechnologies": "Frontend Technologies",
     "backendTechnologies": "Backend Technologies",
     "technologies": {
@@ -790,13 +843,6 @@
         "rust": "A system programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.",
         "laravel": "A PHP framework for web artisans, providing elegant syntax and robust tools."
       }
-    }
-  },
-
-  "productsPage": {
-    "metadata": {
-      "title": "Our Products | Birds Of Eden",
-      "description": "Explore the range of products we offer at Birds Of Eden."
     }
   },
   "products": {
@@ -842,12 +888,7 @@
     "backlinkMonitoring": "Backlink monitoring",
     "seoBoost": "Boost your clients' search engine rankings and drive more organic traffic with our expert solutions."
   },
-
   "JobPostPage": {
-    "metadata": {
-      "title": "Career Opportunities | Birds Of Eden",
-      "description": "Explore exciting career opportunities and join our team."
-    },
     "title": "Join Our Team",
     "applyButton": "Apply Now",
     "applyFor": "Apply for",
@@ -885,10 +926,6 @@
     ]
   },
   "aboutUs": {
-    "metadata": {
-      "title": "About Our Company",
-      "description": "Learn more about our history, mission, and values."
-    },
     "title": "About Birds OF EDEN",
     "header": "BIRDS OF EDEN is a dynamic software company dedicated to creating innovative solutions that empower businesses to thrive in the digital age.",
     "missionTitle": "Our Mission",
@@ -908,17 +945,10 @@
         "role": "Co-Founder & CEO"
       },
       {
-        "name": "Md. Amenul Islam",
+        "name": "Md. Aminur Islam",
         "role": "CTO"
       }
     ]
-  },
-
-  "teamPage": {
-    "metadata": {
-      "title": "Our Team | Birds Of Eden",
-      "description": "Meet the talented individuals behind Birds Of Eden."
-    }
   },
   "team": {
     "title": "Meet Our Executive Team",
@@ -935,20 +965,62 @@
         "description": "Talat Md. Tawfik Elahi is a visionary leader driving strategic growth and excellence. With a forward-thinking approach, he anticipates market shifts and navigates challenges with agility. His leadership bridges strategy and execution, ensuring organizational success."
       },
       {
-        "name": "Md. Amenul Islam",
+        "name": "Md. Aminur Islam",
         "role": "CTO",
         "portfolioLink": "https://talat-me.vercel.app/",
-        "description": "Md. Amenul Islam is a strategic innovator leading operational efficiency and growth. He combines visionary thinking with practical execution to achieve business goals. His foresight enables the organization to adapt and thrive in a dynamic landscape."
+        "description": "Md. Aminur Islam is a strategic innovator leading operational efficiency and growth. He combines visionary thinking with practical execution to achieve business goals. His foresight enables the organization to adapt and thrive in a dynamic landscape."
       }
     ],
     "descriptionTitle": "Description",
-    "viewPortfolio": "View Portfolio"
+    "viewPortfolio": "View Portfolio",
+    "leadershipLabel": "Leadership",
+    "clickToLearnMore": "Click to learn more",
+    "biographyLabel": "Biography",
+    "areasOfExpertiseLabel": "Areas of expertise",
+    "close": "Close",
+    "social": {
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "github": "GitHub"
+    },
+    "leadershipHero": {
+      "title": "Leadership crafted for measurable transformation.",
+      "subtitle": "Birds of Eden brings together ERP veterans, AI strategists, and hands-on delivery leads to guide every engagement."
+    },
+    "membersById": {
+      "talat": {
+        "role": "Founder & CEO",
+        "quote": "I partner with clients to turn bold visions into disciplined delivery, with a sharp focus on ERP, AI, and resilience.",
+        "bio": "Talat Md. Tawfiq Elahi is the visionary leader and CEO of Birds of Eden Software Firm, a cutting-edge technology company focused on providing innovative software solutions. He also heads Adon Venture General Trading LLC, a dynamic enterprise with a broad scope in the international trading sector. With extensive expertise in business strategy, software development, and corporate management, Talat has played a key role in driving both companies towards growth and success. His leadership emphasizes innovation, client satisfaction, and a commitment to excellence, making him a trusted name in the industry. Under his guidance, Birds of Eden has delivered exceptional digital products while Adon Venture continues to thrive in the global marketplace.",
+        "pillars": [
+          "ERP strategy & governance",
+          "AI product roadmap",
+          "Global partner alliances"
+        ]
+      },
+      "amenul": {
+        "role": "Chief Technology Officer",
+        "quote": "We architect resilient platforms that combine clean backends, AI models, and industrial-grade hardware uplifts.",
+        "bio": "Md. Aminur Islam is the dynamic and forward-thinking CEO of Ann-Nahl, a pioneering company dedicated to transforming the digital landscape through innovative solutions. With a deep understanding of technology and a passion for driving change, Amenul has steered Ann-Nahl towards becoming a leader in the industry. Under his leadership, the company has expanded its reach, offering cutting-edge services and exceptional client experiences. Amenul’s commitment to innovation, strategic vision, and strong leadership continues to drive the success of Ann-Nahl, making him a key figure in shaping the future of the company and its industry.",
+        "pillars": [
+          "Microservice & AI model governance",
+          "Security-first DevOps",
+          "Hardware integration controls"
+        ]
+      },
+      "anisur": {
+        "role": "Senior Consultant ( Business Development )",
+        "quote": "I build strategic partnerships that transform opportunities into long-term growth and measurable impact.",
+        "bio": "Anisur leads business development, strategic partnerships, and global market expansion initiatives. He focuses on identifying growth opportunities, nurturing enterprise relationships, and driving sustainable revenue strategies across regions.",
+        "pillars": [
+          "Strategic partnerships",
+          "Market expansion",
+          "Enterprise negotiations"
+        ]
+      }
+    }
   },
   "hardwareProducts": {
-    "metadata": {
-      "title": "Accessories | Your Company",
-      "description": "Explore our wide range of hardware accessories."
-    },
     "premiumTech": {
       "title": "Premium Tech Accessories",
       "description": "Empower your workspace with high-quality, professional-grade tech accessories.",
@@ -972,7 +1044,6 @@
         "expButton": "Explore Collections"
       }
     },
-
     "netTitle": "Networking & Tech Solutions",
     "netDescription": "High-performance gear for seamless connectivity and productivity.",
     "networkingAndTech": [
@@ -993,13 +1064,6 @@
       }
     ]
   },
-
-  "contactPage": {
-    "metadata": {
-      "title": "Contact Us | Birds Of Eden",
-      "description": "Get in touch with Birds Of Eden for inquiries, support, or collaboration opportunities."
-    }
-  },
   "contact": {
     "contactUs": "Contact Us",
     "name": "Name",
@@ -1014,7 +1078,6 @@
     "errorMessage": "There was an error sending the message!",
     "errorAlert": "Failed to send message."
   },
-
   "footer": {
     "companyDescription": "BIRDS OF EDEN is a pioneering software company dedicated to transforming innovative ideas into reality.",
     "importantLinks": "Important Links",
@@ -1023,5 +1086,45 @@
     "newsletter": "Subscribe to our newsletter",
     "emailPlaceholder": "Enter your email",
     "copyright": "© Copyright"
+  },
+  "keyboardPage": {
+    "all": "All",
+    "switches": "Switches",
+    "layout": "Layout",
+    "connectivity": "Connectivity",
+    "keycaps": "Keycaps",
+    "lighting": "Lighting",
+    "deliveryTime": "3-5 days"
+  },
+  "mousePage": {
+    "all": "All",
+    "sensor": "Sensor",
+    "dpi": "DPI",
+    "buttons": "Buttons",
+    "connectivity": "Connectivity",
+    "weight": "Weight",
+    "deliveryTime": "3-5 days"
+  },
+  "laptopPage": {
+    "all": "All",
+    "cpu": "CPU",
+    "ram": "RAM",
+    "storage": "Storage",
+    "display": "Display",
+    "battery": "Battery",
+    "deliveryTime": "3-5 days"
+  },
+  "printerPage": {
+    "all": "All",
+    "type": "Type",
+    "speed": "Speed",
+    "resolution": "Resolution",
+    "connectivity": "Connectivity",
+    "dutyCycle": "Duty cycle",
+    "deliveryTime": "3-5 days"
+  },
+  "modal": {
+    "nextProduct": "Next Product",
+    "previousProduct": "Previous Product"
   }
 }

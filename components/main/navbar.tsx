@@ -18,6 +18,7 @@ import {
   BarChart,
   Building,
   ShoppingCart,
+  Cpu,
 } from "lucide-react";
 import {
   NavigationMenu,
@@ -26,7 +27,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { useRef, useState } from "react";
+import { useRef, useState, RefObject } from "react";
 import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import { useOnClickOutside } from "usehooks-ts";
@@ -51,7 +52,7 @@ const Navbar = () => {
     setShowMenu(false);
   };
 
-  useOnClickOutside(mobileRef, handleClickOutside);
+  useOnClickOutside(mobileRef as RefObject<HTMLElement>, handleClickOutside);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -94,7 +95,7 @@ const Navbar = () => {
               <div className="flex items-center gap-4">
                 {/* Logo */}
                 <div className="mr-4 flex items-center gap-2">
-                  <div className="relative shrink-0 overflow-hidden">
+                  <div className="relative size-14 shrink-0 overflow-hidden">
                     <Image
                       src="/assets/boedl1.png"
                       alt="logo"
@@ -216,12 +217,102 @@ const Navbar = () => {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>
-                        <Link href="our-service">{t("navbar.services")}</Link>
+                        <Link href="/hardware">
+                          {t("navbar.hardware")}
+                        </Link>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
-                        <div className="flex min-w-[550px] flex-col gap-4 p-3">
+                        <div className="flex w-[400px] flex-col gap-4 p-3">
                           <div className="flex gap-4">
-                            <div className="shrink-0 overflow-hidden rounded bg-zinc-800">
+                            <div className="h-36 w-36 shrink-0 overflow-hidden rounded bg-zinc-800">
+                              <Image
+                                className="rounded"
+                                src="https://picsum.photos/200"
+                                alt="Hardware"
+                                height="144"
+                                width="144"
+                              />
+                            </div>
+                            <div className="mb-4">
+                              <h1 className="text-lg font-semibold">
+                                {t("navbar.hardwareProducts")}
+                              </h1>
+                              <p className="text-sm text-black/70 dark:text-white/70">
+                                {t("navbar.exploreHardware")}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="flex gap-4">
+                            <div className="w-full">
+                              <h2 className="mb-2 text-lg font-semibold">
+                                {t("navbar.hardwareCategories")}
+                              </h2>
+                              <div className="flex flex-col gap-3">
+                                <Link
+                                  href="/hardware/laptop"
+                                  className={cn(
+                                    "flex items-center gap-2 hover:underline",
+                                    "/hardware/laptop" == url
+                                      ? "text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                  )}
+                                >
+                                  <Cpu className="h-4 w-4" />
+                                  {t("navbar.laptop")}
+                                </Link>
+                                <Link
+                                  href="/hardware/printer"
+                                  className={cn(
+                                    "flex items-center gap-2 hover:underline",
+                                    "/hardware/printer" == url
+                                      ? "text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                  )}
+                                >
+                                  <Database className="h-4 w-4" />
+                                  {t("navbar.printer")}
+                                </Link>
+                                <Link
+                                  href="/hardware/keyboard"
+                                  className={cn(
+                                    "flex items-center gap-2 hover:underline",
+                                    "/hardware/keyboard" == url
+                                      ? "text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                  )}
+                                >
+                                  <Wrench className="h-4 w-4" />
+                                  {t("navbar.keyboard")}
+                                </Link>
+                                <Link
+                                  href="/hardware/mouse"
+                                  className={cn(
+                                    "flex items-center gap-2 hover:underline",
+                                    "/hardware/mouse" == url
+                                      ? "text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                  )}
+                                >
+                                  <Phone className="h-4 w-4" />
+                                  {t("navbar.mouse")}
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger>
+                        <Link href="OurService">
+                          {t("navbar.services")}
+                        </Link>
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <div className="flex w-[550px] flex-col gap-4 p-3">
+                          <div className="flex gap-4">
+                            <div className="h-36 w-36 shrink-0 overflow-hidden rounded bg-zinc-800">
                               <Image
                                 className="rounded"
                                 src="https://picsum.photos/200"
@@ -247,10 +338,10 @@ const Navbar = () => {
                               </h2>
                               <div className="flex flex-col gap-3">
                                 <Link
-                                  href="/our-service"
+                                  href="/OurService"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/our-service" == url
+                                    "/OurService" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
                                   )}
@@ -259,10 +350,10 @@ const Navbar = () => {
                                   {t("navbar.bigdata")}
                                 </Link>
                                 <Link
-                                  href="/services/regular-services"
+                                  href="/services"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/regular-services" == url
+                                    "/services" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
                                   )}
@@ -271,10 +362,10 @@ const Navbar = () => {
                                   {t("navbar.regularServices")}
                                 </Link>
                                 <Link
-                                  href="/services/web-development"
+                                  href="/Web"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/services/web-development" == url
+                                    "/Web" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
                                   )}
@@ -283,10 +374,10 @@ const Navbar = () => {
                                   {t("navbar.webdev")}
                                 </Link>
                                 <Link
-                                  href="/services/ios-development"
+                                  href="/IOS"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/services/ios-development" == url
+                                    "/IOS" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
                                   )}
@@ -295,10 +386,10 @@ const Navbar = () => {
                                   {t("navbar.iosdev")}
                                 </Link>
                                 <Link
-                                  href="/services/mobile-development"
+                                  href="/Mobile"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/services/mobile-development" == url
+                                    "/Mobile" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
                                   )}
@@ -314,10 +405,10 @@ const Navbar = () => {
                               </h2>
                               <div className="flex flex-col gap-3">
                                 <Link
-                                  href="/services/payment-gateway"
+                                  href="/payment-gateway"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/services/payment-gateway" == url
+                                    "/payment-gateway" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
                                   )}
@@ -326,10 +417,10 @@ const Navbar = () => {
                                   {t("navbar.payment")}
                                 </Link>
                                 <Link
-                                  href="/services/quickbook"
+                                  href="/quickbook-integration"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/services/quickbook" == url
+                                    "/quickbook-integration" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
                                   )}
@@ -338,10 +429,10 @@ const Navbar = () => {
                                   {t("navbar.quickbooks")}
                                 </Link>
                                 <Link
-                                  href="/services/zoho-integration"
+                                  href="/zoho-integration"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/services/zoho-integration" == url
+                                    "/zoho-integration" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
                                   )}
