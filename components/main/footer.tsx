@@ -217,7 +217,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-gray-300 pb-4 pt-8 text-center text-black dark:text-white">
-        <p>{t("footer.copyright")} 2024 Talat</p>
+        <p>{t("footer.copyright")} {new Date().getFullYear()} Talat</p>
         <button
           onClick={toggleTheme}
           className="mt-4 rounded-md border border-black px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black dark:border-white dark:focus:ring-white "
