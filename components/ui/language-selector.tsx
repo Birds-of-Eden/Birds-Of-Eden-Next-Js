@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { ChangeEvent } from "react";
 import Image from "next/image";
 
@@ -42,13 +42,8 @@ const LanguageSelector = () => {
     event: ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
     const newLocale = event.target.value;
-
-    const segments = pathname.split("/").filter(Boolean);
-    segments[0] = newLocale;
-    const newPath = `/${segments.join("/")}`;
-
-    router.push(newPath);
-    router.refresh();
+    if (newLocale === locale) return;
+    router.replace(pathname, { locale: newLocale });
   };
 
   return (

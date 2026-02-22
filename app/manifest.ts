@@ -1,17 +1,11 @@
 import { MetadataRoute } from "next";
-import { getTranslations } from "next-intl/server";
 
 export default async function manifest(): Promise<MetadataRoute.Manifest> {
-  // Pick a locale that is representative of the app
-  const locale = "en";
-
-  const t = await getTranslations({
-    locale,
-  });
+  const appName = "Birds Of Eden";
 
   return {
-    name: t("name", { defaultValue: "Birds Of Eden" }),
-    short_name: t("shortName", { defaultValue: "Birds Of Eden" }),
+    name: appName,
+    short_name: appName,
     icons: [
       {
         src: "/web-app-manifest-192x192.png",
