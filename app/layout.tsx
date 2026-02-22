@@ -30,7 +30,7 @@ const amiri = Amiri({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL!),
+  metadataBase: process.env.NEXT_PUBLIC_BASE_URL ? new URL(process.env.NEXT_PUBLIC_BASE_URL) : new URL("http://localhost:3000"),
   appleWebApp: {
     title: "BirdsOfEden",
   },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description:
       "Birds of Eden is a cutting-edge software company dedicated to transforming ideas into reality through innovative technology solutions",
     type: "website",
-    url: process.env.NEXT_PUBLIC_BASE_URL!,
+    url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
     siteName: "Birds of Eden",
   },
 };
