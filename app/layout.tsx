@@ -48,6 +48,9 @@ export const metadata: Metadata = {
     url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
     siteName: "Birds of Eden",
   },
+  verification: {
+    google: "o-1WgBEe_6vhhBeVMTFL7Le57BidAd8rCDf22AQ2CLQ",
+  },
 };
 
 export default async function RootLayout({
