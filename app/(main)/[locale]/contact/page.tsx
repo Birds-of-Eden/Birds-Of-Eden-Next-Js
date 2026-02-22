@@ -4,20 +4,28 @@ import ContactForm from "@/components/main/home/Contact/ContactForm";
 import LocationMap from "@/components/main/home/Contact/LocationMap";
 
 import type { Metadata } from "next";
+import { buildLocalizedSeoMetadata } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations();
-  const title = t("contactPage.metadata.title"); // Assuming you have contact metadata in your translations
-  const description = t("contactPage.metadata.description"); // Assuming you have contact metadata in your translations
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
 
-  return {
-    title: title,
-    description: description,
-    openGraph: {
-      title: title,
-      description: description,
-    },
-  };
+  return buildLocalizedSeoMetadata({
+    locale,
+    path: "/contact",
+    title: "Contact Birds Of Eden | Start Your ERP or AI Project",
+    description:
+      "Contact Birds Of Eden to discuss ERP, AI, web, mobile, and enterprise software solutions for your business.",
+    keywords: [
+      "contact birds of eden",
+      "software consultation",
+      "ERP project inquiry",
+      "AI development services",
+    ],
+  });
 }
 
 const ContactPage = async () => {

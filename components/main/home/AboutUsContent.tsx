@@ -109,8 +109,8 @@ const AboutUsContent: React.FC<AboutUsContentProps> = ({ aboutUs }) => {
               <Image
                 src={
                   index === 0
-                    ? "/assets/talat_md.png"
-                    : "/assets/amenul_islam.png"
+                    ? "/assets/md_talat.png"
+                    : "/assets/aminul_islam.jpg"
                 }
                 alt={member.name}
                 className="mb-2 w-full rounded-lg"

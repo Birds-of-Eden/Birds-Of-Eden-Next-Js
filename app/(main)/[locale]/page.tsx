@@ -11,12 +11,42 @@ import ProjectGallery from "@/components/main/home/projects-gallery";
 import CircularGallery from "@/components/main/home/circular-gallery";
 import TeamMoment from "@/components/main/home/team-moment";
 import ClientTestimonial from "@/components/main/home/clients-temonials";
+import type { Metadata } from "next";
+import { buildLocalizedSeoMetadata } from "@/lib/seo";
+
+interface Feature {
+  title: string;
+  description: string;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return buildLocalizedSeoMetadata({
+    locale,
+    path: "/",
+    title: "Birds Of Eden | ERP, AI, Web, Mobile and Hardware Solutions",
+    description:
+      "Birds Of Eden builds ERP platforms, AI solutions, web and mobile apps, and enterprise hardware integrations for modern businesses.",
+    keywords: [
+      "ERP software company",
+      "AI solutions",
+      "web development",
+      "mobile app development",
+      "enterprise software",
+    ],
+  });
+}
 
 const HomePage = async () => {
   const t = await getTranslations();
 
   return (
-    <>
+    <main>
       {/* Hero Section */}
       <section className="flex flex-col pt-[100px] lg:pt-0">
         <div className="container">
@@ -75,7 +105,7 @@ const HomePage = async () => {
           <p className="mb-8 text-lg">{t("home.ormSection.description")}</p>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {t.raw("home.ormSection.features").map((feature, index) => {
+            {t.raw("home.ormSection.features").map((feature: Feature, index: number) => {
               const icons = [
                 <CheckCircle
                   key="check-circle"
@@ -149,7 +179,7 @@ const HomePage = async () => {
                 <ul className="flex list-inside list-disc flex-col gap-2 md:gap-4">
                   {t
                     .raw("home.bannerDetails.features")
-                    .map((feature, index) => (
+                    .map((feature: string, index: number) => (
                       <li key={index} className="font-medium">
                         {feature}
                       </li>
@@ -185,7 +215,7 @@ const HomePage = async () => {
         className="pb-40 pt-20"
       >
         <h3 className="heading3 pt-3">{t("home.partners.title")}</h3>
-        <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
+        <CircularGallery items={[]} bend={3} textColor="#ffffff" borderRadius={0.05} />
       </section>
 
       {/* Team Moment */}
@@ -210,7 +240,7 @@ const HomePage = async () => {
               {t("home.blogPage.title")}
             </h3>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-              {t.raw("home.blogPage.blogs").map((blog) => (
+              {t.raw("home.blogPage.blogs").map((blog: any) => (
                 <div
                   key={blog.id}
                   className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:shadow-2xl dark:bg-slate-950"
@@ -255,7 +285,7 @@ const HomePage = async () => {
           </article>
         </div>
       </section>
-    </>
+    </main>
   );
 };
 

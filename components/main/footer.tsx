@@ -45,7 +45,6 @@ const Footer = () => {
                 src="/assets/boedl1.png"
                 alt="logo"
                 className="h-full w-full transform object-cover duration-500 hover:scale-105"
-                style={{ filter: mounted && theme === "dark" ? "invert(1)" : "invert(0)" }}
               />
             </div>
           </div>
@@ -80,7 +79,11 @@ const Footer = () => {
                     <li className="cursor-pointer transition duration-300 hover:text-primary">
                       <Link
                         href="/"
-                        className={pathname === "/" ? "flex items-center gap-2 text-blue-500" : "flex items-center gap-2"}
+                        className={
+                          pathname === "/"
+                            ? "flex items-center gap-2 text-blue-500"
+                            : "flex items-center gap-2"
+                        }
                       >
                         {t("navbar.home")}
                       </Link>
@@ -88,7 +91,11 @@ const Footer = () => {
                     <li className="cursor-pointer transition duration-300 hover:text-primary">
                       <Link
                         href="/about"
-                        className={pathname === "/about" ? "flex items-center gap-2 text-blue-500" : "flex items-center gap-2"}
+                        className={
+                          pathname === "/about"
+                            ? "flex items-center gap-2 text-blue-500"
+                            : "flex items-center gap-2"
+                        }
                       >
                         {t("navbar.about")}
                       </Link>
@@ -97,7 +104,11 @@ const Footer = () => {
                     <li className="cursor-pointer transition duration-300 hover:text-primary">
                       <Link
                         href="/contact"
-                        className={pathname === "/contact" ? "flex items-center gap-2 text-blue-500" : "flex items-center gap-2"}
+                        className={
+                          pathname === "/contact"
+                            ? "flex items-center gap-2 text-blue-500"
+                            : "flex items-center gap-2"
+                        }
                       >
                         {t("navbar.contact")}
                       </Link>
@@ -112,7 +123,11 @@ const Footer = () => {
                     <li className="cursor-pointer transition duration-300 hover:text-primary">
                       <Link
                         href="/privacy"
-                        className={pathname === "/privacy" ? "flex items-center gap-2 text-blue-500" : "flex items-center gap-2"}
+                        className={
+                          pathname === "/privacy"
+                            ? "flex items-center gap-2 text-blue-500"
+                            : "flex items-center gap-2"
+                        }
                       >
                         {t("navbar.privacy")}
                       </Link>
@@ -120,7 +135,11 @@ const Footer = () => {
                     <li className="cursor-pointer transition duration-300 hover:text-primary">
                       <Link
                         href="/services"
-                        className={pathname === "/services" ? "flex items-center gap-2 text-blue-500" : "flex items-center gap-2"}
+                        className={
+                          pathname === "/services"
+                            ? "flex items-center gap-2 text-blue-500"
+                            : "flex items-center gap-2"
+                        }
                       >
                         {t("navbar.services")}
                       </Link>

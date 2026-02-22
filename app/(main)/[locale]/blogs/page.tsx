@@ -1,6 +1,39 @@
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
+import type { Metadata } from "next";
+import { buildLocalizedSeoMetadata } from "@/lib/seo";
+
+interface Blog {
+  id: number;
+  title: string;
+  date: string;
+  author: string;
+  image: string;
+  description: string;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return buildLocalizedSeoMetadata({
+    locale,
+    path: "/blogs",
+    title: "Blogs | Birds Of Eden Insights on ERP, AI and Technology",
+    description:
+      "Explore Birds Of Eden blog articles on ERP systems, AI innovation, enterprise software, and modern product engineering.",
+    keywords: [
+      "ERP blog",
+      "AI blog",
+      "software engineering insights",
+      "technology articles",
+    ],
+  });
+}
 
 const BlogsPage = async () => {
   const t = await getTranslations();
@@ -13,7 +46,7 @@ const BlogsPage = async () => {
             {t("home.blogPage.title")}
           </h3>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {t.raw("home.blogPage.blogs").map((blog) => (
+            {t.raw("home.blogPage.blogs").map((blog: Blog) => (
               <div
                 key={blog.id}
                 className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:shadow-2xl dark:bg-slate-950"
