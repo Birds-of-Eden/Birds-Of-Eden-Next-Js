@@ -215,144 +215,102 @@
         }
       ]
     },
-    "projectGallery": {
-      "title": "我们的项目",
-      "description": "探索我们的创新解决方案，突破技术界限，为客户创造有意义的价值。",
-      "modal": {
-        "overview": "概述",
-        "description": "描述",
-        "close": "关闭",
-        "viewDemo": "查看演示"
-      },
-      "projects": [
-        {
-          "title": "孟加拉国天气政府项目",
-          "description": "高级天气分析平台。我们复杂的仪表板为孟加拉国提供精确清晰的全面天气洞察。",
-          "images": [
-            "BDW1.png",
-            "BDW2.png",
-            "BDW3.png"
-          ],
-          "deploymentUrl": "https://www.bmdcl17.com/"
-        },
-        {
-          "title": "伊斯兰宣教机构",
-          "description": "Islami Dawah 是一个使用 Next.js (App Router) + TypeScript 构建的应用程序，用于协调和报告伊斯兰宣教活动。它具有基于角色的仪表板（管理员、宣教员/大使、助理和用户）。",
-          "images": [
-            "ISD1.jpeg",
-            "ISD2.jpeg",
-            "ISD3.jpeg"
-          ],
-          "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
-        },
-        {
-          "title": "纽约搬家报价",
-          "description": "Moving Quote New York 提供纽约全境的端到端搬迁服务。该平台为客户匹配可靠的搬家公司，提供即时报价，实时跟踪搬迁进度，并提供全面的搬迁资源，确保无忧体验。",
-          "images": [
-            "MQT1.png",
-            "MQT2.png",
-            "MQT3.png"
-          ],
-          "deploymentUrl": "https://movingquotenewyork.com/"
-        },
-        {
-          "title": "希尔福勒·福祖尔 — 书店",
-          "description": "Hilful Fuzul 是一个使用 Next.js (App Router) + TypeScript 构建的电子商务平台，专为图书和出版商定制。它包括用于管理产品、作者、出版商和订单的基于角色的管理界面；面向客户的店面，具有类别浏览、搜索、购物车和愿望清单功能；以及带有支付处理的结账流程。",
-          "images": [
-            "KG2.png",
-            "KG1.png",
-            "KG3.png"
-          ],
-          "deploymentUrl": "https://hilfulfujulbd.com/"
-        },
-        {
-          "title": "纽约搬家报价",
-          "description": "Moving Quote New York 提供纽约全境的端到端搬迁服务。该平台为客户匹配可靠的搬家公司，提供即时报价，实时跟踪搬迁进度，并提供全面的搬迁资源，确保无忧体验。",
-          "images": [
-            "MQN1.png",
-            "MQT2.png",
-            "MQT3.png"
-          ],
-          "deploymentUrl": "https://movingquotenewyork.com/"
-        },
-        {
-          "title": "Net Reputation 任务管理系统",
-          "description": "Net Reputation 任务管理系统是一个使用 Next.js (App Router) + TypeScript 构建的平台，用于运行端到端的客户操作。它包括特定角色的仪表板（管理员、客户经理/CEO、代理、QC、数据录入、客户）、任务和 QC 工作流程，包含暂停原因和绩效评分。",
-          "images": [
-            "NR1.png",
-            "NR2.png",
-            "NR3.png"
-          ],
-          "deploymentUrl": "http://app.netreptask.com/"
-        },
-        {
-          "title": "Reputation Prime",
-          "description": "Reputation Prime 任务管理系统是一个使用 Next.js (App Router) + TypeScript 构建的平台，用于运行端到端的客户操作。它包括特定角色的仪表板（管理员、客户经理/CEO、代理、QC、数据录入、客户）、任务和 QC 工作流程，包含暂停原因和绩效评分。",
-          "images": [
-            "RP1.png",
-            "RP2.png",
-            "RP3.png"
-          ],
-          "deploymentUrl": "https://reputationtask.com/"
-        },
-        {
-          "title": "Gravionne - 提升健康、福祉与人性",
-          "description": "在 Gravionne，我们相信奢华与健康的交汇点，科学与人性的结合。我们的方法植根于精确性，以研究为指导，并受到人类巨大繁荣潜力的启发。",
-          "image": "GR1.png",
-          "deploymentUrl": "https://www.gravionne.com/"
-        },
-        {
-          "title": "AIBL 请假管理系统",
-          "description": "该项目是为 Al-Arafah Islami Bank PLC 开发的智能考勤管理系统，用于实时监控和管理员工出勤。系统提供一个动态仪表板，显示活跃员工总数、出勤、迟到、缺勤和值班员工数量及百分比洞察。",
-          "images": [
-            "AIBL1.jpeg",
-            "AIBL2.jpeg"
-          ],
-          "deploymentUrl": "https://aibl-plc.vercel.app/"
-        },
-        {
-          "title": "生态监测系统",
-          "description": "EcoMonitor 是一个智能环境监测系统，提供实时天气洞察和分析。它通过交互式仪表板和可视化图表显示关键指标，如温度、湿度、风速、压力、紫外线指数和降水量。该平台具有趋势分析、动画数据可视化和系统警报（如高紫外线警告）功能，以支持主动决策。通过天气监测、水质跟踪、报告和用户管理等模块，EcoMonitor 在现代、用户友好的界面中确保准确的数据跟踪和高效的环境分析。",
-          "images": [
-            "EM1.jpeg",
-            "EM2.jpeg",
-            "EM3.jpeg",
-            "EM4.jpeg"
-          ],
-          "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
-        },
-        {
-          "title": "DNA 报告系统",
-          "description": "DNA Archive 是一个集中式实验室管理系统，用于跟踪案件、样本、报告、存储和用户活动。它提供实时分析、系统监控和简化的工作流程，以实现高效的法医数据管理。",
-          "images": [
-            "DNA1.png"
-          ],
-          "deploymentUrl": "https://dna-case-management.vercel.app/login"
-        },
-        {
-          "title": "房地产管理系统",
-          "description": "该房地产公司平台旨在管理房源列表和用户互动，为管理员、经纪人和客户分配不同的角色。管理员可以监督所有操作，管理用户和房产；经纪人可以添加和管理自己的房源；而用户可以浏览、筛选和查询房产。系统确保安全的基于角色的访问、多语言支持以及所有相关方之间的顺畅沟通。",
-          "images": [
-            "RE1.png"
-          ],
-          "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
-        },
-        {
-          "title": "PCO 培训",
-          "description": "PCO Training 是面向英国专业司机的专门平台。它提供全面的培训模块、模拟测试和认证准备，帮助司机满足法规要求并提高技能。",
-          "images": [
-            "PCO1.png"
-          ],
-          "deploymentUrl": "https://uk-driving-course.vercel.app/en"
-        },
-        {
-          "title": "欺诈检测系统",
-          "description": "该项目是一个欺诈审查和验证系统，旨在分析和验证商业评论活动。它显示详细的商家信息，包括位置地图、联系信息、评分和评论统计。该平台跟踪总评论数、评论者和人均平均评论数，以识别可疑模式。通过重新扫描、状态跟踪、PDF 导出和请求管理等功能，该系统有助于检测欺诈行为，确保数据真实性，并支持审查审核和合规方面的明智决策。",
-          "images": [
-            "FD1.jpeg"
-          ],
-          "deploymentUrl": "https://review.reputationtask.com/login"
-        }
+   "projectGallery": {
+       "title": "我们的项目",
+    "description": "探索我们的创新解决方案，突破技术界限，为客户创造有意义的价值。",
+    "modal": {
+      "overview": "概述",
+      "description": "描述",
+      "close": "关闭",
+      "viewDemo": "查看演示"
+    },
+  "projects": [
+    {
+      "title": "孟加拉国天气政府项目",
+      "description": "高级天气分析平台。我们复杂的仪表板为孟加拉国提供精确清晰的全面天气洞察。",
+      "images": ["BDW1.png", "BDW2.png", "BDW3.png"],
+      "deploymentUrl": "https://www.bmdcl17.com/"
+    },
+    {
+      "title": "伊斯兰宣教机构",
+      "description": "Islami Dawah 是一个使用 Next.js (App Router) + TypeScript 构建的应用程序，用于协调和报告伊斯兰宣教活动。它具有基于角色的仪表板（管理员、宣教员/大使、助理和用户）。",
+      "images": ["ISD1.jpeg", "ISD2.jpeg", "ISD3.jpeg"],
+      "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
+    },
+    {
+      "title": "纽约搬家报价",
+      "description": "Moving Quote New York 提供纽约全境的端到端搬迁服务。该平台为客户匹配可靠的搬家公司，提供即时报价，实时跟踪搬迁进度，并提供全面的搬迁资源，确保无忧体验。",
+      "images": ["MQT1.png", "MQT2.png", "MQT3.png"],
+      "deploymentUrl": "https://movingquotenewyork.com/"
+    },
+    {
+      "title": "希尔福勒·福祖尔 — 书店",
+      "description": "Hilful Fuzul 是一个使用 Next.js (App Router) + TypeScript 构建的电子商务平台，专为图书和出版商定制。它包括用于管理产品、作者、出版商和订单的基于角色的管理界面；面向客户的店面，具有类别浏览、搜索、购物车和愿望清单功能；以及带有支付处理的结账流程。",
+      "images": ["KG2.png", "KG1.png", "KG3.png"],
+      "deploymentUrl": "https://hilfulfujulbd.com/"
+    },
+    {
+      "title": "纽约搬家报价",
+      "description": "Moving Quote New York 提供纽约全境的端到端搬迁服务。该平台为客户匹配可靠的搬家公司，提供即时报价，实时跟踪搬迁进度，并提供全面的搬迁资源，确保无忧体验。",
+      "images": ["MQN1.png", "MQT2.png", "MQT3.png"],
+      "deploymentUrl": "https://movingquotenewyork.com/"
+    },
+    {
+      "title": "Net Reputation 任务管理系统",
+      "description": "Net Reputation 任务管理系统是一个使用 Next.js (App Router) + TypeScript 构建的平台，用于运行端到端的客户操作。它包括特定角色的仪表板（管理员、客户经理/CEO、代理、QC、数据录入、客户）、任务和 QC 工作流程，包含暂停原因和绩效评分。",
+      "images": ["NR1.png", "NR2.png", "NR3.png"],
+      "deploymentUrl": "http://app.netreptask.com/"
+    },
+    {
+      "title": "Reputation Prime",
+      "description": "Reputation Prime 任务管理系统是一个使用 Next.js (App Router) + TypeScript 构建的平台，用于运行端到端的客户操作。它包括特定角色的仪表板（管理员、客户经理/CEO、代理、QC、数据录入、客户）、任务和 QC 工作流程，包含暂停原因和绩效评分。",
+      "images": ["RP1.png", "RP2.png", "RP3.png"],
+      "deploymentUrl": "https://reputationtask.com/"
+    },
+    {
+      "title": "Gravionne - 提升健康、福祉与人性",
+      "description": "在 Gravionne，我们相信奢华与健康的交汇点，科学与人性的结合。我们的方法植根于精确性，以研究为指导，并受到人类巨大繁荣潜力的启发。",
+      "image": "GR1.png",
+      "deploymentUrl": "https://www.gravionne.com/"
+    },
+    {
+      "title": "AIBL 请假管理系统",
+      "description": "该项目是为 Al-Arafah Islami Bank PLC 开发的智能考勤管理系统，用于实时监控和管理员工出勤。系统提供一个动态仪表板，显示活跃员工总数、出勤、迟到、缺勤和值班员工数量及百分比洞察。",
+      "images": ["AIBL1.jpeg", "AIBL2.jpeg"],
+      "deploymentUrl": "https://aibl-plc.vercel.app/"
+    },
+    {
+      "title": "生态监测系统",
+      "description": "EcoMonitor 是一个智能环境监测系统，提供实时天气洞察和分析。它通过交互式仪表板和可视化图表显示关键指标，如温度、湿度、风速、压力、紫外线指数和降水量。该平台具有趋势分析、动画数据可视化和系统警报（如高紫外线警告）功能，以支持主动决策。通过天气监测、水质跟踪、报告和用户管理等模块，EcoMonitor 在现代、用户友好的界面中确保准确的数据跟踪和高效的环境分析。",
+      "images": ["EM1.jpeg","EM2.jpeg","EM3.jpeg","EM4.jpeg"],
+      "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
+    },
+    {
+      "title": "DNA 报告系统",
+      "description": "DNA Archive 是一个集中式实验室管理系统，用于跟踪案件、样本、报告、存储和用户活动。它提供实时分析、系统监控和简化的工作流程，以实现高效的法医数据管理。",
+      "images": ["DNA1.png"],
+      "deploymentUrl": "https://dna-case-management.vercel.app/login"
+    },
+    {
+      "title": "房地产管理系统",
+      "description": "该房地产公司平台旨在管理房源列表和用户互动，为管理员、经纪人和客户分配不同的角色。管理员可以监督所有操作，管理用户和房产；经纪人可以添加和管理自己的房源；而用户可以浏览、筛选和查询房产。系统确保安全的基于角色的访问、多语言支持以及所有相关方之间的顺畅沟通。",
+      "images": ["RE1.png"],
+      "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
+    },
+    {
+      "title": "PCO 培训",
+      "description": "PCO Training 是面向英国专业司机的专门平台。它提供全面的培训模块、模拟测试和认证准备，帮助司机满足法规要求并提高技能。",
+      "images": ["PCO1.png"],
+      "deploymentUrl": "https://uk-driving-course.vercel.app/en"
+    },
+    {
+      "title": "欺诈检测系统",
+      "description": "该项目是一个欺诈审查和验证系统，旨在分析和验证商业评论活动。它显示详细的商家信息，包括位置地图、联系信息、评分和评论统计。该平台跟踪总评论数、评论者和人均平均评论数，以识别可疑模式。通过重新扫描、状态跟踪、PDF 导出和请求管理等功能，该系统有助于检测欺诈行为，确保数据真实性，并支持审查审核和合规方面的明智决策。",
+      "images": ["FD1.jpeg"],
+      "deploymentUrl": "https://review.reputationtask.com/login"
+    }
+  
+
       ]
     },
     "clientPage": {

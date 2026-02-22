@@ -453,3 +453,26 @@
 .animate-spin-clockwise {
   animation: spin-clockwise 5s linear infinite; /* 10s হলো ঘূর্ণনের গতি, আপনি পরিবর্তন করতে পারেন */
 }
+/* ===== Custom Scrollbar (Classy & Minimal) ===== */
+.scrollbar-elegant::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-elegant::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-elegant::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #10b981, #059669);
+  border-radius: 9999px;
+}
+
+.scrollbar-elegant::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #34d399, #10b981);
+}
+
+/* Firefox */
+.scrollbar-elegant {
+  scrollbar-width: thin;
+  scrollbar-color: #10b981 transparent;
+}
