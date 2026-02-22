@@ -1,0 +1,978 @@
+{
+  "name": "Birds of Eden",
+  "shortName": "BirdsOfEden",
+  "navbar": {
+    "home": "首页",
+    "about": "关于我们",
+    "team": "认识我们的执行团队",
+    "services": "服务",
+    "contact": "联系我们",
+    "blogs": "博客",
+    "privacy": "隐私政策",
+    "bestSelling": "畅销产品",
+    "exploreServices": "探索我们为您量身定制的顶级服务，满足您的需求。",
+    "development": "开发",
+    "regularServices": "常规服务",
+    "otherServices": "其他服务",
+    "bigdata": "大数据分析与仪表盘设计",
+    "webdev": "网站开发",
+    "iosdev": "iOS应用开发",
+    "mobiledev": "移动应用开发",
+    "payment": "支付网关集成",
+    "quickbooks": "QuickBooks集成",
+    "zoho": "Zoho集成",
+    "technologies": "技术",
+    "ourTechnologies": "我们的技术",
+    "exploreTechnologies": "探索我们最新和先进的技术。",
+    "other": "其他",
+    "frontend": "前端技术",
+    "backend": "后端技术",
+    "products": "产品",
+    "ourProducts": "我们的产品",
+    "exploreProducts": "探索我们为您量身定制的顶级产品，满足您的需求。",
+    "otherProducts": "其他产品",
+    "govt": "政府",
+    "seo": "SEO机构",
+    "financial": "金融机构",
+    "corporate": "企业解决方案",
+    "ecommerce": "电子商务",
+    "hardware": "硬件产品",
+    "drones": "无人机",
+    "career": "职业",
+    "language": "语言"
+  },
+
+  "home": {
+    "hero": {
+      "title": "伊甸园之鸟",
+      "typewriter": [
+        "创新ERP软件解决方案和人工智能的未来",
+        "革新业务自动化",
+        "赋能下一代人工智能系统"
+      ],
+      "description": "伊甸园之鸟是一家尖端的软件公司，致力于通过创新技术解决方案将想法变为现实。我们的使命是通过最先进的软件增强效率、生产力和用户体验，从而赋能企业和个人。",
+      "getStarted": "开始使用",
+      "learnMore": "了解更多"
+    },
+    "service": {
+      "stats": [
+        { "value": "5+", "label": "客户" },
+        { "value": "10+", "label": "项目" },
+        { "value": "1k+", "label": "订阅者" },
+        { "value": "5+", "label": "客户" }
+      ]
+    },
+    "erpProjects": {
+      "title": "我们的ERP项目",
+      "button": "返回",
+      "projects": [
+        {
+          "id": 1,
+          "title": "销售洞察仪表板",
+          "description": "销售洞察仪表板是一款先进的分析工具，旨在为企业提供全面的实时销售数据。它提供了一个动态和交互式的界面，允许用户可视化跨各种维度的销售业绩，包括产品线、地理区域和时间段。此仪表板与现有的ERP系统集成，以提取和整合销售数据，并以清晰和可操作的格式呈现。主要功能包括可定制的图表和图形、用于探索细粒度数据的向下钻取功能以及预测未来销售趋势的预测分析。通过利用此工具，企业可以识别表现最佳的产品，找出需要改进的领域，并做出明智的决策以优化其销售策略并推动收入增长。该仪表板还便于创建详细的销售报告，使利益相关者能够跟踪进度并衡量销售计划的影响。它为销售团队提供了他们需要的信息，以更快、更有效地完成交易，最终提高整体销售业绩和盈利能力。",
+          "image": "project_14.png"
+        },
+        {
+          "id": 2,
+          "title": "客户优化分析",
+          "description": "客户优化分析工具使企业能够深入了解客户参与度、行为和满意度。它通过提供揭示客户互动模式和趋势的先进分析，超越了基本的CRM数据。该工具与各种数据源集成，包括CRM系统、客户支持平台和营销自动化工具，以提供客户生命周期的整体视图。它具有复杂的细分功能，允许企业识别高价值客户并相应地定制其服务。该工具还包括情绪分析，用于评估客户反馈并识别需要改进的领域。通过了解客户的需求和偏好，企业可以提高客户保留率，增加客户终身价值，并提高整体客户满意度。客户优化分析工具还生成可操作的报告和仪表板，提供有关客户流失风险、追加销售机会和交叉销售潜力的见解。它帮助企业主动解决客户问题并个性化其互动，从而建立更牢固的客户关系并提高长期忠诚度。",
+          "image": "project_15.png"
+        },
+        {
+          "id": 3,
+          "title": "营销活动绩效仪表板",
+          "description": "营销活动绩效仪表板帮助企业监控和优化其跨各种渠道的营销活动。它提供了一个集中式平台，用于跟踪关键绩效指标（KPI），例如点击率、转化率和投资回报率（ROI）。此仪表板与营销自动化平台、社交媒体平台和广告网络集成，以提供营销活动绩效的全面视图。它包括实时分析，允许企业做出数据驱动的决策并随时调整其营销活动。主要功能包括可定制的仪表板、自动报告和A/B测试功能。通过利用此工具，企业可以识别最有效的营销渠道，优化其广告支出，并提高其营销活动的整体有效性。营销活动绩效仪表板还便于创建详细的营销活动报告，使营销人员能够跟踪进度并衡量其计划的影响。它为营销团队提供了他们所需的见解，以最大限度地提高其营销投资回报率并实现其营销活动目标。",
+          "image": "project_16.png"
+        },
+        {
+          "id": 4,
+          "title": "无缝入职工作流程",
+          "description": "无缝入职工作流程简化并增强了新用户的入职流程，确保平稳高效的过渡。该工具自动化了关键的入职任务，例如帐户创建、访问权限配置和培训材料分发。它提供了一个用户友好的界面，指导新用户完成入职流程，最大限度地减少混乱并缩短入职所需的时间。工作流程与人力资源系统和其他相关平台集成，以确保信息的无缝流动。主要功能包括自动通知、进度跟踪和可定制的入职清单。通过简化入职流程，企业可以提高新用户的满意度，降低入职成本并提高生产力。无缝入职工作流程还便于创建详细的入职报告，使人力资源团队能够跟踪进度并识别需要改进的领域。它使人力资源团队能够创建积极的入职体验，使新用户为成功做好准备。",
+          "image": "project_17.png"
+        }
+      ]
+    },
+    "ormSection": {
+      "title": "基于人工智能的在线声誉和后台管理",
+      "description": "管理您的在线声誉，以建立信任，与受众互动，并提升您的品牌形象。",
+      "features": [
+        {
+          "title": "建立信任和信誉",
+          "description": "建立强大的在线形象，以增强受众的信任和信誉。"
+        },
+        {
+          "title": "与您的受众互动",
+          "description": "通过评论、留言和社交媒体主动与客户互动。"
+        },
+        {
+          "title": "提升您的品牌形象",
+          "description": "通过突出积极的体验并解决负面反馈来改善品牌认知。"
+        }
+      ],
+      "learnMore": "了解更多"
+    },
+    "ormDetails": {
+      "metadata": {
+        "title": "在线声誉管理（ORM）详情 | 伊甸园之鸟",
+        "description": "了解伊甸园之鸟如何通过我们的在线声誉管理服务增强和保护您的在线声誉。"
+      },
+      "title": "在线声誉管理详情",
+      "description": "在线声誉管理（ORM）对于维护积极的品牌形象至关重要。它包括监控、影响和管理您的在线声誉。以下是更深入的了解：",
+      "keyAspectsTitle": "在线声誉管理的关键方面",
+      "monitoring": "监控您的品牌在各个平台上的在线提及。",
+      "responding": "及时、专业地回复评论和意见。",
+      "contentCreation": "创建积极的内容以影响搜索结果。",
+      "socialMedia": "管理您的社交媒体存在，以互动和建立信任。",
+      "crisisManagement": "处理负面宣传并减轻潜在损害。",
+      "benefitsTitle": "有效在线声誉管理的优势",
+      "enhancedTrust": "增强您与受众的信任和信誉。",
+      "improvedBrandImage": "改善品牌形象和认知。",
+      "increasedSales": "增加销售额和客户忠诚度。",
+      "proactiveReputation": "积极主动的声誉管理。",
+      "competitiveAdvantage": "在市场中获得竞争优势。",
+      "conclusion": "对于任何希望建立和维护强大在线影响力的企业来说，投资在线声誉管理至关重要。它有助于您掌控自己的叙述，并与客户建立持久的关系。"
+    },
+    "bannerDetails": {
+      "title": "我们构建在应用世界中流行的应用程序",
+      "description": "伊甸园之鸟是一家尖端的软件公司，致力于通过创新技术解决方案将想法变为现实。我们的使命是通过最先进的软件增强效率、生产力和用户体验，从而赋能企业和个人。",
+      "features": [
+        "根据您的需求量身定制的专业软件开发。",
+        "推动增长和成功的创新解决方案。",
+        "对质量和卓越用户体验的承诺。"
+      ],
+      "getStarted": "开始使用",
+      "featuresTitle": "主要特点",
+      "getStartedMessage": "准备好将您的应用想法变为现实了吗？立即联系我们开始！",
+      "contactUs": "联系我们"
+    },
+    "dronePage": {
+      "metadata": {
+        "title": "无人机 | 伊甸园之鸟",
+        "description": "探索伊甸园之鸟的最新无人机技术和解决方案。"
+      },
+      "title": "我们的最新技术",
+      "viewCollections": "查看系列",
+      "viewSpecs": "查看规格",
+      "specs": {
+        "flightTime": "飞行时间",
+        "range": "范围",
+        "camera": "相机"
+      },
+      "droneCollection": "探索我们的高级无人机系列",
+      "droneTagline": "为天空探险者提供的尖端技术",
+      "drones": [
+        {
+          "id": 1,
+          "title": "农业精准X1",
+          "description": "先进的农业无人机，配备用于作物健康监测的多光谱成像、用于高效农药分配的精准喷洒系统以及人工智能驱动的作物分析。",
+          "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "45分钟",
+            "range": "10公里",
+            "camera": "多光谱 + 4K RGB"
+          }
+        },
+        {
+          "id": 2,
+          "title": "消防救援专业版",
+          "description": "具有热成像、烟雾穿透能力和实时视频传输的高性能应急响应无人机。",
+          "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "35分钟",
+            "range": "8公里",
+            "camera": "热成像 + 4K HDR"
+          }
+        },
+        {
+          "id": 3,
+          "title": "检查技术X2",
+          "description": "专为基础设施监测和维护而设计的工业检查无人机。具有超高分辨率相机、激光雷达扫描和裂缝检测人工智能。",
+          "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "40分钟",
+            "range": "6公里",
+            "camera": "8K + 激光雷达"
+          }
+        },
+        {
+          "id": 4,
+          "title": "矿山测绘精英版",
+          "description": "具有先进3D测绘功能、防尘设计和地下导航系统的专业矿山和采石场无人机。",
+          "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "50分钟",
+            "range": "12公里",
+            "camera": "6K + 3D扫描仪"
+          }
+        }
+      ]
+    },
+    "projectGallery": {
+      "title": "我们的项目",
+      "description": "发现我们突破技术界限并为客户创造有意义影响的创新解决方案。",
+      "modal": {
+        "overview": "概述",
+        "description": "描述",
+        "close": "关闭"
+      },
+      "projects": [
+        {
+          "title": "身份验证",
+          "description": "上传您的身份证明以进行交易验证。",
+          "image": "project_1.png"
+        },
+        {
+          "title": "股市概览",
+          "description": "查看涨幅最大的股票、跌幅最大的股票和详细的市场趋势。",
+          "image": "project_2.png"
+        },
+        {
+          "title": "钱包和交易历史",
+          "description": "管理您的钱包并查看交易历史。",
+          "image": "project_3.png"
+        },
+        {
+          "title": "电子商务平台",
+          "description": "用于图书购买的现代电子商务解决方案。",
+          "image": "project_4.png"
+        },
+        {
+          "title": "书店系列",
+          "description": "浏览和筛选大量书籍。",
+          "image": "project_5.png"
+        },
+        {
+          "title": "仪表板分析",
+          "description": "具有分组条形图和折线图的数据可视化。",
+          "image": "project_6.png"
+        },
+        {
+          "title": "声誉管理",
+          "description": "通过量身定制的服务控制您的声誉。",
+          "image": "project_7.png"
+        },
+        {
+          "title": "产品展示",
+          "description": "详细的产品展示和促销横幅。",
+          "image": "project_9.png"
+        },
+        {
+          "title": "定价和订阅",
+          "description": "满足不同用户需求的灵活定价计划。",
+          "image": "project_10.png"
+        },
+        {
+          "title": "帐户联系人",
+          "description": "管理帐户联系人和用户权限。",
+          "image": "project_11.png"
+        },
+        {
+          "title": "仪表板概览",
+          "description": "具有高级分析功能的综合仪表板。",
+          "image": "project_12.jpeg"
+        },
+        {
+          "title": "搬家费用计算器",
+          "description": "使用直观的表格计算搬家费用。",
+          "image": "project_13.jpeg"
+        },
+        {
+          "title": "客户管理",
+          "description": "客户活动和参与度指标的概览。",
+          "image": "project_14.png"
+        },
+        {
+          "title": "行动摘要仪表板",
+          "description": "跟踪任务、活动和整体生产力。",
+          "image": "project_15.png"
+        }
+      ]
+    },
+    "clientPage": {
+      "title": "我们的客户",
+      "clients": [
+        {
+          "name": "Ann-Nahl 软件",
+          "description": "Ann-Nahl 软件为企业提供尖端的软件解决方案，专注于质量和客户满意度。",
+          "logo": "ann-nahl.png",
+          "services": ["软件开发", "咨询", "定制解决方案"],
+          "testimonial": "Ann-Nahl 软件改变了我们的运营方式，提供了根据我们的需求量身定制的高质量软件解决方案。"
+        },
+        {
+          "name": "BuzzMoving",
+          "description": "BuzzMoving 提供无缝的搬家体验，确保所有搬迁都得到细致和精确的处理。",
+          "logo": "buzzmoving.png",
+          "services": ["住宅搬家", "商业搬家", "仓储服务"],
+          "testimonial": "BuzzMoving 让我们的搬迁轻松无压力。他们的团队高效、专业且可靠。"
+        },
+        {
+          "name": "声誉至尊",
+          "description": "声誉至尊通过战略声誉管理解决方案帮助企业建立和维护强大的在线声誉。",
+          "logo": "repuprime.jpeg",
+          "services": ["声誉管理", "品牌监控", "危机处理"],
+          "testimonial": "声誉至尊在提升我们的品牌声誉和在线信誉方面发挥了至关重要的作用。"
+        },
+        {
+          "name": "沙特阿拉伯卫生部",
+          "description": "沙特阿拉伯卫生部提供医疗保健服务、政策和医疗法规，以提高公众健康。",
+          "logo": "moh.png",
+          "services": ["公共卫生", "医疗服务", "医疗保健政策"],
+          "testimonial": "卫生部极大地改善了我们获得医疗保健服务和医疗信息的途径。"
+        },
+        {
+          "name": "人力资源和社会发展部",
+          "description": "人力资源和社会发展部致力于建设一个赋权的社区和一个有吸引力的劳动力市场。",
+          "logo": "HRSD.png",
+          "services": ["劳动政策", "社会发展", "就业支持"],
+          "testimonial": "人力资源和社会发展部在创建一个更具活力和包容性的劳动力市场方面发挥了关键作用。"
+        },
+        {
+          "name": "SDAIA（沙特数据与人工智能管理局）",
+          "description": "SDAIA 致力于推进数据和人工智能解决方案，以推动沙特阿拉伯的数字化转型。",
+          "logo": "sdaia.png",
+          "services": ["人工智能", "大数据", "数字化转型"],
+          "testimonial": "SDAIA 为该国人工智能和数据驱动的倡议的增长做出了重大贡献。"
+        },
+        {
+          "name": "阿曼植物园",
+          "description": "阿曼植物园展示了阿曼多样的植物生命，促进保护和教育。",
+          "logo": "OBG.png",
+          "services": ["植物保护", "环境教育", "旅游"],
+          "testimonial": "阿曼植物园为我们提供了沉浸在阿曼丰富生物多样性中的体验。"
+        },
+        {
+          "name": "马斯喀特皇家歌剧院",
+          "description": "马斯喀特皇家歌剧院是阿曼举办音乐和文化表演的首要场所，致力于推广卓越的艺术。",
+          "logo": "ROHM.png",
+          "services": ["表演艺术", "文化活动", "音乐教育"],
+          "testimonial": "马斯喀特皇家歌剧院是一颗文化瑰宝，为阿曼带来了世界一流的表演。"
+        },
+        {
+          "name": "孟加拉国政府",
+          "description": "孟加拉国政府的官方门户网站为公民、企业和游客提供信息和服务。",
+          "logo": "bangovt.png",
+          "services": ["政府服务", "公共行政", "电子政务"],
+          "testimonial": "孟加拉国政府门户网站在访问基本政府服务方面提供了无缝体验。"
+        },
+        {
+          "name": "纽约搬家报价",
+          "description": "纽约报价德克萨斯州提供有竞争力的保险报价，帮助个人和企业获得最佳保单。",
+          "logo": "logo-png.png",
+          "services": ["保险报价", "财务规划", "风险评估"],
+          "testimonial": "纽约报价德克萨斯州帮助我们以无与伦比的价格找到了完美的保险计划。"
+        },
+        {
+          "name": "德克萨斯州搬家",
+          "description": "德克萨斯州搬家为全州的住宅和商业客户提供一流的搬迁服务。",
+          "logo": "moving-texas.png",
+          "services": ["住宅搬家", "商业搬家", "仓储解决方案"],
+          "testimonial": "德克萨斯州搬家凭借其专业可靠的团队，使我们的搬迁顺利无忧。"
+        }
+      ]
+    },
+    "blogPage": {
+      "title": "我们的最新博客",
+      "by": "作者：",
+      "readMore": "阅读更多",
+      "blogs": [
+        {
+          "id": 1,
+          "title": "ERP解决方案在商业增长中对SEO的强大作用",
+          "date": "2024年2月15日",
+          "author": "Zulfiker",
+          "image": "erp.png",
+          "description": "了解ERP解决方案如何简化业务流程，提高效率，并在数字时代推动成功。"
+        },
+        {
+          "id": 2,
+          "title": "农业无人机如何改变农业",
+          "date": "2024年3月10日",
+          "author": "Zisan",
+          "image": "agricultural_drone.jpg",
+          "description": "农业无人机通过精准喷洒、作物监测和提高生产力，正在彻底改变农业。"
+        },
+        {
+          "id": 3,
+          "title": "用于消防服务的无人机：应急响应的变革者",
+          "date": "2024年4月24日",
+          "author": "Md. Hossain",
+          "image": "fire_service_drone.jpg",
+          "description": "消防无人机通过提供空中监视、热成像和快速响应能力，增强了安全性和效率。"
+        }
+      ]
+    },
+    "teamMoments": {
+      "title": "我们的团队时刻"
+    },
+    "partners": {
+      "title": "我们的合作伙伴"
+    },
+    "privacyPolicy": [
+      {
+        "title": "隐私政策",
+        "text": "在伊甸园之鸟，我们非常重视您的隐私。本隐私政策解释了当您使用我们的服务时，我们如何收集、使用和披露关于您的信息。请仔细阅读本政策，以了解我们关于您的信息的做法以及我们将如何处理这些信息。"
+      },
+      {
+        "title": "我们收集的信息",
+        "text": "当您访问我们的网站、使用我们的服务或与我们沟通时，我们会收集您的信息。这些信息可能包括：您的姓名、电子邮件地址、联系信息以及您提供给我们的任何其他信息。"
+      },
+      {
+        "title": "我们如何使用您的信息",
+        "subtitle": "我们可能会使用从您那里收集的信息来：",
+        "list": [
+          "提供和改进我们的服务。",
+          "与您沟通有关我们的服务。",
+          "个性化您的体验。",
+          "回复您的询问。"
+        ]
+      },
+      {
+        "title": "信息共享和披露",
+        "text": "我们不会出售、交易或以其他方式将您的个人信息转移给外部各方。这不包括协助我们运营网站、开展业务或为您提供服务的受信任的第三方，只要这些各方同意对这些信息保密。"
+      },
+      {
+        "title": "联系我们",
+        "text": "如果您对本隐私政策有任何疑问，可以通过 privacy@birdsofeden.com 与我们联系。"
+      }
+    ]
+  },
+
+  "servicesPage": {
+    "metadata": {
+      "title": "我们的服务 | 伊甸园之鸟",
+      "description": "探索伊甸园之鸟提供的服务。"
+    }
+  },
+
+  "services": {
+    "showLess": "显示较少",
+    "learnMore": "了解更多",
+    "bigData": [
+      {
+        "icon": "icon1.png",
+        "title": "在商业中实施LLM",
+        "text": "利用生成式人工智能模型促进业务发展 - 利用生成式人工智能模型的能力来提升决策过程，揭示有价值的见解，提高运营效率，并获得巨大的竞争优势。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon2.png",
+        "title": "向量语义搜索",
+        "text": "通过向量语义搜索解锁精确性 - 运用向量搜索和自然语言处理（NLP）的强大功能，快速准确地解释用户意图，无需完全关键字匹配。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon3.png",
+        "title": "生成式人工智能开发",
+        "text": "使用生成式人工智能工具赋能开发者 - 通过整合GitHub Pilot和Microsoft Copilot等人工智能工具，优化开发者生产力。简化工作流程并加快编码过程，以提高效率和加快开发速度。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon4.png",
+        "title": "自主代理开发",
+        "text": "通过自主人工智能代理增强组织任务 - 实施像AutoGPT或BabyAGI这样的自主人工智能代理，它们独立运行、动态学习和无缝适应，从而增强您的组织在日常任务中的能力。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon5.png",
+        "title": "文本生成",
+        "text": "使用生成式人工智能增强内容创建 - 将生成式人工智能融入您的内容创建过程，以生成全面的内容，提高整体效率和有效性。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon6.png",
+        "title": "微调人工智能模型",
+        "text": "为特定需求定制人工智能输出 - 自定义人工智能模型输出以符合您的特定要求。微调预训练的人工智能模型以执行特定任务，提高性能并缩短训练时间。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon7.png",
+        "title": "图像生成",
+        "text": "通过即时图像生成访问创意资源 - 利用几乎无限的创意和想象力图形资源池，即时生成，节省时间和成本。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon8.png",
+        "title": "基于人类反馈的强化学习（RLHF）",
+        "text": "通过强化学习和人类反馈优化人工智能输出 - 将强化学习与人类反馈相结合，迭代地改进和完善人工智能模型。使人工智能系统能够学习最佳行为，从而产生更准确、高效和强大的输出。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon9.png",
+        "title": "增强的任务自动化",
+        "text": "通过增强的自动化简化运营 - 自动化和加快任务，最大限度地减少所需的时间和精力。提高准确性，减少错误，并提高整体任务质量。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon10.png",
+        "title": "改进的数据分析",
+        "text": "通过人工智能生成的见解提升数据分析 - 利用人工智能生成的见解来收集、组织和可视化广泛的数据集。加速产品开发并在业务增长中超越竞争对手。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon11.png",
+        "title": "促进软件开发",
+        "text": "提高软件开发效率 - 通过支持程序员使用提高生产力、减少挫败感并保持任务专注的工具来提高软件开发效率。这是点击按钮后将显示的卡片的附加文本。"
+      },
+      {
+        "icon": "icon12.png",
+        "title": "降低成本",
+        "text": "通过基于LLM的解决方案优化日常运营 - 通过实施基于LLM的解决方案来支持日常运营，从而降低日常运营成本。这是点击按钮后将显示的卡片的附加文本。"
+      }
+    ],
+    "ourServices": {
+      "title": "常规服务",
+      "services": [
+        {
+          "image": "webdev.jpg",
+          "title": "网页开发",
+          "description": "我们专注于创建满足您业务需求的现代化、响应式和用户友好的网站。"
+        },
+        {
+          "image": "mobiledev.jpg",
+          "title": "手机应用程序开发",
+          "description": "将您的想法转化为吸引用户并提升您品牌形象的强大手机应用程序。"
+        },
+        {
+          "image": "uiux.jpg",
+          "title": "UI/UX 设计",
+          "description": "打造视觉上令人惊叹且直观的界面，吸引您的受众并提升用户体验。"
+        }
+      ]
+    },
+    "webDev": {
+      "title": "网页开发服务",
+      "header": "伊甸园之鸟专注于构建动态且用户友好的网站，旨在帮助您实现在线目标并增强您的数字形象。",
+      "list": [
+        {
+          "title": "定制网站解决方案",
+          "description": "我们开发根据您独特的业务需求量身定制的定制网站，确保个性化和引人入胜的用户体验。"
+        },
+        {
+          "title": "响应式设计",
+          "description": "我们的网站针对所有设备和屏幕尺寸进行了优化，确保在台式机、平板电脑和智能手机上的无缝功能和可访问性。"
+        },
+        {
+          "title": "内容管理",
+          "description": "借助直观的内容管理系统（CMS），您可以完全控制您的网站内容，从而轻松进行更新和修改。"
+        },
+        {
+          "title": "SEO整合",
+          "description": "我们融入搜索引擎优化（SEO）最佳实践，以提高您网站在搜索引擎结果页面（SERP）上的可见性和排名，从而推动自然流量并增加您的在线形象。"
+        }
+      ],
+      "footer": "与我们合作，通过创新有效的网站解决方案转变您的在线形象并实现您的业务目标。"
+    },
+    "iosAppDev": {
+      "title": "iOS应用开发",
+      "header": "在伊甸园之鸟，我们专注于制作无缝且直观的iOS应用程序，以增强您的品牌形象并在App Store上吸引您的受众。",
+      "list": [
+        {
+          "title": "以用户为中心的设计",
+          "description": "我们将用户体验和界面设计放在首位，以创建不仅在视觉上吸引人而且易于使用的iOS应用程序。"
+        },
+        {
+          "title": "性能优化",
+          "description": "利用最新技术和最佳实践，我们确保您的iOS应用程序具有最佳性能和响应能力。"
+        },
+        {
+          "title": "App Store优化（ASO）",
+          "description": "我们的团队帮助您驾驭App Store生态系统的复杂性，优化您的应用程序列表，以获得最大的可见性和下载量。"
+        },
+        {
+          "title": "持续支持",
+          "description": "从概念到发布以及后续，我们提供全面的支持，以确保您的iOS应用程序满足您的业务目标并随着您的需求不断发展。"
+        }
+      ],
+      "footer": "与我们合作，将您的iOS应用程序想法变为现实，并在不断发展的iOS生态系统中给您的用户留下持久的印象。"
+    },
+    "mobileApp": {
+      "title": "移动应用解决方案",
+      "header": "伊甸园之鸟提供全面的移动应用解决方案，通过跨平台的响应式和功能丰富的应用程序为您的业务赋能。",
+      "list": [
+        {
+          "title": "平台多样性",
+          "description": "我们的专业知识扩展到iOS、Android和跨平台环境的应用程序开发，确保您的目标受众的广泛可访问性。"
+        },
+        {
+          "title": "功能丰富的功能",
+          "description": "从用户身份验证和推送通知到应用内购买和第三方集成，我们实施广泛的功能来增强用户体验和参与度。"
+        },
+        {
+          "title": "可扩展的架构",
+          "description": "我们设计可扩展的架构，以适应您的应用程序的增长和不断变化的需求，确保随着用户群的扩展，实现无缝的性能和可靠性。"
+        },
+        {
+          "title": "敏捷开发",
+          "description": "通过敏捷方法，我们将协作和灵活性放在首位，从而在整个开发过程中实现快速迭代和持续改进。"
+        }
+      ],
+      "footer": "与我们合作，利用移动技术的强大功能，在当今的数字环境中将您的业务推向新的成功高度。"
+    },
+    "paymentGateway": {
+      "title": "安全支付网关集成",
+      "description": "我们为希望**安全接受在线支付**的企业提供无缝的**支付网关集成**解决方案。无论您需要集成**Stripe、PayPal还是Razorpay**，我们都能确保为您的客户提供顺畅且**无忧的交易**。",
+      "whyChoose": {
+        "title": "为什么选择我们的支付网关集成？",
+        "list": [
+          {
+            "title": "高安全标准：",
+            "text": "实施**PCI-DSS合规性**、欺诈保护和**SSL加密**。"
+          },
+          {
+            "title": "快速无缝的交易：",
+            "text": "用于**即时支付处理**的优化API。"
+          },
+          {
+            "title": "定制的结账体验：",
+            "text": "设计具有**流畅用户体验**的定制支付页面。"
+          },
+          {
+            "title": "定期付款和订阅：",
+            "text": "为**订阅和会员资格**自动化计费周期。"
+          }
+        ]
+      },
+      "providers": {
+        "title": "支持的支付提供商",
+        "list": [
+          {
+            "title": "Stripe",
+            "text": "为各种规模的企业提供**快速、安全且对开发者友好的**支付处理。",
+            "image": "https://logos-world.net/wp-content/uploads/2021/02/Stripe-Emblem.png"
+          },
+          {
+            "title": "PayPal",
+            "text": "**全球信赖**，提供个人和企业交易解决方案。",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+          },
+          {
+            "title": "Razorpay",
+            "text": "**最适合印度企业**，支持UPI、信用卡和钱包。",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Razorpay_logo.svg"
+          }
+        ]
+      },
+      "integrationProcess": {
+        "title": "我们的集成流程",
+        "list": [
+          {
+            "title": "咨询和需求分析：",
+            "text": "了解您的业务需求。"
+          },
+          {
+            "title": "API集成：",
+            "text": "与**Stripe、PayPal或Razorpay**的无缝连接。"
+          },
+          {
+            "title": "测试和合规性：",
+            "text": "确保上线前的**安全交易**。"
+          },
+          {
+            "title": "上线和支持：",
+            "text": "持续的**监控和维护**，以确保平稳运行。"
+          }
+        ]
+      },
+      "cta": {
+        "title": "准备好接受在线支付了吗？",
+        "description": "立即开始使用**安全高效的支付网关集成**。",
+        "contact": "立即联系我们"
+      }
+    },
+    "quickBook": {
+      "title": "QuickBooks集成服务",
+      "description": "通过无缝的**QuickBooks集成**增强您的**财务管理**。我们专注于集成**QuickBooks Online**和**QuickBooks Desktop**，使企业能够自动化会计、简化交易并保持财务准确性。",
+      "list": [
+        {
+          "title": "自动化会计：",
+          "text": "轻松同步**发票、费用、工资单和财务报告**，以提高准确性和效率。"
+        },
+        {
+          "title": "无缝交易：",
+          "text": "连接**银行账户、税务记录和支付网关**，以获得实时财务见解和自动化对账。"
+        },
+        {
+          "title": "多平台兼容性：",
+          "text": "与**Web应用程序、移动应用程序和基于云的平台**完全兼容，实现灵活的财务管理。"
+        },
+        {
+          "title": "数据安全和合规性：",
+          "text": "行业标准的**银行级加密**确保安全的金融交易和数据保护。"
+        }
+      ],
+      "footer": "通过我们的**定制QuickBooks集成解决方案**优化您的企业财务。立即联系我们，**自动化您的会计并简化财务运营**。"
+    },
+    "zohoIntegration": {
+      "title": "Zoho集成服务",
+      "description": "通过我们的**Zoho集成服务**提高您的业务效率。我们专注于无缝集成**Zoho CRM、Zoho Books、Zoho People和Zoho Inventory**，以简化您的运营并提高生产力。",
+      "list": [
+        {
+          "title": "Zoho CRM集成",
+          "text": "自动化客户关系管理，以优化销售渠道并增强客户参与度。"
+        },
+        {
+          "title": "财务和会计解决方案",
+          "text": "使用Zoho Books高效管理**发票、费用和会计**，包括与**QuickBooks和Stripe**的集成。"
+        },
+        {
+          "title": "人力资源和工资单管理",
+          "text": "使用**Zoho People**简化员工运营，进行考勤跟踪、休假管理和工资单处理。"
+        },
+        {
+          "title": "定制Zoho工作流程",
+          "text": "开发**自动化工作流程**并集成**第三方应用程序**，以提高运营效率。"
+        }
+      ],
+      "footer": "利用**Zoho的业务工具套件**来提高生产力和可扩展性。立即联系我们，为您的企业探索**量身定制的Zoho集成解决方案**。"
+    }
+  },
+  "technologyList": {
+    "metadata": {
+      "title": "我们的技术 | 伊甸园之鸟",
+      "description": "探索伊甸园之鸟用于构建软件解决方案的技术。"
+    },
+    "ourTechnology": "我们的技术",
+    "description": "在{companyName}，我们处于技术创新的前沿。我们的软件解决方案采用最新、最可靠的技术构建，以确保高性能、可扩展性和安全性。",
+    "frontendTechnologies": "前端技术",
+    "backendTechnologies": "后端技术",
+    "technologies": {
+      "frontend": {
+        "reactJs": "用于构建用户界面的JavaScript库。",
+        "vueJs": "渐进式JavaScript框架。",
+        "angular": "一个框架。移动和桌面。",
+        "nextJs": "用于生产的React框架。",
+        "mui": "面向雄心勃勃的Web开发人员的框架。",
+        "chakraUi": "通过提供具有键值绑定的模型，为Web应用程序提供结构。",
+        "streamlit": "用于在纯Python中创建数据应用程序的框架。"
+      },
+      "backend": {
+        "nodeJs": "构建在Chrome的V8引擎上的JavaScript运行时。",
+        "django": "一个鼓励快速开发的高级Python Web框架。",
+        "springBoot": "一个简化基于Java的应用程序开发的框架。",
+        "python": "一种以简单性而闻名的多功能高级编程语言。",
+        "go": "在Google设计的静态类型编译编程语言。",
+        "rust": "一种运行速度极快、防止段错误并保证线程安全的系统编程语言。",
+        "laravel": "面向Web工匠的PHP框架，提供优雅的语法和强大的工具。"
+      }
+    }
+  },
+
+  "productsPage": {
+    "metadata": {
+      "title": "我们的产品 | 伊甸园之鸟",
+      "description": "探索伊甸园之鸟提供的产品范围。"
+    }
+  },
+  "products": {
+    "ourProducts": "我们的产品",
+    "govt": "政府",
+    "seo": "SEO机构的ERP",
+    "financial": "金融机构",
+    "corporate": "企业",
+    "ecommerce": "电子商务",
+    "corporateSolutions": "企业解决方案",
+    "corporateDescription": "通过我们创新的软件解决方案简化您的企业运营：",
+    "erp": "企业资源规划（ERP）",
+    "crm": "客户关系管理（CRM）",
+    "hrms": "人力资源管理系统（HRMS）",
+    "dataAnalytics": "数据分析和报告",
+    "corporateEnhance": "通过我们的定制解决方案增强您的业务效率和决策过程。",
+    "ecommerceSolutions": "电子商务解决方案",
+    "ecommerceDescription": "通过我们全面的电子商务解决方案最大化您的在线销售：",
+    "customStore": "可定制的在线商店平台",
+    "paymentGateway": "支付网关集成",
+    "inventoryManagement": "库存管理系统",
+    "customerExperience": "客户体验增强",
+    "ecommerceGrow": "通过我们可扩展且安全的解决方案发展您的电子商务业务。",
+    "financialSolutions": "金融机构解决方案",
+    "financialDescription": "我们的金融软件解决方案旨在提高金融机构的性能和安全性：",
+    "onlineBanking": "网上银行平台",
+    "fraudDetection": "欺诈检测系统",
+    "investmentManagement": "投资管理工具",
+    "riskManagement": "风险管理解决方案",
+    "financialEnsure": "通过我们最先进的技术确保您机构的增长和可靠性。",
+    "govtSolutions": "政府解决方案",
+    "govtDescription": "我们为政府机构提供量身定制的全面软件解决方案。我们的服务包括：",
+    "publicAdmin": "公共管理系统",
+    "eGovernance": "电子政务平台",
+    "dataSecurity": "数据安全和管理",
+    "citizenEngagement": "公民参与工具",
+    "govtDesigned": "我们的解决方案旨在提高效率、透明度和公众信任。",
+    "seoSolutions": "SEO机构解决方案",
+    "seoDescription": "通过我们的高级工具和平台增强您的SEO策略：",
+    "keywordResearch": "关键词研究和分析",
+    "siteAudit": "网站审核和优化",
+    "contentManagement": "内容管理系统",
+    "backlinkMonitoring": "反向链接监控",
+    "seoBoost": "通过我们的专家解决方案，提高客户的搜索引擎排名并推动更多自然流量。"
+  },
+
+  "JobPostPage": {
+    "metadata": {
+      "title": "职业机会 | 您的公司",
+      "description": "探索令人兴奋的职业机会，加入我们的团队。"
+    },
+    "title": "加入我们的团队",
+    "applyButton": "立即申请",
+    "applyFor": "申请",
+    "location": "地点",
+    "form": {
+      "namePlaceholder": "输入您的姓名",
+      "emailPlaceholder": "输入您的电子邮件",
+      "addressPlaceholder": "输入您的地址",
+      "resumeUpload": "点击上传您的简历",
+      "coverLetterUpload": "点击上传您的求职信",
+      "submitButton": "提交"
+    },
+    "modal": {
+      "close": "×"
+    },
+    "jobs": [
+      {
+        "id": "1",
+        "title": "软件工程师",
+        "description": "加入我们的工程师团队，共同致力于尖端技术。",
+        "location": "Tower 71, ECB Chattar"
+      },
+      {
+        "id": "2",
+        "title": "前端开发人员",
+        "description": "我们正在寻找一位才华横溢的前端开发人员。",
+        "location": "Tower 71, ECB Chattar"
+      },
+      {
+        "id": "3",
+        "title": "后端开发人员",
+        "description": "与一支才华横溢的团队一起开发我们的API和服务。",
+        "location": "远程"
+      }
+    ]
+  },
+  "aboutUs": {
+    "metadata": {
+      "title": "关于我们公司",
+      "description": "了解更多关于我们公司的历史、使命和价值观。"
+    },
+    "title": "关于伊甸园之鸟",
+    "header": "伊甸园之鸟是一家充满活力的软件公司，致力于创造创新解决方案，助力企业在数字时代蓬勃发展。",
+    "missionTitle": "我们的使命",
+    "mission": "在伊甸园之鸟，我们的使命是通过提供超越客户期望的尖端产品和服务，彻底改变软件行业。",
+    "valuesTitle": "我们的价值观",
+    "values": [
+      "创新：我们不断探索新的想法和技术，以保持领先地位。",
+      "质量：我们致力于提供高质量的解决方案，为客户的业务增加价值。",
+      "诚信：我们以诚实、透明和正直的态度开展业务。",
+      "客户满意度：我们将客户的需求和满意度置于首位。",
+      "协作：我们相信协作和团队合作的力量能够取得成功。"
+    ],
+    "coreMembersTitle": "核心成员",
+    "coreMembers": [
+      {
+        "name": "Talat Md. Tawfiq Elahi",
+        "role": "联合创始人兼首席执行官"
+      },
+      {
+        "name": "Md. Amenul Islam",
+        "role": "首席技术官"
+      }
+    ]
+  },
+  "teamPage": {
+    "metadata": {
+      "title": "我们的团队 | 您的公司",
+      "description": "了解我们的团队成员和他们的角色。"
+    }
+  },
+  "team": {
+    "title": "我们的执行团队",
+    "roles": {
+      "CEO": "首席执行官",
+      "CTO": "首席技术官",
+      "COO": "首席运营官"
+    },
+    "members": [
+      {
+        "name": "Talat Md. Tawfik Elahi",
+        "role": "首席执行官",
+        "portfolioLink": "https://talat-me.vercel.app/",
+        "description": "Talat Md. Tawfik Elahi 是一位富有远见的领导者，推动战略增长和卓越。他以具有前瞻性的方法，预测市场变化，并灵活应对挑战。他的领导力将战略和执行相结合，确保组织成功。"
+      },
+      {
+        "name": "Md. Amenul Islam",
+        "role": "首席技术官",
+        "portfolioLink": "https://talat-me.vercel.app/",
+        "description": "Md. Amenul Islam 是一位战略创新者，领导运营效率和增长。他将远见卓识与实际执行相结合，以实现业务目标。他的远见使组织能够在动态环境中适应和蓬勃发展。"
+      }
+    ],
+    "descriptionTitle": "描述",
+    "viewPortfolio": "查看作品集"
+  },
+  "hardwareProducts": {
+    "metadata": {
+      "title": "配件 | 您的公司",
+      "description": "探索我们各种各样的硬件配件。"
+    },
+    "premiumTech": {
+      "title": "高级科技配件",
+      "description": "使用高品质、专业级的科技配件增强您的工作空间。",
+      "slider": {
+        "title": "专业科技配件",
+        "description": "使用高级配件提高生产力：",
+        "list": [
+          {
+            "title": "机械键盘和人体工学鼠标：",
+            "text": "日常使用的精确度和舒适度。"
+          },
+          {
+            "title": "高速固态硬盘和外部存储：",
+            "text": "安全快速的数据管理。"
+          },
+          {
+            "title": "超高清显示器和扩展坞：",
+            "text": "针对多任务处理效率进行了优化。"
+          }
+        ],
+        "expButton": "浏览收藏"
+      }
+    },
+    "netTitle": "网络与技术解决方案",
+    "netDescription": "用于无缝连接和生产力的高性能设备。",
+    "networkingAndTech": [
+      {
+        "image": "router_1.jpg",
+        "title": "配件 1",
+        "description": "面向专业人士的高性能配件。"
+      },
+      {
+        "image": "docking_station.jpg",
+        "title": "配件 2",
+        "description": "面向专业人士的高性能配件。"
+      },
+      {
+        "image": "external_hdd.jpg",
+        "title": "配件 3",
+        "description": "面向专业人士的高性能配件。"
+      }
+    ]
+  },
+  "contactPage": {
+    "metadata": {
+      "title": "联系我们 | Birds Of Eden",
+      "description": "联系我们 Birds Of Eden 进行咨询、支持或合作机会。"
+    }
+  },
+  "contact": {
+    "contactUs": "联系我们",
+    "name": "姓名",
+    "namePlaceholder": "输入您的姓名",
+    "email": "电子邮件",
+    "emailPlaceholder": "输入您的电子邮件",
+    "message": "信息",
+    "messagePlaceholder": "输入您的信息",
+    "sendMessage": "发送信息",
+    "ourLocation": "我们的位置",
+    "successMessage": "信息发送成功！",
+    "errorMessage": "发送信息时出错！",
+    "errorAlert": "发送信息失败。"
+  },
+
+  "footer": {
+    "companyDescription": "伊甸园之鸟是一家开拓性的软件公司，致力于将创新理念转化为现实。",
+    "importantLinks": "重要链接",
+    "links": "链接",
+    "socialLinks": "社交链接",
+    "newsletter": "订阅我们的新闻通讯",
+    "emailPlaceholder": "输入您的电子邮件",
+    "copyright": "© 版权所有"
+  }
+}

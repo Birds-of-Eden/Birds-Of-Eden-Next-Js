@@ -1,0 +1,1027 @@
+{
+  "name": "Birds of Eden",
+  "shortName": "BirdsOfEden",
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "team": "Meet Our Executive Team",
+    "services": "Services",
+    "contact": "Contact",
+    "blogs": "Blogs",
+    "privacy": "Privacy Policy",
+    "bestSelling": "Best Selling",
+    "exploreServices": "Explore our top-rated services tailored to meet your needs.",
+    "development": "Development",
+    "regularServices": "Regular Services",
+    "otherServices": "Other Services",
+    "bigdata": "Big Data Analysis & Dashboard Design",
+    "webdev": "Web Development",
+    "iosdev": "iOS App Development",
+    "mobiledev": "Mobile App Development",
+    "payment": "Payment Gateway Integration",
+    "quickbooks": "QuickBooks Integration",
+    "zoho": "Zoho Integration",
+    "technologies": "Technologies",
+    "ourTechnologies": "Our Technologies",
+    "exploreTechnologies": "Explore our latest and advanced technologies.",
+    "other": "Other",
+    "frontend": "Frontend Technology",
+    "backend": "Backend Technology",
+    "products": "Products",
+    "ourProducts": "Our Products",
+    "exploreProducts": "Explore our top-rated products tailored to meet your needs.",
+    "otherProducts": "Other Products",
+    "govt": "Government",
+    "seo": "SEO Agencies",
+    "financial": "Financial Institutions",
+    "corporate": "Corporate Solutions",
+    "ecommerce": "E-Commerce",
+    "hardware": "Hardware Products",
+    "drones": "Drones",
+    "career": "Career",
+    "language": "Language"
+  },
+
+  "home": {
+    "hero": {
+      "title": "BIRDS OF EDEN",
+      "typewriter": [
+        "Innovating the Future of ERP Software Solutions And AI",
+        "Revolutionizing Business Automation",
+        "Empowering the Next Generation of AI Systems"
+      ],
+      "description": "Birds OF EDEN is a cutting-edge software company dedicated to transforming ideas into reality through innovative technology solutions. Our mission is to empower businesses and individuals with state-of-the-art software that enhances efficiency, productivity, and user experience.",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "service": {
+      "stats": [
+        { "value": "5+", "label": "Clients" },
+        { "value": "10+", "label": "Projects" },
+        { "value": "1k+", "label": "Subscribers" },
+        { "value": "5+", "label": "Clients" }
+      ]
+    },
+
+    "erpProjects": {
+      "title": "Our ERP Projects",
+      "button": "Go Back",
+      "projects": [
+        {
+          "id": 1,
+          "title": "Sales Insights Dashboard",
+          "description": "The Sales Insights Dashboard is an advanced analytics tool designed to provide businesses with comprehensive, real-time sales data. It offers a dynamic and interactive interface that allows users to visualize sales performance across various dimensions, including product lines, geographical regions, and time periods. This dashboard integrates with existing ERP systems to extract and consolidate sales data, presenting it in a clear and actionable format. Key features include customizable charts and graphs, drill-down capabilities to explore granular data, and predictive analytics that forecast future sales trends. By leveraging this tool, businesses can identify top-performing products, pinpoint areas for improvement, and make informed decisions to optimize their sales strategies and drive revenue growth. The dashboard also facilitates the creation of detailed sales reports, enabling stakeholders to track progress and measure the impact of sales initiatives. It empowers sales teams with the information they need to close deals faster and more effectively, ultimately enhancing overall sales performance and profitability.",
+          "image": "project_14.png"
+        },
+        {
+          "id": 2,
+          "title": "Client Optimization Analytics",
+          "description": "The Client Optimization Analytics tool empowers businesses with deep insights into client engagement, behavior, and satisfaction. It goes beyond basic CRM data by providing advanced analytics that reveal patterns and trends in client interactions. This tool integrates with various data sources, including CRM systems, customer support platforms, and marketing automation tools, to provide a holistic view of the client lifecycle. It features sophisticated segmentation capabilities, allowing businesses to identify high-value clients and tailor their services accordingly. The tool also includes sentiment analysis that assesses client feedback and identifies areas for improvement. By understanding client needs and preferences, businesses can enhance client retention, increase client lifetime value, and improve overall client satisfaction. The Client Optimization Analytics tool also generates actionable reports and dashboards that provide insights into client churn risk, upselling opportunities, and cross-selling potential. It helps businesses proactively address client issues and personalize their interactions, fostering stronger client relationships and driving long-term loyalty.",
+          "image": "project_15.png"
+        },
+        {
+          "id": 3,
+          "title": "Campaign Performance Dashboard",
+          "description": "The Campaign Performance Dashboard helps businesses monitor and optimize their marketing campaigns across various channels. It provides a centralized platform for tracking key performance indicators (KPIs), such as click-through rates, conversion rates, and return on investment (ROI). This dashboard integrates with marketing automation platforms, social media platforms, and advertising networks to provide a comprehensive view of campaign performance. It includes real-time analytics that allow businesses to make data-driven decisions and adjust their campaigns on the fly. Key features include customizable dashboards, automated reporting, and A/B testing capabilities. By leveraging this tool, businesses can identify the most effective marketing channels, optimize their ad spend, and improve the overall effectiveness of their marketing campaigns. The Campaign Performance Dashboard also facilitates the creation of detailed campaign reports, enabling marketers to track progress and measure the impact of their initiatives. It empowers marketing teams with the insights they need to maximize their marketing ROI and achieve their campaign objectives.",
+          "image": "project_16.png"
+        },
+        {
+          "id": 4,
+          "title": "Seamless Onboarding Workflow",
+          "description": "The Seamless Onboarding Workflow simplifies and enhances the onboarding process for new users, ensuring a smooth and efficient transition. This tool automates key onboarding tasks, such as account creation, access provisioning, and training material distribution. It provides a user-friendly interface that guides new users through the onboarding process, minimizing confusion and reducing the time required for onboarding. The workflow integrates with HR systems and other relevant platforms to ensure a seamless flow of information. Key features include automated notifications, progress tracking, and customizable onboarding checklists. By streamlining the onboarding process, businesses can improve new user satisfaction, reduce onboarding costs, and enhance productivity. The Seamless Onboarding Workflow also facilitates the creation of detailed onboarding reports, enabling HR teams to track progress and identify areas for improvement. It empowers HR teams to create a positive onboarding experience that sets new users up for success.",
+          "image": "project_17.png"
+        }
+      ]
+    },
+
+    "ormSection": {
+      "title": "AI Based Online Reputation and Back Office Management",
+      "description": "Manage your online reputation to build trust, engage with your audience, and enhance your brand's image.",
+      "features": [
+        {
+          "title": "Build Trust and Credibility",
+          "description": "Establish a strong online presence to enhance trust and credibility among your audience."
+        },
+        {
+          "title": "Engage with Your Audience",
+          "description": "Proactively engage with customers through reviews, comments, and social media."
+        },
+        {
+          "title": "Boost Your Brand Image",
+          "description": "Improve brand perception by highlighting positive experiences and addressing negative feedback."
+        }
+      ],
+      "learnMore": "Learn More"
+    },
+    "ormDetails": {
+      "metadata": {
+        "title": "Online Reputation Management (ORM) Details | Birds Of Eden",
+        "description": "Learn how Birds Of Eden can enhance and protect your online reputation with our ORM services."
+      },
+      "title": "ORM Details",
+      "description": "Online Reputation Management (ORM) is crucial for maintaining a positive brand image. It involves monitoring, influencing, and managing your online reputation. Here's a deeper look:",
+      "keyAspectsTitle": "Key Aspects of ORM",
+      "monitoring": "Monitoring online mentions of your brand across various platforms.",
+      "responding": "Responding to reviews and comments promptly and professionally.",
+      "contentCreation": "Creating positive content to influence search results.",
+      "socialMedia": "Managing your social media presence to engage and build trust.",
+      "crisisManagement": "Handling negative publicity and mitigating potential damage.",
+      "benefitsTitle": "Benefits of Effective ORM",
+      "enhancedTrust": "Enhanced trust and credibility with your audience.",
+      "improvedBrandImage": "Improved brand image and perception.",
+      "increasedSales": "Increased sales and customer loyalty.",
+      "proactiveReputation": "Proactive reputation management.",
+      "competitiveAdvantage": "Competitive advantage in the market.",
+      "conclusion": "Investing in ORM is essential for any business looking to build and maintain a strong online presence. It helps you control your narrative and build lasting relationships with your customers."
+    },
+    "bannerDetails": {
+      "title": "We Build Apps That Get Trending On Appworld",
+      "description": "Birds OF EDEN is a cutting-edge software company dedicated to transforming ideas into reality through innovative technology solutions. Our mission is to empower businesses and individuals with state-of-the-art software that enhances efficiency, productivity, and user experience.",
+      "features": [
+        "Expert software development tailored to your needs.",
+        "Innovative solutions that drive growth and success.",
+        "Commitment to quality and exceptional user experience."
+      ],
+      "getStarted": "Get Started",
+      "featuresTitle": "Key Features",
+      "getStartedMessage": "Ready to turn your app idea into reality? Contact us today to get started!",
+      "contactUs": "Contact Us"
+    },
+
+    "dronePage": {
+      "metadata": {
+        "title": "Drone Technology | Birds Of Eden",
+        "description": "Explore the latest drone technology and its applications in various industries."
+      },
+      "title": "Our Latest Technology",
+      "viewCollections": "View Collections",
+      "viewSpecs": "View Specs",
+      "specs": {
+        "flightTime": "Flight Time",
+        "range": "Range",
+        "camera": "Camera"
+      },
+      "droneCollection": "Discover Our Premium Drone Collection",
+      "droneTagline": "Cutting-edge technology for the sky explorers",
+      "drones": [
+        {
+          "id": 1,
+          "title": "AgriPrecision X1",
+          "description": "Advanced agricultural drone equipped with multispectral imaging for crop health monitoring, precision spraying system for efficient pesticide distribution, and AI-powered crop analysis.",
+          "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "45 minutes",
+            "range": "10 km",
+            "camera": "Multispectral + 4K RGB"
+          }
+        },
+        {
+          "id": 2,
+          "title": "FireRescue Pro",
+          "description": "High-performance emergency response drone with thermal imaging, smoke penetration capabilities, and real-time video transmission.",
+          "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "35 minutes",
+            "range": "8 km",
+            "camera": "Thermal + 4K HDR"
+          }
+        },
+        {
+          "id": 3,
+          "title": "InspectorTech X2",
+          "description": "Industrial inspection drone designed for infrastructure monitoring and maintenance. Features ultra-high resolution cameras, LiDAR scanning, and crack detection AI.",
+          "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "40 minutes",
+            "range": "6 km",
+            "camera": "8K + LiDAR"
+          }
+        },
+        {
+          "id": 4,
+          "title": "MineMapper Elite",
+          "description": "Specialized mining and quarry drone with advanced 3D mapping capabilities, dust-resistant design, and underground navigation system.",
+          "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "flightTime": "50 minutes",
+            "range": "12 km",
+            "camera": "6K + 3D Scanner"
+          }
+        }
+      ]
+    },
+    "projectGallery": {
+      "title": "Our Projects",
+      "description": "Discover our innovative solutions that push the boundaries of technology and create meaningful impact for our clients.",
+      "modal": {
+        "overview": "Overview",
+        "description": "Description",
+        "close": "Close"
+      },
+      "projects": [
+        {
+          "title": "Identity Verification",
+          "description": "Upload a proof of your identity for trading verification.",
+          "image": "project_1.png"
+        },
+        {
+          "title": "Stock Market Overview",
+          "description": "View top gainers, top losers, and detailed market trends.",
+          "image": "project_2.png"
+        },
+        {
+          "title": "Wallet and Transaction History",
+          "description": "Manage your wallet and view transaction history.",
+          "image": "project_3.png"
+        },
+        {
+          "title": "E-Commerce Platform",
+          "description": "Modern e-commerce solution for book purchases.",
+          "image": "project_4.png"
+        },
+        {
+          "title": "Bookstore Collection",
+          "description": "Browse and filter a vast collection of books.",
+          "image": "project_5.png"
+        },
+        {
+          "title": "Dashboard Analytics",
+          "description": "Data visualization with grouped bar and line charts.",
+          "image": "project_6.png"
+        },
+        {
+          "title": "Reputation Management",
+          "description": "Control your reputation with tailored services.",
+          "image": "project_7.png"
+        },
+        {
+          "title": "Product Showcase",
+          "description": "Detailed product display and promotional banners.",
+          "image": "project_9.png"
+        },
+        {
+          "title": "Pricing and Subscription",
+          "description": "Flexible pricing plans for different user needs.",
+          "image": "project_10.png"
+        },
+        {
+          "title": "Account Contacts",
+          "description": "Manage account contacts and user permissions.",
+          "image": "project_11.png"
+        },
+        {
+          "title": "Dashboard Overview",
+          "description": "Comprehensive dashboard with advanced analytics.",
+          "image": "project_12.jpeg"
+        },
+        {
+          "title": "Moving Cost Calculator",
+          "description": "Calculate moving costs with an intuitive form.",
+          "image": "project_13.jpeg"
+        },
+        {
+          "title": "Client Management",
+          "description": "Overview of client campaigns and engagement metrics.",
+          "image": "project_14.png"
+        },
+        {
+          "title": "Action Summary Dashboard",
+          "description": "Track tasks, activities, and overall productivity.",
+          "image": "project_15.png"
+        }
+      ]
+    },
+    "clientPage": {
+      "title": "Our Clients",
+      "clients": [
+        {
+          "name": "Ann-Nahl Software",
+          "description": "Ann-Nahl Software provides cutting-edge software solutions for businesses, with a focus on quality and customer satisfaction.",
+          "logo": "ann-nahl.png",
+          "services": [
+            "Software Development",
+            "Consulting",
+            "Custom Solutions"
+          ],
+          "testimonial": "Ann-Nahl Software has transformed the way we operate, delivering high-quality software solutions tailored to our needs."
+        },
+        {
+          "name": "BuzzMoving",
+          "description": "BuzzMoving offers a seamless moving experience, ensuring that all relocations are handled with care and precision.",
+          "logo": "buzzmoving.png",
+          "services": [
+            "Residential Moving",
+            "Commercial Moving",
+            "Storage Services"
+          ],
+          "testimonial": "BuzzMoving made our relocation stress-free. Their team is efficient, professional, and reliable."
+        },
+        {
+          "name": "Reputation Prime",
+          "description": "Reputation Prime helps businesses build and maintain a strong online reputation through strategic reputation management solutions.",
+          "logo": "repuprime.jpeg",
+          "services": [
+            "Reputation Management",
+            "Brand Monitoring",
+            "Crisis Handling"
+          ],
+          "testimonial": "Reputation Prime played a vital role in enhancing our brand reputation and online credibility."
+        },
+        {
+          "name": "Ministry of Health Saudi Arabia",
+          "description": "The Ministry of Health Saudi Arabia provides healthcare services, policies, and medical regulations to enhance public health.",
+          "logo": "moh.png",
+          "services": [
+            "Public Health",
+            "Medical Services",
+            "Healthcare Policies"
+          ],
+          "testimonial": "The Ministry of Health has greatly improved our access to healthcare services and medical information."
+        },
+        {
+          "name": "Ministry of Human Resources & Social Development",
+          "description": "The Ministry of Human Resources and Social Development works towards an empowered community and an attractive labor market.",
+          "logo": "HRSD.png",
+          "services": [
+            "Labor Policies",
+            "Social Development",
+            "Employment Support"
+          ],
+          "testimonial": "HRSD has played a crucial role in creating a more dynamic and inclusive labor market."
+        },
+        {
+          "name": "SDAIA (Saudi Data & AI Authority)",
+          "description": "SDAIA is dedicated to advancing data and artificial intelligence solutions to drive digital transformation in Saudi Arabia.",
+          "logo": "sdaia.png",
+          "services": [
+            "Artificial Intelligence",
+            "Big Data",
+            "Digital Transformation"
+          ],
+          "testimonial": "SDAIA has significantly contributed to the growth of AI and data-driven initiatives in the country."
+        },
+        {
+          "name": "Oman Botanic Garden",
+          "description": "Oman Botanic Garden showcases the diverse plant life of Oman, promoting conservation and education.",
+          "logo": "OBG.png",
+          "services": [
+            "Botanical Conservation",
+            "Environmental Education",
+            "Tourism"
+          ],
+          "testimonial": "Oman Botanic Garden offers an immersive experience in Oman's rich biodiversity."
+        },
+        {
+          "name": "Royal Opera House Muscat",
+          "description": "The Royal Opera House Muscat is Oman's premier venue for musical and cultural performances, promoting artistic excellence.",
+          "logo": "ROHM.png",
+          "services": ["Performing Arts", "Cultural Events", "Music Education"],
+          "testimonial": "The Royal Opera House Muscat is a cultural gem, bringing world-class performances to Oman."
+        },
+        {
+          "name": "Government of Bangladesh",
+          "description": "The official portal of the Government of Bangladesh provides information and services for citizens, businesses, and visitors.",
+          "logo": "bangovt.png",
+          "services": [
+            "Government Services",
+            "Public Administration",
+            "E-Governance"
+          ],
+          "testimonial": "The Bangladesh Government portal offers a seamless experience in accessing essential government services."
+        },
+        {
+          "name": "Moving Quote NewYork",
+          "description": "New York Quote Texas provides competitive insurance quotes, helping individuals and businesses secure the best policies.",
+          "logo": "logo-png.png",
+          "services": [
+            "Insurance Quotes",
+            "Financial Planning",
+            "Risk Assessment"
+          ],
+          "testimonial": "New York Quote Texas helped us find the perfect insurance plan at an unbeatable rate."
+        },
+        {
+          "name": "Moving Texas",
+          "description": "Moving Texas offers top-notch relocation services for residential and commercial clients across the state.",
+          "logo": "moving-texas.png",
+          "services": [
+            "Residential Moving",
+            "Commercial Moving",
+            "Storage Solutions"
+          ],
+          "testimonial": "Moving Texas made our relocation smooth and hassle-free with their professional and reliable team."
+        }
+      ]
+    },
+    "blogPage": {
+      "title": "Our Latest Blogs",
+      "by": "By",
+      "readMore": "Read More",
+      "blogs": [
+        {
+          "id": 1,
+          "title": "The Power of ERP Solutions for SEO in Business Growth",
+          "date": "Feb 15, 2024",
+          "author": "Zulfiker",
+          "image": "erp.png",
+          "description": "Discover how ERP solutions streamline business processes, improve efficiency, and drive success in a digital era."
+        },
+        {
+          "id": 2,
+          "title": "How Agricultural Drones Are Transforming Farming",
+          "date": "March 10, 2024",
+          "author": "Zisan",
+          "image": "agricultural_drone.jpg",
+          "description": "Agricultural drones are revolutionizing farming with precision spraying, crop monitoring, and improved productivity."
+        },
+        {
+          "id": 3,
+          "title": "Drones for Fire Services: A Game-Changer in Emergency Response",
+          "date": "April 24, 2024",
+          "author": "Md. Hossain",
+          "image": "fire_service_drone.jpg",
+          "description": "Firefighting drones enhance safety and efficiency by providing aerial surveillance, thermal imaging, and rapid response capabilities."
+        }
+      ]
+    },
+    "teamMoments": {
+      "title": "Our Team Moments"
+    },
+    "partners": {
+      "title": "Our Partners"
+    },
+
+    "privacyPolicy": [
+      {
+        "title": "Privacy Policy",
+        "text": "At BIRDS OF EDEN, we take your privacy seriously. This Privacy Policy explains how we collect, use, and disclose information about you when you use our services. Please read this policy carefully to understand our practices regarding your information and how we will treat it."
+      },
+      {
+        "title": "Information We Collect",
+        "text": "We collect information from you when you visit our website, use our services, or communicate with us. This information may include: your name, email address, contact information, and any other information you provide to us."
+      },
+      {
+        "title": "How We Use Your Information",
+        "subtitle": "We may use the information we collect from you to:",
+        "list": [
+          "Provide and improve our services.",
+          "Communicate with you about our services.",
+          "Personalize your experience.",
+          "Respond to your inquiries."
+        ]
+      },
+      {
+        "title": "Information Sharing and Disclosure",
+        "text": "We do not sell, trade, or otherwise transfer your personal information to outside parties. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, as long as those parties agree to keep this information confidential."
+      },
+      {
+        "title": "Contact Us",
+        "text": "If you have any questions about this Privacy Policy, you can contact us at privacy@birdsofeden.com."
+      }
+    ]
+  },
+
+  "servicesPage": {
+    "metadata": {
+      "title": "Our Services | Birds Of Eden",
+      "description": "Explore the range of services we offer at Birds Of Eden."
+    }
+  },
+
+  "services": {
+    "showLess": "Show Less",
+    "learnMore": "Learn More",
+    "bigData": [
+      {
+        "icon": "icon1.png",
+        "title": "Implementing LLMs in Business",
+        "text": "Utilizing Generative AI Models for Business Advancement - Harness the capabilities of generative AI models to elevate decision-making processes, unveil valuable insights, enhance operational efficiency, and gain a substantial competitive advantage. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon2.png",
+        "title": "Vector Semantic Search",
+        "text": "Unlocking Precision with Vector Semantic Search - Employ the prowess of vector search and natural language processing (NLP) to swiftly and accurately interpret user intents, bypassing the necessity for an exact keyword match. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon3.png",
+        "title": "Generative AI Development",
+        "text": "Empowering Developers with Generative AI Tools - Optimize developers' productivity by incorporating AI tools such as GitHub Pilot and Microsoft Copilot. Streamline workflows and expedite coding processes to foster efficiency and faster development. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon4.png",
+        "title": "Autonomous Agent Development",
+        "text": "Empower Organizational Tasks with Autonomous AI Agents - Implement autonomous AI agents like AutoGPT or BabyAGI that operate independently, learn dynamically, and adapt seamlessly, bolstering your organization's capabilities in daily tasks. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon5.png",
+        "title": "Text Generation",
+        "text": "Enhancing Content Creation with Generative AI - Infuse generative AI into your content creation process to produce comprehensive content, enhancing overall efficiency and effectiveness. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon6.png",
+        "title": "Fine-tuning AI Models",
+        "text": "Tailoring AI Outputs for Specific Needs - Customize AI model outputs to align with your specific requirements. Fine-tune pre-trained AI models for specific tasks, enhancing performance and reducing training times. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon7.png",
+        "title": "Image Generation",
+        "text": "Accessing Creative Resources with Instant Image Generation - Tap into a virtually infinite resource pool of creative and imaginative graphics generated instantly to save both time and costs. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon8.png",
+        "title": "Reinforcement Learning from Human Feedback (RLHF)",
+        "text": "Optimizing AI Outputs with Reinforcement Learning and Human Feedback - Combine reinforcement learning with human feedback to refine and improve AI models iteratively. Enable AI systems to learn optimal behaviors, resulting in more accurate, efficient, and robust outputs. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon9.png",
+        "title": "Enhanced Task Automation",
+        "text": "Streamlining Operations through Enhanced Automation - Automate and expedite tasks, minimizing the time and effort required. Improve accuracy, reduce errors, and enhance overall task quality. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon10.png",
+        "title": "Improved Data Analysis",
+        "text": "Elevating Data Analysis through AI-generated Insights - Leverage AI-generated insights to collect, organize, and visualize extensive datasets. Accelerate product development and outpace competitors in business growth. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon11.png",
+        "title": "Boosted Software Development",
+        "text": "Augmenting Efficiency in Software Development - Increase the efficiency of software development by supporting programmers with tools that enhance productivity, reduce frustration, and maintain focus on their tasks. This is additional text for the card that will be revealed when the button is clicked."
+      },
+      {
+        "icon": "icon12.png",
+        "title": "Reduced Costs",
+        "text": "Optimizing Daily Operations with LLM-based Solutions - Drive down daily operational costs by implementing LLM-based solutions to support routine operations. This is additional text for the card that will be revealed when the button is clicked."
+      }
+    ],
+
+    "ourServices": {
+      "title": "Regular Services",
+      "services": [
+        {
+          "image": "webdev.jpg",
+          "title": "Web Development",
+          "description": "We specialize in creating modern, responsive, and user-friendly websites tailored to your business needs."
+        },
+        {
+          "image": "mobiledev.jpg",
+          "title": "Mobile App Development",
+          "description": "Transform your ideas into powerful mobile applications that engage users and enhance your brand."
+        },
+        {
+          "image": "uiux.jpg",
+          "title": "UI/UX Design",
+          "description": "Craft visually stunning and intuitive interfaces that captivate your audience and elevate user experience."
+        }
+      ]
+    },
+    "webDev": {
+      "title": "Web Development Services",
+      "header": "BIRDS OF EDEN specializes in building dynamic and user-friendly websites tailored to help you achieve your online goals and enhance your digital presence.",
+      "list": [
+        {
+          "title": "Custom Web Solutions",
+          "description": "We develop bespoke websites tailored to your unique business requirements, ensuring a personalized and engaging user experience."
+        },
+        {
+          "title": "Responsive Design",
+          "description": "Our websites are optimized for all devices and screen sizes, ensuring seamless functionality and accessibility across desktops, tablets, and smartphones."
+        },
+        {
+          "title": "Content Management",
+          "description": "With intuitive content management systems (CMS), you have full control over your website content, allowing for easy updates and modifications."
+        },
+        {
+          "title": "SEO Integration",
+          "description": "We incorporate search engine optimization (SEO) best practices to improve your website's visibility and ranking on search engine results pages (SERPs), driving organic traffic and increasing your online presence."
+        }
+      ],
+      "footer": "Partner with us to transform your online presence and achieve your business objectives through innovative and effective web solutions."
+    },
+    "iosAppDev": {
+      "title": "iOS App Development",
+      "header": "At BIRDS OF EDEN, we specialize in crafting seamless and intuitive iOS applications to enhance your brand presence and engage your audience on the App Store.",
+      "list": [
+        {
+          "title": "User-Centric Design",
+          "description": "We prioritize user experience and interface design to create iOS apps that are not only visually appealing but also intuitive to use."
+        },
+        {
+          "title": "Performance Optimization",
+          "description": "Leveraging the latest technologies and best practices, we ensure optimal performance and responsiveness for your iOS applications."
+        },
+        {
+          "title": "App Store Optimization (ASO)",
+          "description": "Our team helps you navigate the complexities of the App Store ecosystem, optimizing your app listing for maximum visibility and downloads."
+        },
+        {
+          "title": "Continuous Support",
+          "description": "From concept to launch and beyond, we provide comprehensive support to ensure your iOS app meets your business objectives and evolves with your needs."
+        }
+      ],
+      "footer": "Partner with us to bring your iOS app ideas to life and leave a lasting impression on your users in the ever-growing iOS ecosystem."
+    },
+
+    "mobileApp": {
+      "title": "Mobile App Solutions",
+      "header": "BIRDS OF EDEN offers comprehensive mobile app solutions to empower your business with responsive and feature-rich applications across platforms.",
+      "list": [
+        {
+          "title": "Platform Diversity",
+          "description": "Our expertise extends to developing applications for iOS, Android, and cross-platform environments, ensuring broad accessibility for your target audience."
+        },
+        {
+          "title": "Feature-Rich Functionality",
+          "description": "From user authentication and push notifications to in-app purchases and third-party integrations, we implement a wide range of features to enhance user experience and engagement."
+        },
+        {
+          "title": "Scalable Architecture",
+          "description": "We design scalable architectures that accommodate your app's growth and evolving requirements, ensuring seamless performance and reliability as your user base expands."
+        },
+        {
+          "title": "Agile Development",
+          "description": "With agile methodologies, we prioritize collaboration and flexibility, allowing for rapid iteration and continuous improvement throughout the development process."
+        }
+      ],
+      "footer": "Partner with us to leverage the power of mobile technology and propel your business to new heights of success in today's digital landscape."
+    },
+    "paymentGateway": {
+      "title": "Secure Payment Gateway Integration",
+      "description": "We provide seamless **payment gateway integration** solutions for businesses looking to **accept online payments securely**. Whether you need to integrate **Stripe, PayPal, or Razorpay**, we ensure smooth and **hassle-free transactions** for your customers.",
+      "whyChoose": {
+        "title": "Why Choose Our Payment Gateway Integration?",
+        "list": [
+          {
+            "title": "High Security Standards:",
+            "text": "Implement **PCI-DSS compliance**, fraud protection, and **SSL encryption**."
+          },
+          {
+            "title": "Fast & Seamless Transactions:",
+            "text": "Optimized APIs for **instant payment processing**."
+          },
+          {
+            "title": "Custom Checkout Experience:",
+            "text": "Design tailored payment pages with a **smooth user experience**."
+          },
+          {
+            "title": "Recurring Payments & Subscriptions:",
+            "text": "Automate billing cycles for **subscriptions and memberships**."
+          }
+        ]
+      },
+      "providers": {
+        "title": "Supported Payment Providers",
+        "list": [
+          {
+            "title": "Stripe",
+            "text": "**Fast, secure, and developer-friendly** payment processing for businesses of all sizes.",
+            "image": "https://logos-world.net/wp-content/uploads/2021/02/Stripe-Emblem.png"
+          },
+          {
+            "title": "PayPal",
+            "text": "**Trusted worldwide**, offering both personal and business transaction solutions.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+          },
+          {
+            "title": "Razorpay",
+            "text": "**Best suited for Indian businesses**, supporting UPI, credit cards, and wallets.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Razorpay_logo.svg"
+          }
+        ]
+      },
+      "integrationProcess": {
+        "title": "Our Integration Process",
+        "list": [
+          {
+            "title": "Consultation & Requirements Analysis:",
+            "text": "Understanding your business needs."
+          },
+          {
+            "title": "API Integration:",
+            "text": "Seamless connection with **Stripe, PayPal, or Razorpay**."
+          },
+          {
+            "title": "Testing & Compliance:",
+            "text": "Ensuring **secure transactions** before going live."
+          },
+          {
+            "title": "Go Live & Support:",
+            "text": "Continuous **monitoring and maintenance** for smooth operations."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to Accept Online Payments?",
+        "description": "Get started with **secure and efficient payment gateway integration today**.",
+        "contact": "Contact Us Now"
+      }
+    },
+    "quickBook": {
+      "title": "QuickBooks Integration Services",
+      "description": "Enhance your **financial management** with seamless **QuickBooks Integration**. We specialize in integrating **QuickBooks Online** and **QuickBooks Desktop**, enabling businesses to automate accounting, streamline transactions, and maintain financial accuracy.",
+      "list": [
+        {
+          "title": "Automated Accounting:",
+          "text": "Effortlessly sync **invoices, expenses, payroll, and financial reports** to improve accuracy and efficiency."
+        },
+        {
+          "title": "Seamless Transactions:",
+          "text": "Connect **bank accounts, tax records, and payment gateways** for real-time financial insights and automated reconciliation."
+        },
+        {
+          "title": "Multi-Platform Compatibility:",
+          "text": "Fully compatible with **web applications, mobile apps, and cloud-based platforms** for flexible financial management."
+        },
+        {
+          "title": "Data Security & Compliance:",
+          "text": "Industry-standard **bank-level encryption** ensures secure financial transactions and data protection."
+        }
+      ],
+      "footer": "Optimize your business finances with our **custom QuickBooks integration solutions**. Contact us today to **automate your accounting and streamline financial operations**."
+    },
+    "zohoIntegration": {
+      "title": "Zoho Integration Services",
+      "description": "Enhance your business efficiency with our **Zoho Integration Services**. We specialize in seamlessly integrating **Zoho CRM, Zoho Books, Zoho People, and Zoho Inventory** to streamline your operations and drive productivity.",
+      "list": [
+        {
+          "title": "Zoho CRM Integration",
+          "text": "Automate customer relationship management to optimize sales pipelines and enhance client engagement."
+        },
+        {
+          "title": "Finance & Accounting Solutions",
+          "text": "Efficiently manage **invoices, expenses, and accounting** with Zoho Books, including integrations with **QuickBooks and Stripe**."
+        },
+        {
+          "title": "HR & Payroll Management",
+          "text": "Streamline workforce operations with **Zoho People** for attendance tracking, leave management, and payroll processing."
+        },
+        {
+          "title": "Custom Zoho Workflows",
+          "text": "Develop **automated workflows** and integrate **third-party applications** to enhance operational efficiency."
+        }
+      ],
+      "footer": "Leverage **Zoho's suite of business tools** to enhance productivity and scalability. Contact us today to explore a **custom-tailored Zoho integration solution** for your business."
+    }
+  },
+  "technologyList": {
+    "metadata": {
+      "title": "Our Technologies | Birds Of Eden",
+      "description": "Explore the technologies we use at Birds Of Eden to build our software solutions."
+    },
+    "ourTechnology": "Our Technology",
+    "description": "At {companyName}, we are at the forefront of technological innovation. Our software solutions are built using the latest and most reliable technologies to ensure high performance, scalability, and security.",
+    "frontendTechnologies": "Frontend Technologies",
+    "backendTechnologies": "Backend Technologies",
+    "technologies": {
+      "frontend": {
+        "reactJs": "A JavaScript library for building user interfaces.",
+        "vueJs": "The Progressive JavaScript Framework.",
+        "angular": "One framework. Mobile & desktop.",
+        "nextJs": "A React framework for production.",
+        "mui": "A framework for ambitious web developers.",
+        "chakraUi": "Gives structure to web applications by providing models with key-value binding.",
+        "streamlit": "A framework for creating data apps in pure Python."
+      },
+      "backend": {
+        "nodeJs": "A JavaScript runtime built on Chrome's V8 engine.",
+        "django": "A high-level Python Web framework that encourages rapid development.",
+        "springBoot": "A framework that simplifies the development of Java-based applications.",
+        "python": "A versatile, high-level programming language known for simplicity.",
+        "go": "A statically typed, compiled programming language designed at Google.",
+        "rust": "A system programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.",
+        "laravel": "A PHP framework for web artisans, providing elegant syntax and robust tools."
+      }
+    }
+  },
+
+  "productsPage": {
+    "metadata": {
+      "title": "Our Products | Birds Of Eden",
+      "description": "Explore the range of products we offer at Birds Of Eden."
+    }
+  },
+  "products": {
+    "ourProducts": "Our Products",
+    "govt": "Govt.",
+    "seo": "ERP for SEO Agencies",
+    "financial": "Financial Institutions",
+    "corporate": "Corporate",
+    "ecommerce": "E-Commerce",
+    "corporateSolutions": "Corporate Solutions",
+    "corporateDescription": "Streamline your corporate operations with our innovative software solutions:",
+    "erp": "Enterprise resource planning (ERP)",
+    "crm": "Customer relationship management (CRM)",
+    "hrms": "Human resources management systems (HRMS)",
+    "dataAnalytics": "Data analytics and reporting",
+    "corporateEnhance": "Enhance your business efficiency and decision-making processes with our customized solutions.",
+    "ecommerceSolutions": "E-Commerce Solutions",
+    "ecommerceDescription": "Maximize your online sales with our comprehensive e-commerce solutions:",
+    "customStore": "Customizable online store platforms",
+    "paymentGateway": "Payment gateway integrations",
+    "inventoryManagement": "Inventory management systems",
+    "customerExperience": "Customer experience enhancements",
+    "ecommerceGrow": "Grow your e-commerce business with our scalable and secure solutions.",
+    "financialSolutions": "Financial Institutions Solutions",
+    "financialDescription": "Our financial software solutions are designed to enhance the performance and security of financial institutions:",
+    "onlineBanking": "Online banking platforms",
+    "fraudDetection": "Fraud detection systems",
+    "investmentManagement": "Investment management tools",
+    "riskManagement": "Risk management solutions",
+    "financialEnsure": "Ensure your institution's growth and reliability with our state-of-the-art technology.",
+    "govtSolutions": "Government Solutions",
+    "govtDescription": "We provide comprehensive software solutions tailored for government institutions. Our services include:",
+    "publicAdmin": "Public administration systems",
+    "eGovernance": "E-Governance platforms",
+    "dataSecurity": "Data security and management",
+    "citizenEngagement": "Citizen engagement tools",
+    "govtDesigned": "Our solutions are designed to enhance efficiency, transparency, and public trust.",
+    "seoSolutions": "SEO Agencies Solutions",
+    "seoDescription": "Empower your SEO strategies with our advanced tools and platforms:",
+    "keywordResearch": "Keyword research and analytics",
+    "siteAudit": "Site audit and optimization",
+    "contentManagement": "Content management systems",
+    "backlinkMonitoring": "Backlink monitoring",
+    "seoBoost": "Boost your clients' search engine rankings and drive more organic traffic with our expert solutions."
+  },
+
+  "JobPostPage": {
+    "metadata": {
+      "title": "Career Opportunities | Birds Of Eden",
+      "description": "Explore exciting career opportunities and join our team."
+    },
+    "title": "Join Our Team",
+    "applyButton": "Apply Now",
+    "applyFor": "Apply for",
+    "location": "Location",
+    "form": {
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your email",
+      "addressPlaceholder": "Enter your address",
+      "resumeUpload": "Click to upload your Resume",
+      "coverLetterUpload": "Click to upload your Cover letter",
+      "submitButton": "Submit"
+    },
+    "modal": {
+      "close": "×"
+    },
+    "jobs": [
+      {
+        "id": "1",
+        "title": "Software Engineer",
+        "description": "Join our team of engineers working on cutting-edge technology.",
+        "location": "Tower 71, ECB Chattar"
+      },
+      {
+        "id": "2",
+        "title": "Frontend Developer",
+        "description": "We are looking for a talented frontend developer.",
+        "location": "Tower 71, ECB Chattar"
+      },
+      {
+        "id": "3",
+        "title": "Backend Developer",
+        "description": "Work on our API and services with a talented team.",
+        "location": "Remote"
+      }
+    ]
+  },
+  "aboutUs": {
+    "metadata": {
+      "title": "About Our Company",
+      "description": "Learn more about our history, mission, and values."
+    },
+    "title": "About Birds OF EDEN",
+    "header": "BIRDS OF EDEN is a dynamic software company dedicated to creating innovative solutions that empower businesses to thrive in the digital age.",
+    "missionTitle": "Our Mission",
+    "mission": "At BIRDS OF EDEN, our mission is to revolutionize the software industry by delivering cutting-edge products and services that exceed our clients' expectations.",
+    "valuesTitle": "Our Values",
+    "values": [
+      "Innovation: We constantly explore new ideas and technologies to stay ahead of the curve.",
+      "Quality: We are committed to delivering high-quality solutions that add value to our clients' businesses.",
+      "Integrity: We conduct business with honesty, transparency, and integrity.",
+      "Customer Satisfaction: We prioritize the needs and satisfaction of our clients above all else.",
+      "Collaboration: We believe in the power of collaboration and teamwork to achieve success."
+    ],
+    "coreMembersTitle": "Core Members",
+    "coreMembers": [
+      {
+        "name": "Talat Md. Tawfiq Elahi",
+        "role": "Co-Founder & CEO"
+      },
+      {
+        "name": "Md. Amenul Islam",
+        "role": "CTO"
+      }
+    ]
+  },
+
+  "teamPage": {
+    "metadata": {
+      "title": "Our Team | Birds Of Eden",
+      "description": "Meet the talented individuals behind Birds Of Eden."
+    }
+  },
+  "team": {
+    "title": "Meet Our Executive Team",
+    "roles": {
+      "CEO": "CEO",
+      "CTO": "CTO",
+      "COO": "COO"
+    },
+    "members": [
+      {
+        "name": "Talat Md. Tawfik Elahi",
+        "role": "CEO",
+        "portfolioLink": "https://talat-me.vercel.app/",
+        "description": "Talat Md. Tawfik Elahi is a visionary leader driving strategic growth and excellence. With a forward-thinking approach, he anticipates market shifts and navigates challenges with agility. His leadership bridges strategy and execution, ensuring organizational success."
+      },
+      {
+        "name": "Md. Amenul Islam",
+        "role": "CTO",
+        "portfolioLink": "https://talat-me.vercel.app/",
+        "description": "Md. Amenul Islam is a strategic innovator leading operational efficiency and growth. He combines visionary thinking with practical execution to achieve business goals. His foresight enables the organization to adapt and thrive in a dynamic landscape."
+      }
+    ],
+    "descriptionTitle": "Description",
+    "viewPortfolio": "View Portfolio"
+  },
+  "hardwareProducts": {
+    "metadata": {
+      "title": "Accessories | Your Company",
+      "description": "Explore our wide range of hardware accessories."
+    },
+    "premiumTech": {
+      "title": "Premium Tech Accessories",
+      "description": "Empower your workspace with high-quality, professional-grade tech accessories.",
+      "slider": {
+        "title": "Professional Tech Accessories",
+        "description": "Enhance productivity with premium accessories:",
+        "list": [
+          {
+            "title": "Mechanical Keyboards & Ergonomic Mice:",
+            "text": "Precision and comfort for daily use."
+          },
+          {
+            "title": "High-Speed SSDs & External Storage:",
+            "text": "Secure and fast data management."
+          },
+          {
+            "title": "Ultra HD Monitors & Docking Stations:",
+            "text": "Optimized for multitasking efficiency."
+          }
+        ],
+        "expButton": "Explore Collections"
+      }
+    },
+
+    "netTitle": "Networking & Tech Solutions",
+    "netDescription": "High-performance gear for seamless connectivity and productivity.",
+    "networkingAndTech": [
+      {
+        "image": "router_1.jpg",
+        "title": "Accessory 1",
+        "description": "High-performance accessory for professionals."
+      },
+      {
+        "image": "docking_station.jpg",
+        "title": "Accessory 2",
+        "description": "High-performance accessory for professionals."
+      },
+      {
+        "image": "external_hdd.jpg",
+        "title": "Accessory 3",
+        "description": "High-performance accessory for professionals."
+      }
+    ]
+  },
+
+  "contactPage": {
+    "metadata": {
+      "title": "Contact Us | Birds Of Eden",
+      "description": "Get in touch with Birds Of Eden for inquiries, support, or collaboration opportunities."
+    }
+  },
+  "contact": {
+    "contactUs": "Contact Us",
+    "name": "Name",
+    "namePlaceholder": "Enter your name",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "message": "Message",
+    "messagePlaceholder": "Enter your message",
+    "sendMessage": "Send Message",
+    "ourLocation": "Our Location",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "There was an error sending the message!",
+    "errorAlert": "Failed to send message."
+  },
+
+  "footer": {
+    "companyDescription": "BIRDS OF EDEN is a pioneering software company dedicated to transforming innovative ideas into reality.",
+    "importantLinks": "Important Links",
+    "links": "Links",
+    "socialLinks": "Social Links",
+    "newsletter": "Subscribe to our newsletter",
+    "emailPlaceholder": "Enter your email",
+    "copyright": "© Copyright"
+  }
+}
