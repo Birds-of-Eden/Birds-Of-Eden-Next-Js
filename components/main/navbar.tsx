@@ -140,7 +140,7 @@ const Navbar = () => {
                               "flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50",
                               "/" == url
                                 ? "text-blue-500"
-                                : "text-black/80 dark:text-white/80"
+                                : "text-black/80 dark:text-white/80",
                             )}
                           >
                             <Home className="h-4 w-4" />
@@ -152,7 +152,7 @@ const Navbar = () => {
                               "flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50",
                               "/about-us" == url
                                 ? "text-blue-500"
-                                : "text-black/80 dark:text-white/80"
+                                : "text-black/80 dark:text-white/80",
                             )}
                           >
                             <Info className="h-4 w-4" />
@@ -164,7 +164,7 @@ const Navbar = () => {
                               "flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50",
                               "/team" == url
                                 ? "text-blue-500"
-                                : "text-black/80 dark:text-white/80"
+                                : "text-black/80 dark:text-white/80",
                             )}
                           >
                             <Users className="h-4 w-4" />
@@ -176,7 +176,7 @@ const Navbar = () => {
                               "flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50",
                               "/our-service" == url
                                 ? "text-blue-500"
-                                : "text-black/80 dark:text-white/80"
+                                : "text-black/80 dark:text-white/80",
                             )}
                           >
                             <Wrench className="h-4 w-4" />
@@ -188,7 +188,7 @@ const Navbar = () => {
                               "flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50",
                               "/contact" == url
                                 ? "text-blue-500"
-                                : "text-black/80 dark:text-white/80"
+                                : "text-black/80 dark:text-white/80",
                             )}
                           >
                             <Phone className="h-4 w-4" />
@@ -200,7 +200,7 @@ const Navbar = () => {
                               "flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50",
                               "/blogs" == url
                                 ? "text-blue-500"
-                                : "text-black/80 dark:text-white/80"
+                                : "text-black/80 dark:text-white/80",
                             )}
                           >
                             <BookOpen className="h-4 w-4" />
@@ -212,7 +212,7 @@ const Navbar = () => {
                               "flex items-center gap-2 whitespace-nowrap rounded px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700/50",
                               "/privacy" == url
                                 ? "text-blue-500"
-                                : "text-black/80 dark:text-white/80"
+                                : "text-black/80 dark:text-white/80",
                             )}
                           >
                             <Shield className="h-4 w-4" />
@@ -223,9 +223,7 @@ const Navbar = () => {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>
-                        <Link href="/hardware">
-                          {t("navbar.hardware")}
-                        </Link>
+                        <Link href="/hardware">{t("navbar.hardware")}</Link>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="flex w-[400px] flex-col gap-4 p-3">
@@ -249,60 +247,66 @@ const Navbar = () => {
                             </div>
                           </div>
 
-                          <div className="flex gap-4">
-                            <div className="w-full">
-                              <h2 className="mb-2 text-lg font-semibold">
-                                {t("navbar.hardwareCategories")}
-                              </h2>
-                              <div className="flex flex-col gap-3">
-                                <Link
-                                  href="/hardware/laptop"
-                                  className={cn(
-                                    "flex items-center gap-2 hover:underline",
-                                    "/hardware/laptop" == url
-                                      ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                  )}
-                                >
-                                  <Cpu className="h-4 w-4" />
-                                  {t("navbar.laptop")}
-                                </Link>
-                                <Link
-                                  href="/hardware/printer"
-                                  className={cn(
-                                    "flex items-center gap-2 hover:underline",
-                                    "/hardware/printer" == url
-                                      ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                  )}
-                                >
-                                  <Database className="h-4 w-4" />
-                                  {t("navbar.printer")}
-                                </Link>
-                                <Link
-                                  href="/hardware/keyboard"
-                                  className={cn(
-                                    "flex items-center gap-2 hover:underline",
-                                    "/hardware/keyboard" == url
-                                      ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                  )}
-                                >
-                                  <Wrench className="h-4 w-4" />
-                                  {t("navbar.keyboard")}
-                                </Link>
-                                <Link
-                                  href="/hardware/mouse"
-                                  className={cn(
-                                    "flex items-center gap-2 hover:underline",
-                                    "/hardware/mouse" == url
-                                      ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
-                                  )}
-                                >
-                                  <Phone className="h-4 w-4" />
-                                  {t("navbar.mouse")}
-                                </Link>
+                          <div className="flex flex-col gap-2">
+                            <h2 className="mb-2 text-lg font-semibold">
+                              {t("navbar.hardwareCategories")}
+                            </h2>
+                            <div className="flex gap-8 p-2">
+                              <div className="w-1/2">
+                                <div className="flex flex-col gap-3">
+                                  <Link
+                                    href="/hardware/laptop"
+                                    className={cn(
+                                      "flex items-center gap-2 hover:underline",
+                                      "/hardware/laptop" == url
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
+                                    )}
+                                  >
+                                    <Cpu className="h-4 w-4" />
+                                    {t("navbar.laptop")}
+                                  </Link>
+                                  <Link
+                                    href="/hardware/printer"
+                                    className={cn(
+                                      "flex items-center gap-2 hover:underline",
+                                      "/hardware/printer" == url
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
+                                    )}
+                                  >
+                                    <Database className="h-4 w-4" />
+                                    {t("navbar.printer")}
+                                  </Link>
+                                </div>
+                              </div>
+                              <div className="w-1/2">
+                                <div className="flex flex-col gap-3">
+                                  <Link
+                                    href="/hardware/keyboard"
+                                    className={cn(
+                                      "flex items-center gap-2 hover:underline",
+                                      "/hardware/keyboard" == url
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
+                                    )}
+                                  >
+                                    <Wrench className="h-4 w-4" />
+                                    {t("navbar.keyboard")}
+                                  </Link>
+                                  <Link
+                                    href="/hardware/mouse"
+                                    className={cn(
+                                      "flex items-center gap-2 hover:underline",
+                                      "/hardware/mouse" == url
+                                        ? "text-blue-500"
+                                        : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
+                                    )}
+                                  >
+                                    <Phone className="h-4 w-4" />
+                                    {t("navbar.mouse")}
+                                  </Link>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -311,9 +315,7 @@ const Navbar = () => {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>
-                        <Link href="OurService">
-                          {t("navbar.services")}
-                        </Link>
+                        <Link href="OurService">{t("navbar.services")}</Link>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="flex w-[550px] flex-col gap-4 p-3">
@@ -349,7 +351,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/OurService" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Database className="h-4 w-4" />
@@ -361,7 +363,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/services" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Wrench className="h-4 w-4" />
@@ -373,7 +375,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/Web" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Globe className="h-4 w-4" />
@@ -385,7 +387,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/IOS" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Smartphone className="h-4 w-4" />
@@ -397,7 +399,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/Mobile" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Smartphone className="h-4 w-4" />
@@ -416,7 +418,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/payment-gateway" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <CreditCard className="h-4 w-4" />
@@ -428,7 +430,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/quickbook-integration" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <BookCheck className="h-4 w-4" />
@@ -440,7 +442,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/zoho-integration" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Boxes className="h-4 w-4" />
@@ -492,7 +494,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/technologies" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Globe className="h-4 w-4" />
@@ -511,7 +513,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/technologies" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Database className="h-4 w-4" />
@@ -561,7 +563,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/products/govt" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Building2 className="h-4 w-4" />
@@ -573,7 +575,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/products/seo" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <BarChart className="h-4 w-4" />
@@ -585,7 +587,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/products/financial" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Building className="h-4 w-4" />
@@ -604,7 +606,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/products/corporate" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <Building2 className="h-4 w-4" />
@@ -616,7 +618,7 @@ const Navbar = () => {
                                     "flex items-center gap-2 hover:underline",
                                     "/products/ecommerce" == url
                                       ? "text-blue-500"
-                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500"
+                                      : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
                                 >
                                   <ShoppingCart className="h-4 w-4" />
@@ -632,7 +634,7 @@ const Navbar = () => {
                       asChild
                       className={cn(
                         "whitespace-nowrap rounded-lg px-4 py-2 tracking-wide transition-colors hover:bg-zinc-200 focus:outline-none dark:hover:bg-zinc-700/50 dark:focus:bg-zinc-700/50 dark:active:bg-zinc-700/50",
-                        "/hardware" == url ? "text-blue-500" : ""
+                        "/hardware" == url ? "text-blue-500" : "",
                       )}
                     >
                       <Link
@@ -646,7 +648,7 @@ const Navbar = () => {
                       asChild
                       className={cn(
                         "whitespace-nowrap rounded-lg px-4 py-2 tracking-wide transition-colors hover:bg-zinc-200 focus:outline-none dark:hover:bg-zinc-700/50 dark:focus:bg-zinc-700/50 dark:active:bg-zinc-700/50",
-                        "/drones" == url ? "text-blue-500" : ""
+                        "/drones" == url ? "text-blue-500" : "",
                       )}
                     >
                       <Link href="/drones" className="flex items-center gap-2">
