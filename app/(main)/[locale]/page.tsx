@@ -60,7 +60,9 @@ const HomePage = async () => {
               <h1 className="transform font-bold text-primary text-4xl leading-7 transition-transform duration-500 xl:text-5xl">
                 {t("home.hero.title")}
               </h1>
-              <TypeWriterTexts strings={t.raw("home.hero.typewriter")} />
+              <div className="typewriter-container">
+                <TypeWriterTexts strings={t.raw("home.hero.typewriter")} />
+              </div>
               <p className="font-light tracking-wide text-black duration-500 dark:text-white/90 xl:text-xl">
                 {t("home.hero.description")}
               </p>
@@ -68,18 +70,20 @@ const HomePage = async () => {
                 <Link
                   href="#erp-project"
                   className="mb-2 rounded-md border-2 border-blue-500 bg-blue-500/50 px-4 py-2 text-lg text-black shadow-md transition-transform duration-300 hover:scale-105 hover:border-blue-700 hover:bg-blue-700 dark:text-white xl:px-8 xl:py-3 xl:text-2xl"
+                  aria-label="Get started with our ERP solutions"
                 >
                   {t("home.hero.getStarted")}
                 </Link>
                 <Link
                   href="/our-service"
                   className="mb-2 rounded-md border-2 border-emerald-500 bg-emerald-500/50 px-4 py-2 text-lg text-black shadow-md transition-transform duration-300 hover:scale-105 hover:border-emerald-700 hover:bg-emerald-700 dark:text-white xl:px-8 xl:py-3 xl:text-2xl"
+                  aria-label="Learn more about our services"
                 >
                   {t("home.hero.learnMore")}
                 </Link>
               </div>
             </div>
-            <div className="hidden md:flex">
+            <div className="hidden md:flex" aria-hidden="true">
               <CircleServices />
             </div>
           </div>
@@ -97,9 +101,9 @@ const HomePage = async () => {
       </section>
 
       {/* ORM */}
-      <section className="bg-gray-100 py-16 dark:bg-slate-700">
+      <section className="bg-gray-100 py-16 dark:bg-slate-700" aria-labelledby="orm-title">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="mb-4 text-4xl font-bold">
+          <h2 id="orm-title" className="mb-4 text-4xl font-bold">
             {t("home.ormSection.title")}
           </h2>
           <p className="mb-8 text-lg">{t("home.ormSection.description")}</p>
@@ -110,18 +114,21 @@ const HomePage = async () => {
                 <CheckCircle
                   key="check-circle"
                   className="h-10 w-10 text-green-500"
+                  aria-hidden="true"
                 />,
                 <MessageSquare
                   key="message-square"
                   className="h-10 w-10 text-blue-500"
+                  aria-hidden="true"
                 />,
                 <TrendingUp
                   key="trending-up"
                   className="h-10 w-10 text-purple-500"
+                  aria-hidden="true"
                 />,
               ];
               return (
-                <div
+                <article
                   key={index}
                   className="rounded-2xl bg-white p-6 shadow-md transition-shadow duration-300 hover:shadow-lg dark:bg-slate-800"
                 >
@@ -132,7 +139,7 @@ const HomePage = async () => {
                   <p className="text-gray-600 dark:text-white">
                     {feature.description}
                   </p>
-                </div>
+                </article>
               );
             })}
           </div>

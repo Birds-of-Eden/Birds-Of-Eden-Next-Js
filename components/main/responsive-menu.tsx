@@ -129,9 +129,9 @@ const ResponsiveMenu = React.forwardRef<HTMLDivElement, ResponsiveMenuProps>(
                             <ul className="flex flex-col gap-1">
                               <li className="mb-3 cursor-pointer hover:text-primary">
                                 <Link
-                                  href="/OurService"
+                                  href="/our-service"
                                   className={cn(
-                                    "/OurService" == url
+                                    "/our-service" == url
                                       ? "flex items-center gap-2 text-red-500"
                                       : "flex items-center gap-2"
                                   )}
@@ -142,9 +142,9 @@ const ResponsiveMenu = React.forwardRef<HTMLDivElement, ResponsiveMenuProps>(
                               </li>
                               <li className="mb-3 cursor-pointer ring-green-300 hover:text-primary">
                                 <Link
-                                  href="/services"
+                                  href="/services/regular-services"
                                   className={cn(
-                                    "/services" == url
+                                    "/services/regular-services" == url
                                       ? "flex items-center gap-2 text-red-500"
                                       : "flex items-center gap-2"
                                   )}
@@ -155,9 +155,9 @@ const ResponsiveMenu = React.forwardRef<HTMLDivElement, ResponsiveMenuProps>(
                               </li>
                               <li className="mb-3 cursor-pointer hover:text-primary">
                                 <Link
-                                  href="/Web"
+                                  href="/services/web-development"
                                   className={cn(
-                                    "/Web" == url
+                                    "/services/web-development" == url
                                       ? "flex items-center gap-2 text-red-500"
                                       : "flex items-center gap-2"
                                   )}
@@ -168,9 +168,9 @@ const ResponsiveMenu = React.forwardRef<HTMLDivElement, ResponsiveMenuProps>(
                               </li>
                               <li className="mb-3 cursor-pointer hover:text-primary">
                                 <Link
-                                  href="/IOS"
+                                  href="/services/ios-development"
                                   className={cn(
-                                    "/IOS" == url
+                                    "/services/ios-development" == url
                                       ? "flex items-center gap-2 text-red-500"
                                       : "flex items-center gap-2"
                                   )}
@@ -181,9 +181,9 @@ const ResponsiveMenu = React.forwardRef<HTMLDivElement, ResponsiveMenuProps>(
                               </li>
                               <li className="mb-3 cursor-pointer hover:text-primary">
                                 <Link
-                                  href="/Mobile"
+                                  href="/services/mobile-development"
                                   className={cn(
-                                    "/Mobile" == url
+                                    "/services/mobile-development" == url
                                       ? "flex items-center gap-2 text-red-500"
                                       : "flex items-center gap-2"
                                   )}
@@ -201,9 +201,9 @@ const ResponsiveMenu = React.forwardRef<HTMLDivElement, ResponsiveMenuProps>(
                             <ul className="flex flex-col gap-1">
                               <li className="mb-3 cursor-pointer hover:text-primary">
                                 <Link
-                                  href="/payment-gateway"
+                                  href="/services/payment-gateway"
                                   className={cn(
-                                    "/payment-gateway" == url
+                                    "/services/payment-gateway" == url
                                       ? "flex items-center gap-2 text-red-500"
                                       : "flex items-center gap-2"
                                   )}
@@ -214,9 +214,9 @@ const ResponsiveMenu = React.forwardRef<HTMLDivElement, ResponsiveMenuProps>(
                               </li>
                               <li className="mb-3 cursor-pointer hover:text-primary">
                                 <Link
-                                  href="/quickbook-integration"
+                                  href="/services/quickbook"
                                   className={cn(
-                                    "/quickbook-integration" == url
+                                    "/services/quickbook" == url
                                       ? "flex items-center gap-2 text-red-500"
                                       : "flex items-center gap-2"
                                   )}
@@ -227,9 +227,9 @@ const ResponsiveMenu = React.forwardRef<HTMLDivElement, ResponsiveMenuProps>(
                               </li>
                               <li className="mb-3 cursor-pointer hover:text-primary">
                                 <Link
-                                  href="/zoho-integration"
+                                  href="/services/zoho-integration"
                                   className={cn(
-                                    "/zoho-integration" == url
+                                    "/services/zoho-integration" == url
                                       ? "flex items-center gap-2 text-red-500"
                                       : "flex items-center gap-2"
                                   )}

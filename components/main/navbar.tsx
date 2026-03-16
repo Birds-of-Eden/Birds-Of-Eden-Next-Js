@@ -315,7 +315,7 @@ const Navbar = () => {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger>
-                        <Link href="OurService">{t("navbar.services")}</Link>
+                        <Link href="/our-service">{t("navbar.services")}</Link>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="flex w-[550px] flex-col gap-4 p-3">
@@ -346,10 +346,10 @@ const Navbar = () => {
                               </h2>
                               <div className="flex flex-col gap-3">
                                 <Link
-                                  href="/OurService"
+                                  href="/our-service"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/OurService" == url
+                                    "/our-service" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
@@ -358,10 +358,10 @@ const Navbar = () => {
                                   {t("navbar.bigdata")}
                                 </Link>
                                 <Link
-                                  href="/services"
+                                  href="/services/regular-services"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/services" == url
+                                    "/services/regular-services" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
@@ -370,10 +370,10 @@ const Navbar = () => {
                                   {t("navbar.regularServices")}
                                 </Link>
                                 <Link
-                                  href="/Web"
+                                  href="/services/web-development"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/Web" == url
+                                    "/services/web-development" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
@@ -382,10 +382,10 @@ const Navbar = () => {
                                   {t("navbar.webdev")}
                                 </Link>
                                 <Link
-                                  href="/IOS"
+                                  href="/services/ios-development"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/IOS" == url
+                                    "/services/ios-development" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
@@ -394,10 +394,10 @@ const Navbar = () => {
                                   {t("navbar.iosdev")}
                                 </Link>
                                 <Link
-                                  href="/Mobile"
+                                  href="/services/mobile-development"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/Mobile" == url
+                                    "/services/mobile-development" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
@@ -413,10 +413,10 @@ const Navbar = () => {
                               </h2>
                               <div className="flex flex-col gap-3">
                                 <Link
-                                  href="/payment-gateway"
+                                  href="/services/payment-gateway"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/payment-gateway" == url
+                                    "/services/payment-gateway" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
@@ -425,10 +425,10 @@ const Navbar = () => {
                                   {t("navbar.payment")}
                                 </Link>
                                 <Link
-                                  href="/quickbook-integration"
+                                  href="/services/quickbook"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/quickbook-integration" == url
+                                    "/services/quickbook" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}
@@ -437,10 +437,10 @@ const Navbar = () => {
                                   {t("navbar.quickbooks")}
                                 </Link>
                                 <Link
-                                  href="/zoho-integration"
+                                  href="/services/zoho-integration"
                                   className={cn(
                                     "flex items-center gap-2 hover:underline",
-                                    "/zoho-integration" == url
+                                    "/services/zoho-integration" == url
                                       ? "text-blue-500"
                                       : "text-black/70 hover:text-blue-500 dark:text-white/70 dark:hover:text-blue-500",
                                   )}

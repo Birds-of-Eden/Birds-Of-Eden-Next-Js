@@ -159,6 +159,10 @@
     },
     "dronePage": {
       "title": "Our Latest Technology",
+      "metadata": {
+        "title": "Drones | Birds Of Eden",
+        "description": "Explore Birds Of Eden drones and aerial technology solutions, including our latest drone collection and specifications."
+      },
       "viewCollections": "View Collections",
       "viewSpecs": "View Specs",
       "specs": {
@@ -821,7 +825,7 @@
   },
   "technologyList": {
     "ourTechnology": "Our Technology",
-    "description": "At {{companyName}}, we are at the forefront of technological innovation. Our software solutions are built using the latest and most reliable technologies to ensure high performance, scalability, and security.",
+    "description": "At {companyName}, we are at the forefront of technological innovation. Our software solutions are built using the latest and most reliable technologies to ensure high performance, scalability, and security.",
     "frontendTechnologies": "Frontend Technologies",
     "backendTechnologies": "Backend Technologies",
     "technologies": {
@@ -843,6 +847,10 @@
         "rust": "A system programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.",
         "laravel": "A PHP framework for web artisans, providing elegant syntax and robust tools."
       }
+    },
+    "metadata": {
+      "title": "Technologies | Birds Of Eden",
+      "description": "Explore the technologies we use at {companyName} to build scalable, secure, and high-performance software."
     }
   },
   "products": {
@@ -1068,7 +1076,11 @@
         "title": "Accessory 3",
         "description": "High-performance accessory for professionals."
       }
-    ]
+    ],
+    "metadata": {
+      "title": "Hardware | Birds Of Eden",
+      "description": "Explore Birds Of Eden hardware products and accessories, including premium tech accessories and networking solutions."
+    }
   },
   "contact": {
     "contactUs": "Contact Us",
@@ -1132,5 +1144,17 @@
   "modal": {
     "nextProduct": "Next Product",
     "previousProduct": "Previous Product"
+  },
+  "servicesPage": {
+    "metadata": {
+      "title": "Services | Birds Of Eden",
+      "description": "Explore Birds Of Eden services including ERP, AI solutions, web development, mobile app development, and enterprise integrations."
+    }
+  },
+  "productsPage": {
+    "metadata": {
+      "title": "Products | Birds Of Eden",
+      "description": "Discover Birds Of Eden products and solutions designed for government, corporate, finance, e-commerce, and SEO agencies."
+    }
   }
 }

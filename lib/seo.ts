@@ -3,7 +3,7 @@ import { routing, type Locale } from "@/i18n/routing";
 
 const FALLBACK_BASE_URL = "http://localhost:3000";
 const SITE_NAME = "Birds Of Eden";
-const DEFAULT_OG_IMAGE = "/opengraph-image.jpeg";
+const DEFAULT_OG_IMAGE = "/opengraph-image";
 
 type BuildLocalizedSeoMetadataInput = {
   locale: string;

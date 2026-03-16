@@ -159,6 +159,10 @@
     },
     "dronePage": {
       "title": "我们的最新技术",
+      "metadata": {
+        "title": "无人机 | Birds Of Eden",
+        "description": "探索 Birds Of Eden 的无人机与航空技术解决方案，包括最新的无人机系列与规格信息。"
+      },
       "viewCollections": "查看系列",
       "viewSpecs": "查看规格",
       "specs": {

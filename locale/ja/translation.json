@@ -173,6 +173,10 @@
     },
     "dronePage": {
       "title": "最新のテクノロジー",
+      "metadata": {
+        "title": "ドローン | Birds Of Eden",
+        "description": "Birds Of Eden のドローンと航空テクノロジーソリューションをご覧ください。最新のドローンコレクションと仕様を紹介します。"
+      },
       "viewCollections": "コレクションを見る",
       "viewSpecs": "仕様を見る",
       "specs": {
