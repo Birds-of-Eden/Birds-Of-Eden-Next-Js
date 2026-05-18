@@ -128,6 +128,10 @@
       "learnMore": "Learn More"
     },
     "ormDetails": {
+      "metadata": {
+        "title": "ORM Details | Birds Of Eden",
+        "description": "Learn what Online Reputation Management (ORM) is and how it helps you monitor, respond, and improve your brand's online presence."
+      },
       "title": "ORM Details",
       "description": "Online Reputation Management (ORM) is crucial for maintaining a positive brand image. It involves monitoring, influencing, and managing your online reputation. Here's a deeper look:",
       "keyAspectsTitle": "Key Aspects of ORM",

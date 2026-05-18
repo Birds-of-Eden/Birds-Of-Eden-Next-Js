@@ -35,6 +35,7 @@ import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import LanguageSelector from "@/components/ui/language-selector";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
+import NextLink from "next/link";
 import ResponsiveMenu from "./responsive-menu";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -673,6 +674,9 @@ const Navbar = () => {
                     <BiSolidMoon className="h-6 w-6 shrink-0" />
                   )}
                 </button>
+                <NextLink href="/auth/signin" className="link boxshadow">
+                  Sign in
+                </NextLink>
                 <Link href="/career" className="link boxshadow">
                   {t("navbar.career")}
                 </Link>

@@ -120,6 +120,10 @@
       "learnMore": "تعلم أكثر"
     },
     "ormDetails": {
+      "metadata": {
+        "title": "ORM Details | Birds Of Eden",
+        "description": "Learn what Online Reputation Management (ORM) is and how it helps you monitor, respond, and improve your brand's online presence."
+      },
       "title": "تفاصيل إدارة السمعة عبر الإنترنت",
       "description": "تعتبر إدارة السمعة عبر الإنترنت (ORM) أمرًا بالغ الأهمية للحفاظ على صورة علامة تجارية إيجابية. وهي تنطوي على مراقبة سمعتك عبر الإنترنت والتأثير فيها وإدارتها. إليك نظرة متعمقة:",
       "keyAspectsTitle": "الجوانب الرئيسية لإدارة السمعة عبر الإنترنت",

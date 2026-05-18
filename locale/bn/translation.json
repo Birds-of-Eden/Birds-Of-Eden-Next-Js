@@ -118,6 +118,10 @@
       "learnMore": "আরও জানুন"
     },
     "ormDetails": {
+      "metadata": {
+        "title": "ORM Details | Birds Of Eden",
+        "description": "Learn what Online Reputation Management (ORM) is and how it helps you monitor, respond, and improve your brand's online presence."
+      },
       "title": "ওআরএম বিবরণ",
       "description": "অনলাইন খ্যাতি ব্যবস্থাপনা (ওআরএম) একটি ইতিবাচক ব্র্যান্ড ইমেজ বজায় রাখার জন্য অত্যন্ত গুরুত্বপূর্ণ। এর মধ্যে আপনার অনলাইন খ্যাতি পর্যবেক্ষণ, প্রভাবিত এবং পরিচালনা করা জড়িত। এখানে একটি গভীরতর চেহারা:",
       "keyAspectsTitle": "ওআরএম এর মূল দিক",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Tiro_Bangla, Inter, Amiri } from "next/font/google";
+import Script from "next/script";
 import { getLocale } from "next-intl/server";
 import "@splidejs/react-splide/css";
 import "./globals.css";
@@ -9,6 +10,7 @@ import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { unstable_ViewTransition as ViewTransition } from "react";
 import { cn } from "@/lib/utils";
 import StructuredData from "@/components/StructuredData";
+import RouteChangeTracker from "@/components/analytics/route-change-tracker";
 
 // Bangla
 const tiroBangla = Tiro_Bangla({
@@ -119,11 +121,40 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const locale = await getLocale();
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID || "GTM-WJQTH2RV";
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','${gtmId}');
+          `}
+        </Script>
+
         <StructuredData />
+
+        {gaId ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}');
+              `}
+            </Script>
+          </>
+        ) : null}
       </head>
       <body
         className={cn("antialiased", {
@@ -132,6 +163,17 @@ export default async function RootLayout({
           [amiri.className]: locale === "ar",
         })}
       >
+        <RouteChangeTracker />
+
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
