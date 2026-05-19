@@ -921,6 +921,10 @@
     "applyButton": "今すぐ応募",
     "applyFor": "応募する",
     "location": "場所",
+    "metadata": {
+      "title": "キャリアと採用 - Birds Of Eden",
+      "description": "Birds Of Edenでのキャリアと採用に関する情報を見つけましょう。私たちのチームに参加して、革新的なソフトウェアソリューションを開発し、デジタル時代に企業の成功を支援しましょう。"
+    },
     "form": {
       "namePlaceholder": "あなたの名前を入力してください",
       "emailPlaceholder": "あなたのメールアドレスを入力してください",

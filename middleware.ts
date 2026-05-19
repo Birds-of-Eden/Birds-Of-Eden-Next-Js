@@ -1,23 +1,46 @@
+import createMiddleware from "next-intl/middleware";
 import { getToken } from "next-auth/jwt";
 import { NextResponse, type NextRequest } from "next/server";
+import { routing } from "./i18n/routing";
+
+const intlMiddleware = createMiddleware(routing);
 
 const PUBLIC_PATHS = new Set([
   "/",
   "/sign-up",
-  "/api/auth/signout",
-  "/api/auth/session",
+  "/auth/signin",
+  "/auth/signup",
   "/favicon.ico",
   "/static",
 ]);
 
-const AUTH_PATHS = new Set([
-  "/auth/signin",
-  "/auth/signup",
-  "/auth/signin",
-  "/sign-up",
-]);
+const AUTH_PATHS = new Set(["/auth/signin", "/auth/signup", "/sign-up"]);
 
-const STATIC_FILE_REGEX = /\.(png|jpg|jpeg|gif|svg|css|js|woff2?|ttf|eot)$/i;
+const STATIC_FILE_REGEX =
+  /\.(png|jpg|jpeg|gif|svg|css|js|woff2?|ttf|eot|ico|webp)$/i;
+
+function getLocaleAndPath(pathname: string) {
+  const segments = pathname.split("/");
+  const possibleLocale = segments[1];
+
+  const hasLocale = routing.locales.includes(possibleLocale as never);
+  const locale = hasLocale ? possibleLocale : routing.defaultLocale;
+
+  const pathnameWithoutLocale = hasLocale
+    ? `/${segments.slice(2).join("/")}` || "/"
+    : pathname;
+
+  return {
+    locale,
+    pathnameWithoutLocale:
+      pathnameWithoutLocale === "" ? "/" : pathnameWithoutLocale,
+  };
+}
+
+function withLocale(path: string, locale: string) {
+  if (locale === routing.defaultLocale) return path;
+  return `/${locale}${path}`;
+}
 
 function isPublic(pathname: string) {
   return Array.from(PUBLIC_PATHS).some(
@@ -27,57 +50,74 @@ function isPublic(pathname: string) {
 
 function safeCallback(request: NextRequest) {
   const cb = request.nextUrl.searchParams.get("callbackUrl");
+
   if (!cb) return null;
   if (!cb.startsWith("/") || cb.startsWith("//")) return null;
+
   return cb;
 }
 
 export default async function middleware(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
 
-  // Static + public shortcuts
-  if (isPublic(pathname)) return NextResponse.next();
-  if (pathname.startsWith("/api/") && !pathname.startsWith("/api/auth/")) {
+  if (STATIC_FILE_REGEX.test(pathname)) {
     return NextResponse.next();
   }
-  if (STATIC_FILE_REGEX.test(pathname)) return NextResponse.next();
+
+  if (pathname.startsWith("/api/")) {
+    return NextResponse.next();
+  }
+
+  const { locale, pathnameWithoutLocale } = getLocaleAndPath(pathname);
 
   const token = await getToken({
     req: request,
     secret: process.env.NEXTAUTH_SECRET,
   });
 
-  const isAdminRoute = pathname === "/admin" || pathname.startsWith("/admin/");
-  const isUserRoute = pathname === "/user" || pathname.startsWith("/user/");
+  const isAdminRoute =
+    pathnameWithoutLocale === "/admin" ||
+    pathnameWithoutLocale.startsWith("/admin/");
 
-  // Unauthenticated access to protected routes - redirect to login
+  const isUserRoute =
+    pathnameWithoutLocale === "/user" ||
+    pathnameWithoutLocale.startsWith("/user/");
+
+  const isAuthRoute = AUTH_PATHS.has(pathnameWithoutLocale);
+
+  if (isPublic(pathnameWithoutLocale) && !token) {
+    return intlMiddleware(request);
+  }
+
   if ((isAdminRoute || isUserRoute) && !token) {
-    const loginUrl = new URL("/auth/signin", request.url);
+    const loginUrl = new URL(withLocale("/auth/signin", locale), request.url);
     loginUrl.searchParams.set("callbackUrl", `${pathname}${search}`);
     return NextResponse.redirect(loginUrl);
   }
 
-  // Role guard: only ADMIN may access /admin routes
   if (isAdminRoute && token?.role !== "ADMIN") {
-    return NextResponse.redirect(new URL("/", request.url));
+    return NextResponse.redirect(new URL(withLocale("/", locale), request.url));
   }
 
-  // Role guard: only non-ADMIN may access /user routes
   if (isUserRoute && token?.role === "ADMIN") {
-    return NextResponse.redirect(new URL("/admin", request.url));
+    return NextResponse.redirect(
+      new URL(withLocale("/admin", locale), request.url),
+    );
   }
 
-  // Auth pages should not be shown to logged-in users — redirect by role
-  if (token && AUTH_PATHS.has(pathname)) {
+  if (token && isAuthRoute) {
     const callbackUrl = safeCallback(request);
+
     const destination =
-      callbackUrl || (token.role === "ADMIN" ? "/admin" : "/user");
+      callbackUrl ||
+      withLocale(token.role === "ADMIN" ? "/admin" : "/user", locale);
+
     return NextResponse.redirect(new URL(destination, request.url));
   }
 
-  return NextResponse.next();
+  return intlMiddleware(request);
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|api/auth|static).*)"],
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|static).*)"],
 };

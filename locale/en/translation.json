@@ -905,6 +905,10 @@
     "applyButton": "Apply Now",
     "applyFor": "Apply for",
     "location": "Location",
+    "metadata": {
+      "title": "Jobs | Birds Of Eden",
+      "description": "Explore job opportunities at Birds Of Eden and join our dynamic team of creative and passionate professionals."
+    },
     "form": {
       "namePlaceholder": "Enter your name",
       "emailPlaceholder": "Enter your email",

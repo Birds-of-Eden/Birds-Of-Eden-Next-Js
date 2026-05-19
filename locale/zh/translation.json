@@ -897,6 +897,10 @@
     "applyButton": "立即申请",
     "applyFor": "申请",
     "location": "地点",
+    "metadata": {
+      "title": "在伊甸园之鸟寻找职业机会",
+      "description": "在伊甸园之鸟寻找职业机会，加入我们充满活力的创意和热情的专业团队。我们提供一个支持和协作的环境，鼓励创新和个人成长。探索我们的职业机会，成为我们成功旅程的一部分。"
+    },
     "form": {
       "namePlaceholder": "输入您的姓名",
       "emailPlaceholder": "输入您的电子邮件",

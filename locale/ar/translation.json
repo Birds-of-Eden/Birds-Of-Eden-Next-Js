@@ -905,6 +905,10 @@
     "applyButton": "قدم الآن",
     "applyFor": "التقديم على",
     "location": "الموقع",
+    "metadata": {
+      "title": "وظائف | Birds Of Eden",
+      "description": "استكشف فرص العمل في Birds Of Eden وانضم إلى فريقنا الديناميكي من المهنيين المبدعين والمتحمسين."
+    },
     "form": {
       "namePlaceholder": "أدخل اسمك",
       "emailPlaceholder": "أدخل بريدك الإلكتروني",

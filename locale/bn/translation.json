@@ -917,6 +917,10 @@
     "applyButton": "আবেদন করুন",
     "applyFor": "আবেদন করুন",
     "location": "অবস্থান",
+    "metadata": {
+      "title": "কর্মসংস্থান | Birds Of Eden",
+      "description": "BIRDS OF EDEN-এ কর্মসংস্থানের সুযোগগুলি আবিষ্কার করুন এবং আমাদের উদ্ভাবনী সফটওয়্যার কোম্পানির অংশ হন।"
+    },
     "form": {
       "namePlaceholder": "আপনার নাম লিখুন",
       "emailPlaceholder": "আপনার ইমেইল লিখুন",
