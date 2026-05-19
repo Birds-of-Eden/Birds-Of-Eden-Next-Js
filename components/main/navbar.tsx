@@ -674,9 +674,9 @@ const Navbar = () => {
                     <BiSolidMoon className="h-6 w-6 shrink-0" />
                   )}
                 </button>
-                <NextLink href="/auth/signin" className="link boxshadow">
+                {/* <NextLink href="/auth/signin" className="link boxshadow">
                   Sign in
-                </NextLink>
+                </NextLink> */}
                 <Link href="/career" className="link boxshadow">
                   {t("navbar.career")}
                 </Link>
