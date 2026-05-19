@@ -11,6 +11,7 @@ import { unstable_ViewTransition as ViewTransition } from "react";
 import { cn } from "@/lib/utils";
 import StructuredData from "@/components/StructuredData";
 import RouteChangeTracker from "@/components/analytics/route-change-tracker";
+import AnalyticsTracker from "@/components/admin/AnalyticsTracker";
 
 // Bangla
 const tiroBangla = Tiro_Bangla({
@@ -164,6 +165,7 @@ export default async function RootLayout({
         })}
       >
         <RouteChangeTracker />
+        <AnalyticsTracker />
 
         <noscript>
           <iframe
