@@ -46,7 +46,6 @@
     "career": "キャリア",
     "language": "言語"
   },
-
   "home": {
     "hero": {
       "title": "エデンの鳥",
@@ -61,13 +60,24 @@
     },
     "service": {
       "stats": [
-        { "value": "5+", "label": "クライアント" },
-        { "value": "10+", "label": "プロジェクト" },
-        { "value": "1k+", "label": "購読者" },
-        { "value": "5+", "label": "クライアント" }
+        {
+          "value": "5+",
+          "label": "クライアント"
+        },
+        {
+          "value": "10+",
+          "label": "プロジェクト"
+        },
+        {
+          "value": "1k+",
+          "label": "購読者"
+        },
+        {
+          "value": "5+",
+          "label": "クライアント"
+        }
       ]
     },
-
     "erpProjects": {
       "title": "当社のERPプロジェクト",
       "button": "戻る",
@@ -235,100 +245,142 @@
     },
     "projectGallery": {
       "title": "私たちのプロジェクト",
-    "description": "テクノロジーの限界を押し広げ、クライアントに意味のあるインパクトを生み出す、革新的なソリューションをご覧ください。",
-    "modal": {
-      "overview": "概要",
-      "description": "説明",
-      "close": "閉じる",
-      "viewDemo": "デモを見る"
-    },
-  "projects": [
-    {
-      "title": "バングラデシュ気象政府プロジェクト",
-      "description": "高度な気象分析プラットフォーム。私たちの洗練されたダッシュボードは、バングラデシュの包括的な気象インサイトを精度と明確さで提供します。",
-      "images": ["BDW1.png", "BDW2.png", "BDW3.png"],
-      "deploymentUrl": "https://www.bmdcl17.com/"
-    },
-    {
-      "title": "イスラミ・ダワ研究所",
-      "description": "Islami Dawahは、イスラムの啓発活動を調整・報告するためのNext.js（App Router）+ TypeScriptアプリケーションです。管理者、ダーイ（宣教師）/アンバサダー、アシスタント、ユーザーなど、役割ベースのダッシュボードを備えています。",
-      "images": ["ISD1.jpeg", "ISD2.jpeg", "ISD3.jpeg"],
-      "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
-    },
-    {
-      "title": "ムービングクォートニューヨーク",
-      "description": "Moving Quote New Yorkは、ニューヨーク州全域で包括的な引越しサービスを提供しています。このプラットフォームは、信頼できる業者と顧客をマッチングし、即時見積もりを提供し、引越しの進捗状況をリアルタイムで追跡し、ストレスのない体験を保証するための包括的な引越しリソースを提供します。",
-      "images": ["MQT1.png", "MQT2.png", "MQT3.png"],
-      "deploymentUrl": "https://movingquotenewyork.com/"
-    },
-    {
-      "title": "ヒルフル・フズール — 書店",
-      "description": "Hilful Fuzulは、書籍と出版社に特化したNext.js（App Router）+ TypeScriptのEコマースプラットフォームです。製品、著者、出版社、注文を管理するための役割ベースの管理インターフェース、カテゴリブラウジング、検索、カート、ウィッシュリストを備えた顧客向けストアフロント、および支払い処理を伴うチェックアウトフローが含まれています。",
-      "images": ["KG2.png", "KG1.png", "KG3.png"],
-      "deploymentUrl": "https://hilfulfujulbd.com/"
-    },
-    {
-      "title": "ムービングクォートニューヨーク",
-      "description": "Moving Quote New Yorkは、ニューヨーク州全域で包括的な引越しサービスを提供しています。このプラットフォームは、信頼できる業者と顧客をマッチングし、即時見積もりを提供し、引越しの進捗状況をリアルタイムで追跡し、ストレスのない体験を保証するための包括的な引越しリソースを提供します。",
-      "images": ["MQN1.png", "MQT2.png", "MQT3.png"],
-      "deploymentUrl": "https://movingquotenewyork.com/"
-    },
-    {
-      "title": "Net Reputation タスク管理システム",
-      "description": "Net Reputationタスク管理システムは、エンドツーエンドのクライアントオペレーションを実行するためのNext.js（App Router）+ TypeScriptプラットフォームです。これには、役割固有のダッシュボード（管理者、AM/CEO、エージェント、QC、データ入力、クライアント）、一時停止理由とパフォーマンススコアリングを備えたタスクおよびQCワークフローが含まれます。",
-      "images": ["NR1.png", "NR2.png", "NR3.png"],
-      "deploymentUrl": "http://app.netreptask.com/"
-    },
-    {
-      "title": "レピュテーションプライム",
-      "description": "Reputation Primeタスク管理システムは、エンドツーエンドのクライアントオペレーションを実行するためのNext.js（App Router）+ TypeScriptプラットフォームです。これには、役割固有のダッシュボード（管理者、AM/CEO、エージェント、QC、データ入力、クライアント）、一時停止理由とパフォーマンススコアリングを備えたタスクおよびQCワークフローが含まれます。",
-      "images": ["RP1.png", "RP2.png", "RP3.png"],
-      "deploymentUrl": "https://reputationtask.com/"
-    },
-    {
-      "title": "Gravionne - 健康、ウェルネス、人間性の向上",
-      "description": "Gravionneでは、ラグジュアリーとウェルネスの交差点、科学と人間性が出会う場所を信じています。私たちのアプローチは精度に根ざし、研究に導かれ、人間の潜在的な繁栄の可能性に触発されています。",
-      "image": "GR1.png",
-      "deploymentUrl": "https://www.gravionne.com/"
-    },
-    {
-      "title": "AIBL 休暇管理システム",
-      "description": "このプロジェクトは、Al-Arafah Islami Bank PLC のために開発されたスマートな勤怠管理システムであり、従業員の出退勤をリアルタイムで監視および管理します。このシステムは、総アクティブ従業員数、出勤者数、遅刻者数、欠勤者数、当直者数を割合の洞察とともに表示する動的なダッシュボードを提供します。",
-      "images": ["AIBL1.jpeg", "AIBL2.jpeg"],
-      "deploymentUrl": "https://aibl-plc.vercel.app/"
-    },
-    {
-      "title": "エコモニターシステム",
-      "description": "EcoMonitorは、リアルタイムの気象インサイトと分析を提供するスマートな環境監視システムです。インタラクティブなダッシュボードと視覚的なチャートを通じて、温度、湿度、風速、気圧、UV指数、降水量などの主要な指標を表示します。このプラットフォームは、トレンド分析、アニメーションデータの可視化、およびプロアクティブな意思決定をサポートする高UV警告などのシステムアラートを備えています。気象監視、水質追跡、レポート、ユーザー管理のモジュールにより、EcoMonitorはモダンでユーザーフレンドリーなインターフェースで正確なデータ追跡と効率的な環境分析を保証します。",
-      "images": ["EM1.jpeg","EM2.jpeg","EM3.jpeg","EM4.jpeg"],
-      "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
-    },
-    {
-      "title": "DNA レポートシステム",
-      "description": "DNA Archiveは、症例、サンプル、レポート、保管、およびユーザーアクティビティを追跡する集中型ラボ管理システムです。リアルタイムの分析、システム監視、および効率的な法医学データ管理のための合理化されたワークフローを提供します。",
-      "images": ["DNA1.png"],
-      "deploymentUrl": "https://dna-case-management.vercel.app/login"
-    },
-    {
-      "title": "不動産管理システム",
-      "description": "この不動産会社プラットフォームは、管理者、エージェント、クライアントに明確な役割を割り当て、物件リストとユーザーインタラクションを管理するように設計されています。管理者はすべての操作を監督し、ユーザーと物件を管理できます。エージェントは自分の物件リストを追加および管理できます。ユーザーは物件を閲覧、フィルタリング、問い合わせることができます。このシステムは、安全な役割ベースのアクセス、多言語サポート、および関係者全員間の円滑なコミュニケーションを保証します。",
-      "images": ["RE1.png"],
-      "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
-    },
-    {
-      "title": "PCO トレーニング",
-      "description": "PCO Trainingは、英国のプロドライバー向けの専門プラットフォームです。ドライバーが規制要件を満たし、スキルを向上させるのに役立つ、包括的なトレーニングモジュール、模擬試験、および資格取得準備を提供します。",
-      "images": ["PCO1.png"],
-      "deploymentUrl": "https://uk-driving-course.vercel.app/en"
-    },
-    {
-      "title": "不正検出システム",
-      "description": "このプロジェクトは、ビジネスレビュー活動を分析および検証するために設計された不正レビューおよび検証システムです。ロケーションマッピング、連絡先情報、評価、レビュー統計を含む詳細なビジネスプロファイルを表示します。このプラットフォームは、総レビュー数、レビュアー数、および一人当たりの平均レビュー数を追跡して、不審なパターンを特定します。再スキャン、ステータス追跡、PDFエクスポート、リクエスト管理などの機能により、このシステムは不正行為の検出、データの信頼性の確保、およびレビューモデレーションとコンプライアンスのための情報に基づいた意思決定をサポートします。",
-      "images": ["FD1.jpeg"],
-      "deploymentUrl": "https://review.reputationtask.com/login"
-    }
-  
-
+      "description": "テクノロジーの限界を押し広げ、クライアントに意味のあるインパクトを生み出す、革新的なソリューションをご覧ください。",
+      "modal": {
+        "overview": "概要",
+        "description": "説明",
+        "close": "閉じる",
+        "viewDemo": "デモを見る"
+      },
+      "projects": [
+        {
+          "title": "バングラデシュ気象政府プロジェクト",
+          "description": "高度な気象分析プラットフォーム。私たちの洗練されたダッシュボードは、バングラデシュの包括的な気象インサイトを精度と明確さで提供します。",
+          "images": [
+            "BDW1.png",
+            "BDW2.png",
+            "BDW3.png"
+          ],
+          "deploymentUrl": "https://www.bmdcl17.com/"
+        },
+        {
+          "title": "イスラミ・ダワ研究所",
+          "description": "Islami Dawahは、イスラムの啓発活動を調整・報告するためのNext.js（App Router）+ TypeScriptアプリケーションです。管理者、ダーイ（宣教師）/アンバサダー、アシスタント、ユーザーなど、役割ベースのダッシュボードを備えています。",
+          "images": [
+            "ISD1.jpeg",
+            "ISD2.jpeg",
+            "ISD3.jpeg"
+          ],
+          "deploymentUrl": "https://hisab.hilfulfujulbd.com/"
+        },
+        {
+          "title": "ムービングクォートニューヨーク",
+          "description": "Moving Quote New Yorkは、ニューヨーク州全域で包括的な引越しサービスを提供しています。このプラットフォームは、信頼できる業者と顧客をマッチングし、即時見積もりを提供し、引越しの進捗状況をリアルタイムで追跡し、ストレスのない体験を保証するための包括的な引越しリソースを提供します。",
+          "images": [
+            "MQT1.png",
+            "MQT2.png",
+            "MQT3.png"
+          ],
+          "deploymentUrl": "https://movingquotenewyork.com/"
+        },
+        {
+          "title": "ヒルフル・フズール — 書店",
+          "description": "Hilful Fuzulは、書籍と出版社に特化したNext.js（App Router）+ TypeScriptのEコマースプラットフォームです。製品、著者、出版社、注文を管理するための役割ベースの管理インターフェース、カテゴリブラウジング、検索、カート、ウィッシュリストを備えた顧客向けストアフロント、および支払い処理を伴うチェックアウトフローが含まれています。",
+          "images": [
+            "KG2.png",
+            "KG1.png",
+            "KG3.png"
+          ],
+          "deploymentUrl": "https://hilfulfujulbd.com/"
+        },
+        {
+          "title": "ムービングクォートニューヨーク",
+          "description": "Moving Quote New Yorkは、ニューヨーク州全域で包括的な引越しサービスを提供しています。このプラットフォームは、信頼できる業者と顧客をマッチングし、即時見積もりを提供し、引越しの進捗状況をリアルタイムで追跡し、ストレスのない体験を保証するための包括的な引越しリソースを提供します。",
+          "images": [
+            "MQN1.png",
+            "MQT2.png",
+            "MQT3.png"
+          ],
+          "deploymentUrl": "https://movingquotenewyork.com/"
+        },
+        {
+          "title": "Net Reputation タスク管理システム",
+          "description": "Net Reputationタスク管理システムは、エンドツーエンドのクライアントオペレーションを実行するためのNext.js（App Router）+ TypeScriptプラットフォームです。これには、役割固有のダッシュボード（管理者、AM/CEO、エージェント、QC、データ入力、クライアント）、一時停止理由とパフォーマンススコアリングを備えたタスクおよびQCワークフローが含まれます。",
+          "images": [
+            "NR1.png",
+            "NR2.png",
+            "NR3.png"
+          ],
+          "deploymentUrl": "http://app.netreptask.com/"
+        },
+        {
+          "title": "レピュテーションプライム",
+          "description": "Reputation Primeタスク管理システムは、エンドツーエンドのクライアントオペレーションを実行するためのNext.js（App Router）+ TypeScriptプラットフォームです。これには、役割固有のダッシュボード（管理者、AM/CEO、エージェント、QC、データ入力、クライアント）、一時停止理由とパフォーマンススコアリングを備えたタスクおよびQCワークフローが含まれます。",
+          "images": [
+            "RP1.png",
+            "RP2.png",
+            "RP3.png"
+          ],
+          "deploymentUrl": "https://reputationtask.com/"
+        },
+        {
+          "title": "Gravionne - 健康、ウェルネス、人間性の向上",
+          "description": "Gravionneでは、ラグジュアリーとウェルネスの交差点、科学と人間性が出会う場所を信じています。私たちのアプローチは精度に根ざし、研究に導かれ、人間の潜在的な繁栄の可能性に触発されています。",
+          "image": "GR1.png",
+          "deploymentUrl": "https://www.gravionne.com/"
+        },
+        {
+          "title": "AIBL 休暇管理システム",
+          "description": "このプロジェクトは、Al-Arafah Islami Bank PLC のために開発されたスマートな勤怠管理システムであり、従業員の出退勤をリアルタイムで監視および管理します。このシステムは、総アクティブ従業員数、出勤者数、遅刻者数、欠勤者数、当直者数を割合の洞察とともに表示する動的なダッシュボードを提供します。",
+          "images": [
+            "AIBL1.jpeg",
+            "AIBL2.jpeg"
+          ],
+          "deploymentUrl": "https://aibl-plc.vercel.app/"
+        },
+        {
+          "title": "エコモニターシステム",
+          "description": "EcoMonitorは、リアルタイムの気象インサイトと分析を提供するスマートな環境監視システムです。インタラクティブなダッシュボードと視覚的なチャートを通じて、温度、湿度、風速、気圧、UV指数、降水量などの主要な指標を表示します。このプラットフォームは、トレンド分析、アニメーションデータの可視化、およびプロアクティブな意思決定をサポートする高UV警告などのシステムアラートを備えています。気象監視、水質追跡、レポート、ユーザー管理のモジュールにより、EcoMonitorはモダンでユーザーフレンドリーなインターフェースで正確なデータ追跡と効率的な環境分析を保証します。",
+          "images": [
+            "EM1.jpeg",
+            "EM2.jpeg",
+            "EM3.jpeg",
+            "EM4.jpeg"
+          ],
+          "deploymentUrl": "https://eco-monitor-jade.vercel.app/"
+        },
+        {
+          "title": "DNA レポートシステム",
+          "description": "DNA Archiveは、症例、サンプル、レポート、保管、およびユーザーアクティビティを追跡する集中型ラボ管理システムです。リアルタイムの分析、システム監視、および効率的な法医学データ管理のための合理化されたワークフローを提供します。",
+          "images": [
+            "DNA1.png"
+          ],
+          "deploymentUrl": "https://dna-case-management.vercel.app/login"
+        },
+        {
+          "title": "不動産管理システム",
+          "description": "この不動産会社プラットフォームは、管理者、エージェント、クライアントに明確な役割を割り当て、物件リストとユーザーインタラクションを管理するように設計されています。管理者はすべての操作を監督し、ユーザーと物件を管理できます。エージェントは自分の物件リストを追加および管理できます。ユーザーは物件を閲覧、フィルタリング、問い合わせることができます。このシステムは、安全な役割ベースのアクセス、多言語サポート、および関係者全員間の円滑なコミュニケーションを保証します。",
+          "images": [
+            "RE1.png"
+          ],
+          "deploymentUrl": "https://real-estate-admin-jade.vercel.app/en"
+        },
+        {
+          "title": "PCO トレーニング",
+          "description": "PCO Trainingは、英国のプロドライバー向けの専門プラットフォームです。ドライバーが規制要件を満たし、スキルを向上させるのに役立つ、包括的なトレーニングモジュール、模擬試験、および資格取得準備を提供します。",
+          "images": [
+            "PCO1.png"
+          ],
+          "deploymentUrl": "https://uk-driving-course.vercel.app/en"
+        },
+        {
+          "title": "不正検出システム",
+          "description": "このプロジェクトは、ビジネスレビュー活動を分析および検証するために設計された不正レビューおよび検証システムです。ロケーションマッピング、連絡先情報、評価、レビュー統計を含む詳細なビジネスプロファイルを表示します。このプラットフォームは、総レビュー数、レビュアー数、および一人当たりの平均レビュー数を追跡して、不審なパターンを特定します。再スキャン、ステータス追跡、PDFエクスポート、リクエスト管理などの機能により、このシステムは不正行為の検出、データの信頼性の確保、およびレビューモデレーションとコンプライアンスのための情報に基づいた意思決定をサポートします。",
+          "images": [
+            "FD1.jpeg"
+          ],
+          "deploymentUrl": "https://review.reputationtask.com/login"
+        }
       ]
     },
     "clientPage": {
@@ -349,7 +401,11 @@
           "name": "バズムービング",
           "description": "バズムービングは、すべての引越しを丁寧かつ正確に処理し、シームレスな引越し体験を提供します。",
           "logo": "buzzmoving.png",
-          "services": ["住宅の引越し", "商業の引越し", "保管サービス"],
+          "services": [
+            "住宅の引越し",
+            "商業の引越し",
+            "保管サービス"
+          ],
           "testimonial": "バズムービングのおかげで、引越しがストレスフリーに。彼らのチームは効率的でプロフェッショナル、そして信頼できます。"
         },
         {
@@ -367,56 +423,88 @@
           "name": "サウジアラビア保健省",
           "description": "サウジアラビア保健省は、公衆衛生を向上させるための医療サービス、政策、医療規制を提供しています。",
           "logo": "moh.png",
-          "services": ["公衆衛生", "医療サービス", "医療政策"],
+          "services": [
+            "公衆衛生",
+            "医療サービス",
+            "医療政策"
+          ],
           "testimonial": "保健省のおかげで、医療サービスと医療情報へのアクセスが大幅に向上しました。"
         },
         {
           "name": "人的資源・社会開発省",
           "description": "人的資源・社会開発省は、繁栄する社会と魅力的な労働市場を目指して活動しています。",
           "logo": "HRSD.png",
-          "services": ["労働政策", "社会開発", "雇用支援"],
+          "services": [
+            "労働政策",
+            "社会開発",
+            "雇用支援"
+          ],
           "testimonial": "この省のおかげで、よりダイナミックで包括的な労働市場が創出されました。"
         },
         {
           "name": "サウジデータ・AI局 (SDAIA)",
           "description": "SDAIAは、サウジアラビアでのデジタル変革を推進するために、データと人工知能のソリューションを促進しています。",
           "logo": "sdaia.png",
-          "services": ["人工知能", "ビッグデータ", "デジタル変革"],
+          "services": [
+            "人工知能",
+            "ビッグデータ",
+            "デジタル変革"
+          ],
           "testimonial": "SDAIAは、国内におけるAIとデータ駆動型の取り組みの成長に大きく貢献しています。"
         },
         {
           "name": "オマーン植物園",
           "description": "オマーン植物園は、オマーンの多様な植物を展示し、保存と教育を推進しています。",
           "logo": "OBG.png",
-          "services": ["植物の保護", "環境教育", "観光"],
+          "services": [
+            "植物の保護",
+            "環境教育",
+            "観光"
+          ],
           "testimonial": "オマーン植物園は、オマーンの豊かな生物多様性を体験する素晴らしい場所です。"
         },
         {
           "name": "ロイヤルオペラハウスマスカット",
           "description": "ロイヤルオペラハウスマスカットは、オマーンの音楽と文化の最高の舞台であり、芸術の卓越性を推進しています。",
           "logo": "ROHM.png",
-          "services": ["舞台芸術", "文化イベント", "音楽教育"],
+          "services": [
+            "舞台芸術",
+            "文化イベント",
+            "音楽教育"
+          ],
           "testimonial": "ロイヤルオペラハウスマスカットは、世界クラスのパフォーマンスをオマーンにもたらす文化的な宝石です。"
         },
         {
           "name": "バングラデシュ政府",
           "description": "バングラデシュ政府の公式ポータルは、市民、ビジネス、訪問者向けに情報とサービスを提供しています。",
           "logo": "bangovt.png",
-          "services": ["政府サービス", "公共管理", "電子政府"],
+          "services": [
+            "政府サービス",
+            "公共管理",
+            "電子政府"
+          ],
           "testimonial": "バングラデシュ政府のポータルは、重要な政府サービスへのアクセスをスムーズにしています。"
         },
         {
           "name": "ムービングクオートニューヨーク",
           "description": "ムービングクオートニューヨークは、競争力のある保険見積もりを提供し、最適な保険プランを見つける手助けをします。",
           "logo": "logo-png.png",
-          "services": ["保険見積もり", "財務計画", "リスク評価"],
+          "services": [
+            "保険見積もり",
+            "財務計画",
+            "リスク評価"
+          ],
           "testimonial": "ムービングクオートニューヨークは、私たちに最適な保険プランを見つけるのに大変役立ちました。"
         },
         {
           "name": "ムービングテキサス",
           "description": "ムービングテキサスは、州全体の住宅および商業クライアント向けに高品質の引越しサービスを提供しています。",
           "logo": "moving-texas.png",
-          "services": ["住宅の引越し", "商業の引越し", "保管ソリューション"],
+          "services": [
+            "住宅の引越し",
+            "商業の引越し",
+            "保管ソリューション"
+          ],
           "testimonial": "ムービングテキサスのおかげで、プロフェッショナルで信頼性の高いチームのおかげで、引越しがスムーズでストレスフリーになりました。"
         }
       ]
@@ -865,7 +953,6 @@
       }
     ]
   },
-
   "aboutUs": {
     "title": "BIRDS OF EDENについて",
     "header": "BIRDS OF EDENは、デジタル時代において企業が成功するための革新的なソリューションを提供する、ダイナミックなソフトウェア企業です。",
@@ -1035,7 +1122,9 @@
     "connectivity": "接続",
     "keycaps": "キーキャップ",
     "lighting": "ライティング",
-    "deliveryTime": "3-5日"
+    "deliveryTime": "3-5日",
+    "specifications": "仕様",
+    "highlights": "ハイライト"
   },
   "mousePage": {
     "all": "すべて",
@@ -1044,7 +1133,9 @@
     "buttons": "ボタン",
     "connectivity": "接続",
     "weight": "重量",
-    "deliveryTime": "3-5日"
+    "deliveryTime": "3-5日",
+    "specifications": "仕様",
+    "highlights": "ハイライト"
   },
   "laptopPage": {
     "all": "すべて",
@@ -1053,7 +1144,9 @@
     "storage": "ストレージ",
     "display": "ディスプレイ",
     "battery": "バッテリー",
-    "deliveryTime": "3-5日"
+    "deliveryTime": "3-5日",
+    "specifications": "仕様",
+    "highlights": "ハイライト"
   },
   "printerPage": {
     "all": "すべて",
@@ -1062,7 +1155,9 @@
     "resolution": "解像度",
     "connectivity": "接続",
     "dutyCycle": "デューティーサイクル",
-    "deliveryTime": "3-5日"
+    "deliveryTime": "3-5日",
+    "specifications": "仕様",
+    "highlights": "ハイライト"
   },
   "modal": {
     "nextProduct": "次の製品",

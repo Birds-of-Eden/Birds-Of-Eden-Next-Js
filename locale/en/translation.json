@@ -1116,7 +1116,9 @@
     "connectivity": "Connectivity",
     "keycaps": "Keycaps",
     "lighting": "Lighting",
-    "deliveryTime": "3-5 days"
+    "deliveryTime": "3-5 days",
+    "specifications": "Specifications",
+    "highlights": "Highlights"
   },
   "mousePage": {
     "all": "All",
@@ -1125,7 +1127,9 @@
     "buttons": "Buttons",
     "connectivity": "Connectivity",
     "weight": "Weight",
-    "deliveryTime": "3-5 days"
+    "deliveryTime": "3-5 days",
+    "specifications": "Specifications",
+    "highlights": "Highlights"
   },
   "laptopPage": {
     "all": "All",
@@ -1134,7 +1138,9 @@
     "storage": "Storage",
     "display": "Display",
     "battery": "Battery",
-    "deliveryTime": "3-5 days"
+    "deliveryTime": "3-5 days",
+    "specifications": "Specifications",
+    "highlights": "Highlights"
   },
   "printerPage": {
     "all": "All",
@@ -1143,7 +1149,9 @@
     "resolution": "Resolution",
     "connectivity": "Connectivity",
     "dutyCycle": "Duty cycle",
-    "deliveryTime": "3-5 days"
+    "deliveryTime": "3-5 days",
+    "specifications": "Specifications",
+    "highlights": "Highlights"
   },
   "modal": {
     "nextProduct": "Next Product",
