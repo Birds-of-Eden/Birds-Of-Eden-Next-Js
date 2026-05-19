@@ -27,13 +27,12 @@ const AdminSidebar = ({ onNavigate, collapsed, onToggleCollapse }: Props) => {
   const pathname = usePathname();
   const router = useRouter();
   const [internalCollapsed, setInternalCollapsed] = useState(false);
+
   const isControlled = typeof collapsed === "boolean";
   const isCollapsed = isControlled ? collapsed : internalCollapsed;
 
   const isActive = (href: string) => {
-    if (href === "/admin") {
-      return pathname === "/admin";
-    }
+    if (href === "/admin") return pathname === "/admin";
     return pathname.startsWith(href);
   };
 
@@ -41,23 +40,34 @@ const AdminSidebar = ({ onNavigate, collapsed, onToggleCollapse }: Props) => {
     onNavigate?.();
   };
 
+  const navItems = [
+    { name: "Dashboard", href: "/admin", icon: Home },
+    { name: "Blog", href: "/admin/blog", icon: BookOpen },
+  ];
+
   return (
     <aside
-      className="md:fixed md:left-0 md:top-0 md:z-50 md:h-screen h-screen flex flex-col transition-all duration-300 bg-[#003B3A] text-[#F3F4F2] w-full md:w-auto"
+      className="md:fixed md:left-0 md:top-0 md:z-50 flex h-screen flex-col border-r border-slate-200 bg-white text-zinc-900 shadow-sm transition-all duration-300 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white w-full md:w-auto"
       style={{
         width: isCollapsed ? SIDEBAR_COLLAPSED : SIDEBAR_EXPANDED,
       }}
     >
       {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b border-white/20">
-        <div className="flex items-center gap-2">
+      <div className="flex items-center justify-between border-b border-slate-200 p-4 dark:border-zinc-800">
+        <div className="flex items-center gap-3">
           {!isCollapsed && (
-            <div className="w-9 h-9 rounded-full bg-[#C49A3A] flex items-center justify-center">
-              <Shield size={18} />
+            <div className="flex size-10 items-center justify-center rounded-full bg-primary text-white shadow">
+              <Shield size={20} />
             </div>
           )}
+
           {!isCollapsed && (
-            <span className="text-lg font-semibold">Admin Panel</span>
+            <div>
+              <h2 className="text-lg font-bold leading-none">Admin Panel</h2>
+              <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+                Birds Of Eden
+              </p>
+            </div>
           )}
         </div>
 
@@ -66,49 +76,54 @@ const AdminSidebar = ({ onNavigate, collapsed, onToggleCollapse }: Props) => {
             if (isControlled) onToggleCollapse?.();
             else setInternalCollapsed((c) => !c);
           }}
-          className="p-1 rounded bg-[#C49A3A]"
+          className="flex size-8 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-zinc-700 transition hover:bg-slate-200 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700"
         >
           {isCollapsed ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
         </button>
       </div>
 
       {/* Navigation */}
-      <nav className="flex-1 p-3 space-y-1 overflow-y-auto">
-        {[
-          { name: "Dashboard", href: "/admin", icon: Home },
-          { name: "Blog", href: "/admin/blog", icon: BookOpen },
-        ].map((item) => (
-          <div key={item.name}>
+      <nav className="flex-1 space-y-1 overflow-y-auto p-3">
+        {navItems.map((item) => {
+          const active = isActive(item.href);
+          const Icon = item.icon;
+
+          return (
             <Link
+              key={item.name}
               href={item.href}
               onClick={handleNavigate}
-              className={`flex items-center gap-3 rounded-lg px-3 py-2 transition
-                ${
-                  isActive(item.href)
-                    ? "bg-[#C49A3A] text-[#003B3A]"
-                    : "hover:bg-white/10"
-                }`}
+              title={isCollapsed ? item.name : undefined}
+              className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition ${
+                active
+                  ? "bg-primary text-white shadow-sm"
+                  : "text-zinc-700 hover:bg-zinc-200 hover:text-primary dark:text-white/80 dark:hover:bg-zinc-700/50 dark:hover:text-primary"
+              }`}
             >
-              <item.icon size={20} />
+              <Icon size={20} className="shrink-0" />
               {!isCollapsed && <span>{item.name}</span>}
             </Link>
-          </div>
-        ))}
+          );
+        })}
       </nav>
 
       {/* Footer */}
-      <div className="p-4 border-t border-white/20">
+      <div className="border-t border-slate-200 p-4 dark:border-zinc-800">
         <div className="flex items-center gap-3">
           {!isCollapsed && (
-            <div className="w-10 h-10 rounded-full bg-[#C49A3A] flex items-center justify-center">
+            <div className="flex size-10 items-center justify-center rounded-full bg-primary text-white shadow">
               <UserCog size={20} />
             </div>
           )}
 
           {!isCollapsed && (
-            <div className="flex-1">
-              <p className="font-medium">Admin User</p>
-              <p className="text-sm opacity-70">admin@example.com</p>
+            <div className="min-w-0 flex-1">
+              <p className="truncate font-medium text-zinc-900 dark:text-white">
+                Admin User
+              </p>
+              <p className="truncate text-sm text-zinc-500 dark:text-zinc-400">
+                admin@example.com
+              </p>
             </div>
           )}
 
@@ -120,7 +135,7 @@ const AdminSidebar = ({ onNavigate, collapsed, onToggleCollapse }: Props) => {
                 router.push("/auth/signin");
               }
             }}
-            className="p-2 rounded bg-[#C49A3A]"
+            className="flex size-9 items-center justify-center rounded-full bg-slate-100 text-zinc-700 transition hover:bg-red-100 hover:text-red-600 dark:bg-zinc-800 dark:text-white dark:hover:bg-red-500/20 dark:hover:text-red-400"
           >
             <LogOut size={18} />
           </button>

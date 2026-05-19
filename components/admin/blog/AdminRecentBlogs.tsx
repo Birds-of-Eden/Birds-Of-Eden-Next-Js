@@ -1,11 +1,9 @@
-// components/admin/blog/RecentBlogs.tsx
 "use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Calendar, BookOpen } from "lucide-react";
 import { format } from "date-fns";
-import { Skeleton } from "@/components/ui/skeleton";
 import { processBlogSummary } from "./summaryUtils";
 
 interface RecentBlog {
@@ -18,10 +16,10 @@ interface RecentBlog {
 }
 
 const RecentBlogSkeleton = () => (
-  <div className="flex flex-col gap-3 p-4 rounded-lg border bg-card animate-pulse">
-    <Skeleton className="h-32 w-full rounded-md" />
-    <Skeleton className="h-4 w-3/4" />
-    <Skeleton className="h-3 w-1/2" />
+  <div className="flex flex-col gap-3 p-4 rounded-lg border border-border bg-card animate-pulse">
+    <div className="h-32 w-full rounded-md bg-muted" />
+    <div className="h-4 w-3/4 rounded bg-muted" />
+    <div className="h-3 w-1/2 rounded bg-muted" />
   </div>
 );
 
@@ -49,13 +47,13 @@ export default function AdminRecentBlogs() {
 
   if (loading) {
     return (
-      <div className="rounded-2xl border border-[#be923c]/20 bg-white/80 backdrop-blur-sm shadow-sm overflow-hidden">
+      <div className="rounded-2xl border border-border bg-card shadow-sm overflow-hidden">
         {/* Header */}
-        <div className="flex items-center gap-3 px-6 py-5 border-b border-[#be923c]/20 bg-[#003535]/95">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#be923c]/15">
-            <BookOpen className="h-5 w-5 text-[#be923c]" />
+        <div className="flex items-center gap-3 px-6 py-5 border-b border-border bg-muted/40">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/15">
+            <BookOpen className="h-5 w-5 text-primary" />
           </div>
-          <h3 className="text-base font-semibold tracking-wide text-[#be923c]">
+          <h3 className="text-base font-semibold tracking-wide text-primary">
             Recent Articles
           </h3>
         </div>
@@ -75,15 +73,13 @@ export default function AdminRecentBlogs() {
   }
 
   return (
-    <div className="rounded-2xl border border-[#be923c]/20 bg-white/80 backdrop-blur-sm shadow-sm overflow-hidden">
+    <div className="rounded-2xl border border-border bg-card shadow-sm overflow-hidden">
       {/* Header */}
-      <div className="p-5 border-b bg-muted/40 flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#be923c]/15">
-          <BookOpen className="h-5 w-5 text-[#be923c]" />
+      <div className="p-5 border-b border-border bg-muted/40 flex items-center gap-3">
+        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15">
+          <BookOpen className="h-5 w-5 text-primary" />
         </div>
-        <h3 className="text-lg font-semibold text-[#be923c]">
-          Recent Articles
-        </h3>
+        <h3 className="text-lg font-semibold text-primary">Recent Articles</h3>
       </div>
 
       {/* Content */}
@@ -95,10 +91,10 @@ export default function AdminRecentBlogs() {
               href={`/blog/${blog.slug}`}
               className="group block"
             >
-              <article className="relative flex flex-col gap-3 p-4 rounded-lg border bg-card hover:bg-accent/30 hover:shadow-md transition-all duration-300">
+              <article className="relative flex flex-col gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent/50 hover:shadow-md transition-all duration-300">
                 {/* New badge (only first item) */}
                 {index === 0 && (
-                  <span className="absolute top-3 right-3 text-[10px] uppercase tracking-widest px-2 py-1 rounded-full bg-primary/10 text-primary">
+                  <span className="absolute top-3 right-3 text-[10px] uppercase tracking-widest px-2 py-1 rounded-full bg-primary/20 text-primary-foreground">
                     New
                   </span>
                 )}

@@ -20,24 +20,24 @@ const AdminHeaderMobile = ({ toggleSidebar, title, user }: AdminHeaderMobileProp
     : 'Admin';
 
   return (
-    <header className="md:hidden sticky top-0 z-40 bg-white dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800">
+    <header className="md:hidden sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
       <div className="flex items-center justify-between px-3 py-2">
 
         {/* Left */}
         <div className="flex items-center gap-3">
           <button
             onClick={toggleSidebar}
-            className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-gray-800 transition"
+            className="p-2 rounded-lg hover:bg-muted transition"
             aria-label="Open sidebar"
           >
             <Menu size={22} />
           </button>
 
           <div className="leading-tight">
-            <h1 className="text-sm font-semibold text-[#003B3A] dark:text-white">
+            <h1 className="text-sm font-semibold text-foreground">
               {title}
             </h1>
-            <p className="text-[11px] text-slate-500 dark:text-slate-400">
+            <p className="text-[11px] text-muted-foreground">
               {roleLabel}
             </p>
           </div>
@@ -45,11 +45,11 @@ const AdminHeaderMobile = ({ toggleSidebar, title, user }: AdminHeaderMobileProp
 
         {/* Right */}
         <div className="flex items-center gap-1">
-          <button className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-gray-800 transition">
+          <button className="p-2 rounded-lg hover:bg-muted transition">
             <Search size={18} />
           </button>
 
-          <button className="relative p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-gray-800 transition">
+          <button className="relative p-2 rounded-lg hover:bg-muted transition">
             <Bell size={18} />
             <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full" />
           </button>
@@ -57,7 +57,8 @@ const AdminHeaderMobile = ({ toggleSidebar, title, user }: AdminHeaderMobileProp
           <div
             className="ml-1 w-8 h-8 rounded-full flex items-center justify-center overflow-hidden"
             style={{
-              background: 'linear-gradient(135deg, #C49A3A, #003B3A)'
+              background:
+                'linear-gradient(135deg, hsl(var(--primary)), hsl(var(--chart-2)))',
             }}
           >
             {user?.image ? (

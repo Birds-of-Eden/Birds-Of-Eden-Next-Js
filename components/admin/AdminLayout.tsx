@@ -5,8 +5,8 @@ import AdminSidebar, {
   SIDEBAR_COLLAPSED,
   SIDEBAR_EXPANDED,
 } from "./AdminSidebar";
+import AdminHeader from "./AdminHeader";
 import { AnimatePresence, motion } from "framer-motion";
-import AdminHeaderMobile from "./AdminHeaderMobile";
 
 interface AdminLayoutProps {
   children: ReactNode;
@@ -24,13 +24,12 @@ const AdminLayout = ({ children, pageTitle, user }: AdminLayoutProps) => {
 
   const desktopSidebarWidth = useMemo(
     () => (sidebarCollapsed ? SIDEBAR_COLLAPSED : SIDEBAR_EXPANDED),
-    [sidebarCollapsed]
+    [sidebarCollapsed],
   );
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC]">
+    <div className="min-h-screen bg-background text-foreground">
       <div className="md:flex">
-
         {/* Desktop Sidebar */}
         <div className="hidden md:block">
           <AdminSidebar
@@ -44,7 +43,7 @@ const AdminLayout = ({ children, pageTitle, user }: AdminLayoutProps) => {
           {sidebarOpen && (
             <>
               <motion.div
-                className="fixed inset-0 bg-black/50 z-40 md:hidden"
+                className="fixed inset-0 z-40 bg-black/50 md:hidden"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -52,7 +51,7 @@ const AdminLayout = ({ children, pageTitle, user }: AdminLayoutProps) => {
               />
 
               <motion.div
-                className="fixed left-0 top-0 h-full z-50 md:hidden"
+                className="fixed left-0 top-0 z-50 h-full md:hidden"
                 initial={{ x: "-100%" }}
                 animate={{ x: 0 }}
                 exit={{ x: "-100%" }}
@@ -70,30 +69,20 @@ const AdminLayout = ({ children, pageTitle, user }: AdminLayoutProps) => {
 
         {/* Main Content */}
         <div
-          className="flex-1 min-h-screen md:pl-[var(--sidebar-width)]"
+          className="min-h-screen flex-1 transition-all duration-300 md:pl-[var(--sidebar-width)]"
           style={
             {
               "--sidebar-width": `${desktopSidebarWidth}px`,
             } as React.CSSProperties
           }
         >
-          {/* Mobile Header */}
-          <AdminHeaderMobile
+          <AdminHeader
             toggleSidebar={() => setSidebarOpen(true)}
             title={pageTitle || "Admin Dashboard"}
             user={user}
           />
 
-          {/* Desktop Header */}
-          <div className="hidden md:block">
-            <AdminHeaderMobile
-              title={pageTitle || "Admin Dashboard"}
-              user={user}
-              toggleSidebar={() => {}}
-            />
-          </div>
-
-          <main>{children}</main>
+          <main className="p-4 md:p-6">{children}</main>
         </div>
       </div>
     </div>

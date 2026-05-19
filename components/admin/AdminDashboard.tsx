@@ -112,7 +112,7 @@ function isAbortError(err: unknown) {
 const SkeletonBox: React.FC<{ className?: string }> = React.memo(
   function SkeletonBox({ className = "" }) {
     return <div className={`animate-pulse bg-gray-200 rounded ${className}`} />;
-  }
+  },
 );
 SkeletonBox.displayName = "SkeletonBox";
 
@@ -137,7 +137,7 @@ const TableSkeleton: React.FC<{ rows?: number; cols?: number }> = React.memo(
         </div>
       </div>
     );
-  }
+  },
 );
 TableSkeleton.displayName = "TableSkeleton";
 
@@ -181,7 +181,6 @@ const AdminDashboard: React.FC = () => {
 
   const [isPending, startTransition] = useTransition();
 
-
   // ---------- Analytics state ----------
   const [analyticsLoading, setAnalyticsLoading] = useState(true);
   const [analyticsError, setAnalyticsError] = useState<string | null>(null);
@@ -208,7 +207,7 @@ const AdminDashboard: React.FC = () => {
   const BrowserLogo: React.FC<{ name?: string }> = ({ name }) => {
     const n = (name || "").toLowerCase();
 
-    if (n.includes("chrome")) return <FaChrome className="text-[#003B3A]" />;
+    if (n.includes("chrome")) return <FaChrome className="text-primary" />;
     if (n.includes("firefox"))
       return <FaFirefoxBrowser className="text-orange-500" />;
     if (n.includes("safari")) return <FaSafari className="text-sky-500" />;
@@ -218,7 +217,7 @@ const AdminDashboard: React.FC = () => {
       return <FaInternetExplorer className="text-sky-700" />;
 
     // fallback icon
-    return <FaGlobeAmericas className="text-gray-500" />;
+    return <FaGlobeAmericas className="text-muted-foreground" />;
   };
   const [customFrom, setCustomFrom] = useState<string>("");
   const [customTo, setCustomTo] = useState<string>("");
@@ -268,7 +267,7 @@ const AdminDashboard: React.FC = () => {
         }
       }
     },
-    [startTransition]
+    [startTransition],
   );
 
   useEffect(() => {
@@ -290,9 +289,9 @@ const AdminDashboard: React.FC = () => {
         body: JSON.stringify({ id }),
       });
       if (!resp.ok) throw new Error("Delete failed");
-        startTransition(() => {
-          setBlogs((prev) => prev.filter((b) => b.id !== id));
-        });
+      startTransition(() => {
+        setBlogs((prev) => prev.filter((b) => b.id !== id));
+      });
     } catch {
       alert("Failed to delete blog post. Please try again.");
     }
@@ -324,8 +323,8 @@ const AdminDashboard: React.FC = () => {
       startTransition(() => {
         setBlogs((prev) =>
           prev.map((b) =>
-            b.id === updatedBlog.id ? { ...b, ...updatedBlog } : b
-          )
+            b.id === updatedBlog.id ? { ...b, ...updatedBlog } : b,
+          ),
         );
         setIsEditModalVisible(false);
         setEditBlogData(null);
@@ -342,7 +341,7 @@ const AdminDashboard: React.FC = () => {
       const startOfToday = new Date(
         now.getFullYear(),
         now.getMonth(),
-        now.getDate()
+        now.getDate(),
       );
       return {
         from: startOfToday,
@@ -376,7 +375,7 @@ const AdminDashboard: React.FC = () => {
         const { from, to, bucket: resolvedBucket } = resolveRange();
         if (to <= from) {
           setAnalyticsError(
-            "Invalid date range. End date must be after start date."
+            "Invalid date range. End date must be after start date.",
           );
           setAnalyticsLoading(false);
           return;
@@ -392,7 +391,7 @@ const AdminDashboard: React.FC = () => {
           {
             cache: "no-store",
             signal: controller.signal,
-          }
+          },
         );
         if (!res.ok) {
           let message = `Failed to load analytics (${res.status})`;
@@ -418,7 +417,7 @@ const AdminDashboard: React.FC = () => {
         if (isAbortError(e)) return;
         console.error(e);
         setAnalyticsError(
-          e instanceof Error ? e.message : "Failed to load analytics."
+          e instanceof Error ? e.message : "Failed to load analytics.",
         );
       } finally {
         setAnalyticsLoading(false);
@@ -432,21 +431,21 @@ const AdminDashboard: React.FC = () => {
   // ✅ devices data memo
   const deviceTypeRows = useMemo(
     () => analytics?.devices?.deviceType ?? [],
-    [analytics]
+    [analytics],
   );
   const osRows = useMemo(() => analytics?.devices?.os ?? [], [analytics]);
   const browserRows = useMemo(
     () => analytics?.devices?.browser ?? [],
-    [analytics]
+    [analytics],
   );
 
   const deviceTypeTotal = useMemo(
     () => deviceTypeRows.reduce((a, x) => a + (x.count || 0), 0),
-    [deviceTypeRows]
+    [deviceTypeRows],
   );
   const osTotal = useMemo(
     () => osRows.reduce((a, x) => a + (x.count || 0), 0),
-    [osRows]
+    [osRows],
   );
 
   const deviceTypePie = useMemo(
@@ -455,19 +454,19 @@ const AdminDashboard: React.FC = () => {
         name: r.name || "Unknown",
         value: r.count || 0,
       })),
-    [deviceTypeRows]
+    [deviceTypeRows],
   );
 
   return (
-    <div className="p-6 bg-[#F1F3F4] min-h-screen text-[#0F1C1C]">
+    <div className="p-6 bg-background text-foreground min-h-screen">
       {/* ---------- NEW Analytics ---------- */}
-      <section className="bg-white rounded-xl shadow-sm p-5 mb-8">
+      <section className="bg-card rounded-xl border border-border shadow-sm p-5 mb-8">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           <div>
-            <h2 className="text-xl font-semibold text-gray-800">
+            <h2 className="text-xl font-semibold text-foreground">
               Website Analytics
             </h2>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-muted-foreground">
               Visitors, page views, active time, sources, geo & devices
             </p>
           </div>
@@ -476,7 +475,7 @@ const AdminDashboard: React.FC = () => {
             <select
               value={rangePreset}
               onChange={(e) => setRangePreset(e.target.value as RangePreset)}
-              className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white"
+              className="text-sm border border-input rounded-lg px-3 py-2 bg-background"
             >
               <option value="today">Today</option>
               <option value="24h">Last 24h</option>
@@ -491,14 +490,14 @@ const AdminDashboard: React.FC = () => {
                   type="date"
                   value={customFrom}
                   onChange={(e) => setCustomFrom(e.target.value)}
-                  className="text-sm border border-gray-300 rounded-lg px-3 py-2"
+                  className="text-sm border border-input rounded-lg px-3 py-2 bg-background"
                 />
-                <span className="text-gray-400 text-sm">to</span>
+                <span className="text-muted-foreground text-sm">to</span>
                 <input
                   type="date"
                   value={customTo}
                   onChange={(e) => setCustomTo(e.target.value)}
-                  className="text-sm border border-gray-300 rounded-lg px-3 py-2"
+                  className="text-sm border border-input rounded-lg px-3 py-2 bg-background"
                 />
               </div>
             )}
@@ -506,7 +505,7 @@ const AdminDashboard: React.FC = () => {
             <select
               value={bucket}
               onChange={(e) => setBucket(e.target.value as AnalyticsBucket)}
-              className="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white"
+              className="text-sm border border-input rounded-lg px-3 py-2 bg-background"
               disabled={rangePreset === "24h"}
               title={rangePreset === "24h" ? "24h uses hourly buckets" : ""}
             >
@@ -580,15 +579,15 @@ const AdminDashboard: React.FC = () => {
         )}
 
         {/* Tabs */}
-        <div className="flex flex-wrap gap-2 mt-6 border-b border-gray-200">
+        <div className="flex flex-wrap gap-2 mt-6 border-b border-border">
           {tabOptions.map((t) => (
             <button
               key={t.key}
               onClick={() => setTab(t.key)}
               className={`px-4 py-2 text-sm font-medium rounded-t-lg ${
                 tab === t.key
-                  ? "bg-gray-50 text-gray-900 border border-gray-200 border-b-0"
-                  : "text-gray-500 hover:text-gray-800"
+                  ? "bg-muted/40 text-foreground border border-border border-b-0"
+                  : "text-muted-foreground hover:text-foreground"
               }`}
             >
               {t.label}
@@ -601,22 +600,24 @@ const AdminDashboard: React.FC = () => {
           {analyticsLoading ? (
             <SkeletonBox className="h-[320px] w-full" />
           ) : !analytics ? (
-            <div className="text-gray-500 text-sm">No analytics data</div>
+            <div className="text-muted-foreground text-sm">
+              No analytics data
+            </div>
           ) : tab === "traffic" ? (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Visitors Chart */}
-              <div className="bg-gradient-to-br from-white to-[#F2F4F4] rounded-2xl p-5 border border-[#E1E5E5] shadow-sm">
+              <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
                 <div className="flex justify-between items-center mb-4">
                   <div>
-                    <h3 className="text-base font-semibold text-gray-800">
+                    <h3 className="text-base font-semibold text-foreground">
                       Visitors Over Time
                     </h3>
-                    <p className="text-xs text-gray-500 mt-1">
+                    <p className="text-xs text-muted-foreground mt-1">
                       Unique visitors trend
                     </p>
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-[#F4E8CF] flex items-center justify-center">
-                    <FaEye className="text-[#003B3A] text-sm" />
+                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+                    <FaEye className="text-primary text-sm" />
                   </div>
                 </div>
                 <div className="h-[260px]">
@@ -648,14 +649,17 @@ const AdminDashboard: React.FC = () => {
                       <CartesianGrid
                         strokeDasharray="3 3"
                         vertical={false}
-                        stroke="#e5e7eb"
+                        stroke="hsl(var(--border))"
                         strokeOpacity={0.5}
                       />
                       <XAxis
                         dataKey="t"
                         tickLine={false}
                         axisLine={false}
-                        tick={{ fill: "#6b7280", fontSize: 11 }}
+                        tick={{
+                          fill: "hsl(var(--muted-foreground))",
+                          fontSize: 11,
+                        }}
                         tickFormatter={(value) => {
                           if (bucket === "hour") return value.slice(11, 16);
                           return value.slice(5, 10);
@@ -665,13 +669,18 @@ const AdminDashboard: React.FC = () => {
                         allowDecimals={false}
                         tickLine={false}
                         axisLine={false}
-                        tick={{ fill: "#6b7280", fontSize: 11 }}
+                        tick={{
+                          fill: "hsl(var(--muted-foreground))",
+                          fontSize: 11,
+                        }}
                       />
                       <Tooltip
                         contentStyle={{
                           borderRadius: "8px",
-                          border: "1px solid #e5e7eb",
-                          boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
+                          border: "1px solid hsl(var(--border))",
+                          backgroundColor: "hsl(var(--popover))",
+                          color: "hsl(var(--popover-foreground))",
+                          boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
                           fontSize: "12px",
                         }}
                         formatter={(value) => [value, "Visitors"]}
@@ -691,9 +700,9 @@ const AdminDashboard: React.FC = () => {
                   </ResponsiveContainer>
                 </div>
                 {analytics.series.length > 0 && (
-                  <div className="flex items-center gap-2 mt-4 pt-3 border-t border-[#E1E5E5]">
-                    <div className="w-3 h-3 rounded-full bg-[#003B3A]"></div>
-                    <span className="text-xs text-gray-600">
+                  <div className="flex items-center gap-2 mt-4 pt-3 border-t border-border">
+                    <div className="w-3 h-3 rounded-full bg-primary"></div>
+                    <span className="text-xs text-muted-foreground">
                       Peak:{" "}
                       {Math.max(...analytics.series.map((s) => s.visitors))}{" "}
                       visitors
@@ -703,18 +712,18 @@ const AdminDashboard: React.FC = () => {
               </div>
 
               {/* Page Views Chart */}
-              <div className="bg-gradient-to-br from-white to-emerald-50 rounded-2xl p-5 border border-emerald-100 shadow-sm">
+              <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
                 <div className="flex justify-between items-center mb-4">
                   <div>
-                    <h3 className="text-base font-semibold text-gray-800">
+                    <h3 className="text-base font-semibold text-foreground">
                       Page Views Over Time
                     </h3>
-                    <p className="text-xs text-gray-500 mt-1">
+                    <p className="text-xs text-muted-foreground mt-1">
                       Total page views trend
                     </p>
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center">
-                    <FaRegChartBar className="text-emerald-600 text-sm" />
+                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+                    <FaRegChartBar className="text-primary text-sm" />
                   </div>
                 </div>
                 <div className="h-[260px]">
@@ -746,14 +755,17 @@ const AdminDashboard: React.FC = () => {
                       <CartesianGrid
                         strokeDasharray="3 3"
                         vertical={false}
-                        stroke="#e5e7eb"
+                        stroke="hsl(var(--border))"
                         strokeOpacity={0.5}
                       />
                       <XAxis
                         dataKey="t"
                         tickLine={false}
                         axisLine={false}
-                        tick={{ fill: "#6b7280", fontSize: 11 }}
+                        tick={{
+                          fill: "hsl(var(--muted-foreground))",
+                          fontSize: 11,
+                        }}
                         tickFormatter={(value) => {
                           if (bucket === "hour") return value.slice(11, 16);
                           return value.slice(5, 10);
@@ -763,13 +775,18 @@ const AdminDashboard: React.FC = () => {
                         allowDecimals={false}
                         tickLine={false}
                         axisLine={false}
-                        tick={{ fill: "#6b7280", fontSize: 11 }}
+                        tick={{
+                          fill: "hsl(var(--muted-foreground))",
+                          fontSize: 11,
+                        }}
                       />
                       <Tooltip
                         contentStyle={{
                           borderRadius: "8px",
-                          border: "1px solid #e5e7eb",
-                          boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
+                          border: "1px solid hsl(var(--border))",
+                          backgroundColor: "hsl(var(--popover))",
+                          color: "hsl(var(--popover-foreground))",
+                          boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
                           fontSize: "12px",
                         }}
                         formatter={(value) => [value, "Page Views"]}
@@ -785,13 +802,13 @@ const AdminDashboard: React.FC = () => {
                   </ResponsiveContainer>
                 </div>
                 {analytics.series.length > 0 && (
-                  <div className="flex items-center gap-2 mt-4 pt-3 border-t border-emerald-50">
-                    <div className="w-3 h-3 rounded-full bg-emerald-500"></div>
-                    <span className="text-xs text-gray-600">
+                  <div className="flex items-center gap-2 mt-4 pt-3 border-t border-border">
+                    <div className="w-3 h-3 rounded-full bg-primary"></div>
+                    <span className="text-xs text-muted-foreground">
                       Total:{" "}
                       {analytics.series.reduce(
                         (acc, s) => acc + s.pageViews,
-                        0
+                        0,
                       )}{" "}
                       page views
                     </span>
@@ -800,20 +817,20 @@ const AdminDashboard: React.FC = () => {
               </div>
 
               {/* Top Pages Table */}
-              <div className="lg:col-span-2 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
-                <div className="p-4 border-b border-gray-200 bg-gradient-to-r from-gray-50 to-white">
+              <div className="lg:col-span-2 bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
+                <div className="p-4 border-b border-border bg-muted/20">
                   <div className="flex justify-between items-center">
-                    <h3 className="text-base font-semibold text-gray-800">
+                    <h3 className="text-base font-semibold text-foreground">
                       Top Performing Pages
                     </h3>
-                    <span className="text-xs text-gray-500">
+                    <span className="text-xs text-muted-foreground">
                       Sorted by views
                     </span>
                   </div>
                 </div>
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
-                    <thead className="bg-gray-50/50 text-xs uppercase text-gray-500">
+                    <thead className="bg-muted/20 text-xs uppercase text-muted-foreground">
                       <tr>
                         <th className="px-6 py-4 text-left font-medium">
                           Path
@@ -834,21 +851,21 @@ const AdminDashboard: React.FC = () => {
                         analytics.topPages.map((p, index) => (
                           <tr
                             key={p.path}
-                            className="hover:bg-gray-50/50 transition-colors group"
+                            className="hover:bg-muted/20 transition-colors group"
                           >
                             <td className="px-6 py-4">
                               <div className="flex items-center gap-3">
-                                <div className="w-8 h-8 rounded-lg bg-[#E9EDED] text-[#003B3A] flex items-center justify-center text-xs font-bold">
+                                <div className="w-8 h-8 rounded-lg bg-muted text-primary flex items-center justify-center text-xs font-bold">
                                   {index + 1}
                                 </div>
-                                <span className="font-medium text-gray-900 truncate max-w-xs">
+                                <span className="font-medium text-foreground truncate max-w-xs">
                                   {p.path}
                                 </span>
                               </div>
                             </td>
                             <td className="px-6 py-4">
                               <div className="flex items-center gap-2">
-                                <span className="font-semibold text-gray-900">
+                                <span className="font-semibold text-foreground">
                                   {numberFormatter.format(p.views)}
                                 </span>
                                 <div className="w-24 bg-gray-200 rounded-full h-2">
@@ -859,7 +876,7 @@ const AdminDashboard: React.FC = () => {
                                         100,
                                         (p.views /
                                           (analytics.topPages[0]?.views || 1)) *
-                                          100
+                                          100,
                                       )}%`,
                                     }}
                                   ></div>
@@ -867,7 +884,7 @@ const AdminDashboard: React.FC = () => {
                               </div>
                             </td>
                             <td className="px-6 py-4">
-                              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#F4E8CF] text-[#003B3A] rounded-full">
+                              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-accent text-primary rounded-full">
                                 <div className="w-2 h-2 rounded-full bg-[#BC913A] animate-pulse"></div>
                                 <span className="text-sm font-medium">
                                   {fmtSec(p.avgActiveTimeSec)}
@@ -881,16 +898,16 @@ const AdminDashboard: React.FC = () => {
                                     p.avgActiveTimeSec > 120
                                       ? "bg-green-500"
                                       : p.avgActiveTimeSec > 60
-                                      ? "bg-yellow-500"
-                                      : "bg-red-500"
+                                        ? "bg-yellow-500"
+                                        : "bg-red-500"
                                   }`}
                                 ></div>
                                 <span className="text-sm text-gray-600">
                                   {p.avgActiveTimeSec > 120
                                     ? "High"
                                     : p.avgActiveTimeSec > 60
-                                    ? "Medium"
-                                    : "Low"}
+                                      ? "Medium"
+                                      : "Low"}
                                 </span>
                               </div>
                             </td>
@@ -900,11 +917,11 @@ const AdminDashboard: React.FC = () => {
                         <tr>
                           <td
                             colSpan={4}
-                            className="px-6 py-8 text-center text-gray-500"
+                            className="px-6 py-8 text-center text-muted-foreground"
                           >
                             <div className="flex flex-col items-center gap-2">
-                              <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
-                                <FaFileAlt className="text-gray-400" />
+                              <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
+                                <FaFileAlt className="text-muted-foreground" />
                               </div>
                               <p>No page data available</p>
                             </div>
@@ -917,18 +934,18 @@ const AdminDashboard: React.FC = () => {
               </div>
             </div>
           ) : tab === "sources" ? (
-            <div className="bg-gradient-to-br from-white to-purple-50 rounded-2xl p-5 border border-purple-100 shadow-sm">
+            <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
               <div className="flex justify-between items-center mb-4">
                 <div>
-                  <h3 className="text-base font-semibold text-gray-800">
+                  <h3 className="text-base font-semibold text-foreground">
                     Traffic Sources
                   </h3>
-                  <p className="text-xs text-gray-500 mt-1">
+                  <p className="text-xs text-muted-foreground mt-1">
                     Where your visitors are coming from
                   </p>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
-                  <FaGlobeAmericas className="text-purple-600 text-sm" />
+                <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+                  <FaGlobeAmericas className="text-primary text-sm" />
                 </div>
               </div>
               <div className="h-[320px]">
@@ -999,10 +1016,10 @@ const AdminDashboard: React.FC = () => {
                     </BarChart>
                   </ResponsiveContainer>
                 ) : (
-                  <div className="h-full flex items-center justify-center text-gray-500">
+                  <div className="h-full flex items-center justify-center text-muted-foreground">
                     <div className="text-center">
-                      <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-3">
-                        <FaGlobeAmericas className="text-gray-400 text-xl" />
+                      <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center mx-auto mb-3">
+                        <FaGlobeAmericas className="text-muted-foreground text-xl" />
                       </div>
                       <p>No source data available</p>
                     </div>
@@ -1012,24 +1029,24 @@ const AdminDashboard: React.FC = () => {
             </div>
           ) : tab === "geo" ? (
             <div className="space-y-6">
-              <div className="bg-gradient-to-br from-white to-[#F2F4F4] rounded-2xl p-5 border border-[#E1E5E5] shadow-sm">
+              <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
                 <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-base font-semibold text-gray-800">
+                  <h3 className="text-base font-semibold text-foreground">
                     Geographic Distribution
                   </h3>
-                  <div className="w-10 h-10 rounded-full bg-[#F4E8CF] flex items-center justify-center">
-                    <FaGlobeAmericas className="text-[#003B3A] text-sm" />
+                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+                    <FaGlobeAmericas className="text-primary text-sm" />
                   </div>
                 </div>
                 {!analytics.geo?.enabled ? (
-                  <div className="p-6 bg-white rounded-xl border border-gray-200 text-center">
-                    <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-3">
-                      <FaGlobeAmericas className="text-gray-400 text-xl" />
+                  <div className="p-6 bg-card rounded-xl border border-border text-center">
+                    <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center mx-auto mb-3">
+                      <FaGlobeAmericas className="text-muted-foreground text-xl" />
                     </div>
-                    <p className="text-gray-600 mb-2">
+                    <p className="text-muted-foreground mb-2">
                       Geo analytics not configured
                     </p>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-muted-foreground">
                       Enable server-side IP → country/city mapping to see
                       geographic data
                     </p>
@@ -1037,9 +1054,9 @@ const AdminDashboard: React.FC = () => {
                 ) : (
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {/* Countries */}
-                    <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
-                      <div className="p-4 border-b border-gray-200 bg-gradient-to-r from-[#F2F4F4]/70 to-white">
-                        <h4 className="text-sm font-semibold text-gray-800 flex items-center gap-2">
+                    <div className="bg-card rounded-xl border border-border overflow-hidden shadow-sm">
+                      <div className="p-4 border-b border-border bg-muted/20">
+                        <h4 className="text-sm font-semibold text-foreground flex items-center gap-2">
                           <div className="w-2 h-2 rounded-full bg-[#BC913A]"></div>
                           Top Countries
                         </h4>
@@ -1048,30 +1065,30 @@ const AdminDashboard: React.FC = () => {
                         {(analytics.geo.countries ?? []).map((c, index) => (
                           <div
                             key={c.name}
-                            className="flex items-center justify-between p-3 hover:bg-[#E9EDED] rounded-lg transition-colors group"
+                            className="flex items-center justify-between p-3 hover:bg-muted rounded-lg transition-colors group"
                           >
                             <div className="flex items-center gap-3">
-                              <div className="w-8 h-8 rounded-lg bg-[#E9EDED] text-[#003B3A] flex items-center justify-center text-xs font-bold">
+                              <div className="w-8 h-8 rounded-lg bg-muted text-primary flex items-center justify-center text-xs font-bold">
                                 {index + 1}
                               </div>
-                              <span className="font-medium text-gray-900">
+                              <span className="font-medium text-foreground">
                                 {c.name}
                               </span>
                             </div>
                             <div className="flex items-center gap-3">
-                              <span className="text-sm font-semibold text-gray-900">
+                              <span className="text-sm font-semibold text-foreground">
                                 {numberFormatter.format(c.count)}
                               </span>
-                              <div className="w-32 bg-gray-200 rounded-full h-2">
+                              <div className="w-32 bg-muted rounded-full h-2">
                                 <div
-                                  className="bg-[#003B3A] h-2 rounded-full transition-all duration-500"
+                                  className="bg-primary h-2 rounded-full transition-all duration-500"
                                   style={{
                                     width: `${Math.min(
                                       100,
                                       (c.count /
                                         (analytics.geo.countries[0]?.count ||
                                           1)) *
-                                        100
+                                        100,
                                     )}%`,
                                   }}
                                 ></div>
@@ -1083,9 +1100,9 @@ const AdminDashboard: React.FC = () => {
                     </div>
 
                     {/* Cities */}
-                    <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
-                      <div className="p-4 border-b border-gray-200 bg-gradient-to-r from-emerald-50/50 to-white">
-                        <h4 className="text-sm font-semibold text-gray-800 flex items-center gap-2">
+                    <div className="bg-card rounded-xl border border-border overflow-hidden shadow-sm">
+                      <div className="p-4 border-b border-border bg-muted/20">
+                        <h4 className="text-sm font-semibold text-foreground flex items-center gap-2">
                           <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
                           Top Cities
                         </h4>
@@ -1100,12 +1117,12 @@ const AdminDashboard: React.FC = () => {
                               <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">
                                 {index + 1}
                               </div>
-                              <span className="font-medium text-gray-900">
+                              <span className="font-medium text-foreground">
                                 {c.name}
                               </span>
                             </div>
                             <div className="flex items-center gap-3">
-                              <span className="text-sm font-semibold text-gray-900">
+                              <span className="text-sm font-semibold text-foreground">
                                 {numberFormatter.format(c.count)}
                               </span>
                               <div className="w-32 bg-gray-200 rounded-full h-2">
@@ -1116,7 +1133,7 @@ const AdminDashboard: React.FC = () => {
                                       100,
                                       (c.count /
                                         (analytics.geo.cities[0]?.count || 1)) *
-                                        100
+                                        100,
                                     )}%`,
                                   }}
                                 ></div>
@@ -1141,8 +1158,8 @@ const AdminDashboard: React.FC = () => {
                     onClick={() => setDeviceTab(t.key)}
                     className={`px-4 py-2 text-sm font-medium rounded-lg border transition ${
                       deviceTab === t.key
-                        ? "bg-white border-gray-300 text-gray-900 shadow-sm"
-                        : "bg-gray-50 border-gray-200 text-gray-600 hover:bg-white"
+                        ? "bg-card border-border text-foreground shadow-sm"
+                        : "bg-muted/20 border-border text-muted-foreground hover:bg-muted/30 hover:text-foreground"
                     }`}
                   >
                     {t.label}
@@ -1153,12 +1170,12 @@ const AdminDashboard: React.FC = () => {
               {deviceTab === "deviceType" ? (
                 <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
                   {/* Left: Device Types Pie */}
-                  <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
+                  <div className="bg-card rounded-xl border border-border p-5 shadow-sm">
                     <div className="mb-1">
-                      <h3 className="text-sm font-semibold text-gray-900">
+                      <h3 className="text-sm font-semibold text-foreground">
                         Device Types
                       </h3>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-xs text-muted-foreground">
                         Distribution of device categories
                       </p>
                     </div>
@@ -1180,7 +1197,7 @@ const AdminDashboard: React.FC = () => {
                               label={({ name, value }) =>
                                 `${name}: ${pct(
                                   value as number,
-                                  deviceTypeTotal
+                                  deviceTypeTotal,
                                 )}%`
                               }
                             >
@@ -1193,10 +1210,18 @@ const AdminDashboard: React.FC = () => {
                             </Pie>
 
                             <Tooltip
+                              contentStyle={{
+                                borderRadius: "8px",
+                                border: "1px solid hsl(var(--border))",
+                                backgroundColor: "hsl(var(--popover))",
+                                color: "hsl(var(--popover-foreground))",
+                                boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
+                                fontSize: "12px",
+                              }}
                               formatter={(value, name) => [
                                 `${numberFormatter.format(Number(value))} (${pct(
                                   Number(value),
-                                  deviceTypeTotal
+                                  deviceTypeTotal,
                                 )}%)`,
                                 name,
                               ]}
@@ -1206,19 +1231,19 @@ const AdminDashboard: React.FC = () => {
                         </ResponsiveContainer>
                       </div>
                     ) : (
-                      <div className="h-[260px] flex items-center justify-center text-gray-500">
+                      <div className="h-[260px] flex items-center justify-center text-muted-foreground">
                         No device data
                       </div>
                     )}
                   </div>
                 </div>
               ) : deviceTab === "browser" ? (
-                <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
+                <div className="bg-card rounded-xl border border-border p-5 shadow-sm">
                   <div className="mb-1">
-                    <h3 className="text-sm font-semibold text-gray-900">
+                    <h3 className="text-sm font-semibold text-foreground">
                       Browser Usage
                     </h3>
-                    <p className="text-xs text-gray-500">
+                    <p className="text-xs text-muted-foreground">
                       Top browsers with icons + percentage
                     </p>
                   </div>
@@ -1236,11 +1261,11 @@ const AdminDashboard: React.FC = () => {
                             <div key={`${b.name}-${i}`} className="space-y-1">
                               <div className="flex items-center justify-between">
                                 <div className="flex items-center gap-3">
-                                  <div className="w-9 h-9 rounded-lg bg-gray-50 border border-gray-200 flex items-center justify-center">
+                                  <div className="w-9 h-9 rounded-lg bg-muted/30 border border-border flex items-center justify-center">
                                     <BrowserLogo name={b.name} />
                                   </div>
                                   <div>
-                                    <div className="text-sm font-semibold text-gray-900">
+                                    <div className="text-sm font-semibold text-foreground">
                                       {b.name}
                                     </div>
                                     {/* <div className="text-xs text-gray-500">
@@ -1249,14 +1274,14 @@ const AdminDashboard: React.FC = () => {
                                   </div>
                                 </div>
 
-                                <div className="text-sm text-gray-700 font-medium">
+                                <div className="text-sm text-foreground font-medium">
                                   {p.toFixed(1)}%
                                 </div>
                               </div>
 
-                              <div className="h-2 w-full rounded-full bg-gray-100 overflow-hidden">
+                              <div className="h-2 w-full rounded-full bg-muted overflow-hidden">
                                 <div
-                                  className="h-2 rounded-full bg-[#003B3A]"
+                                  className="h-2 rounded-full bg-primary"
                                   style={{ width: `${Math.min(100, p)}%` }}
                                 />
                               </div>
@@ -1266,18 +1291,20 @@ const AdminDashboard: React.FC = () => {
                       })()}
                     </div>
                   ) : (
-                    <div className="h-[260px] flex items-center justify-center text-gray-500">
+                    <div className="h-[260px] flex items-center justify-center text-muted-foreground">
                       No browser data
                     </div>
                   )}
                 </div>
               ) : (
-                <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
+                <div className="bg-card rounded-xl border border-border p-5 shadow-sm">
                   <div className="mb-1">
-                    <h3 className="text-sm font-semibold text-gray-900">
+                    <h3 className="text-sm font-semibold text-foreground">
                       Operating Systems
                     </h3>
-                    <p className="text-xs text-gray-500">Usage distribution</p>
+                    <p className="text-xs text-muted-foreground">
+                      Usage distribution
+                    </p>
                   </div>
 
                   {osTotal > 0 ? (
@@ -1287,17 +1314,17 @@ const AdminDashboard: React.FC = () => {
                         return (
                           <div key={`${r.name}-${i}`} className="space-y-1">
                             <div className="flex items-center justify-between text-xs">
-                              <span className="font-medium text-gray-900">
+                              <span className="font-medium text-foreground">
                                 {r.name}
                               </span>
-                              <span className="text-gray-500">
+                              <span className="text-muted-foreground">
                                 {p.toFixed(1)}%
                               </span>
                             </div>
 
-                            <div className="h-2 w-full rounded-full bg-gray-100 overflow-hidden">
+                            <div className="h-2 w-full rounded-full bg-muted overflow-hidden">
                               <div
-                                className="h-2 rounded-full bg-[#003B3A]"
+                                className="h-2 rounded-full bg-primary"
                                 style={{ width: `${Math.min(100, p)}%` }}
                               />
                             </div>
@@ -1306,7 +1333,7 @@ const AdminDashboard: React.FC = () => {
                       })}
                     </div>
                   ) : (
-                    <div className="h-[260px] flex items-center justify-center text-gray-500">
+                    <div className="h-[260px] flex items-center justify-center text-muted-foreground">
                       No OS data
                     </div>
                   )}
@@ -1316,21 +1343,22 @@ const AdminDashboard: React.FC = () => {
           )}
         </div>
       </section>
+
       <section className="mb-8 space-y-6">
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-5">
+        <div className="bg-card rounded-xl shadow-sm border border-border p-5">
           <div className="flex items-center justify-between gap-3 mb-4">
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">
+              <h3 className="text-lg font-semibold text-foreground">
                 Recent blog posts
               </h3>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-muted-foreground">
                 Quick actions for the latest entries
               </p>
             </div>
             <button
               type="button"
               onClick={() => fetchBlogs()}
-              className="text-sm px-3 py-2 rounded-lg border border-gray-200 hover:bg-gray-50 text-gray-700"
+              className="text-sm px-3 py-2 rounded-lg border border-border bg-background hover:bg-accent text-foreground transition-colors"
               disabled={isLoadingBlogs}
             >
               {isLoadingBlogs ? "Refreshing..." : "Refresh"}
@@ -1340,19 +1368,19 @@ const AdminDashboard: React.FC = () => {
           {isLoadingBlogs ? (
             <SkeletonBox className="h-24" />
           ) : errorBlogs ? (
-            <div className="text-sm text-red-600">{errorBlogs}</div>
+            <div className="text-sm text-destructive">{errorBlogs}</div>
           ) : recentBlogs.length ? (
-            <ul className="divide-y divide-gray-200">
+            <ul className="divide-y divide-border">
               {recentBlogs.map((blog) => (
                 <li
                   key={blog.id}
                   className="py-3 flex items-start justify-between gap-4"
                 >
                   <div>
-                    <p className="text-sm font-semibold text-gray-900 line-clamp-1">
+                    <p className="text-sm font-semibold text-foreground line-clamp-1">
                       {blog.post_title || "Untitled post"}
                     </p>
-                    <p className="text-xs text-gray-500 mt-1">
+                    <p className="text-xs text-muted-foreground mt-1">
                       {blog.post_status}
                       {" ・ "}
                       {blog._d
@@ -1364,14 +1392,14 @@ const AdminDashboard: React.FC = () => {
                     <button
                       type="button"
                       onClick={() => handleEditClick(blog)}
-                      className="px-3 py-1.5 text-xs rounded-lg border border-gray-200 hover:bg-gray-50 text-gray-700"
+                      className="px-3 py-1.5 text-xs rounded-lg border border-border bg-background hover:bg-accent text-foreground transition-colors"
                     >
                       Edit
                     </button>
                     <button
                       type="button"
                       onClick={() => handleDeleteClick(blog.id)}
-                      className="px-3 py-1.5 text-xs rounded-lg border border-red-100 text-red-700 hover:bg-red-50"
+                      className="px-3 py-1.5 text-xs rounded-lg border border-destructive/30 text-destructive hover:bg-destructive/10 transition-colors"
                     >
                       Delete
                     </button>
@@ -1380,7 +1408,9 @@ const AdminDashboard: React.FC = () => {
               ))}
             </ul>
           ) : (
-            <p className="text-sm text-gray-500">No blog posts found.</p>
+            <p className="text-sm text-muted-foreground">
+              No blog posts found.
+            </p>
           )}
         </div>
 
@@ -1396,16 +1426,16 @@ const AdminDashboard: React.FC = () => {
           onClick={handleEditClose}
         >
           <div
-            className="bg-white rounded-xl w-full max-w-2xl shadow-lg overflow-hidden"
+            className="bg-card rounded-xl w-full max-w-2xl shadow-lg overflow-hidden border border-border"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex justify-between items-center p-5 border-b border-gray-200">
-              <h2 className="text-xl font-semibold text-gray-800">
+            <div className="flex justify-between items-center p-5 border-b border-border">
+              <h2 className="text-xl font-semibold text-foreground">
                 Edit Blog Post
               </h2>
               <button
                 onClick={handleEditClose}
-                className="text-gray-400 hover:text-gray-600 transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 ✕
               </button>
@@ -1413,7 +1443,7 @@ const AdminDashboard: React.FC = () => {
 
             <div className="p-5 space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-foreground mb-1">
                   Post Title
                 </label>
                 <input
@@ -1425,12 +1455,12 @@ const AdminDashboard: React.FC = () => {
                       post_title: e.target.value,
                     })
                   }
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003B3A]"
+                  className="w-full p-3 border border-input rounded-lg bg-background outline-none ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-foreground mb-1">
                   Post Status
                 </label>
                 <select
@@ -1441,7 +1471,7 @@ const AdminDashboard: React.FC = () => {
                       post_status: e.target.value,
                     })
                   }
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003B3A]"
+                  className="w-full p-3 border border-input rounded-lg bg-background outline-none ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2"
                 >
                   <option value="publish">Published</option>
                   <option value="draft">Draft</option>
@@ -1450,16 +1480,16 @@ const AdminDashboard: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex justify-end gap-3 p-5 border-t border-gray-200">
+            <div className="flex justify-end gap-3 p-5 border-t border-border">
               <button
                 onClick={handleEditClose}
-                className="px-4 py-2 text-gray-700 border rounded-lg hover:bg-gray-50"
+                className="px-4 py-2 text-foreground border border-border rounded-lg bg-background hover:bg-muted/30"
               >
                 Cancel
               </button>
               <button
                 onClick={() => handleEditSave(editBlogData)}
-                className="px-4 py-2 bg-[#003B3A] text-white rounded-lg hover:bg-[#022f2f]"
+                className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:opacity-90"
               >
                 Save Changes
               </button>
@@ -1488,15 +1518,15 @@ const StatCard: React.FC<StatCardProps> = React.memo(function StatCard({
   loading,
 }) {
   return (
-    <div className="bg-white rounded-xl shadow-sm p-5 hover:shadow-md transition-shadow">
+    <div className="bg-card rounded-xl border border-border shadow-sm p-5 hover:shadow-md transition-shadow">
       <div className="flex justify-between items-start">
         <div className="flex-1">
-          <p className="text-sm font-medium text-gray-600">{title}</p>
+          <p className="text-sm font-medium text-muted-foreground">{title}</p>
           <div className="mt-1">
             {loading ? (
               <SkeletonBox className="h-7 w-20" />
             ) : (
-              <h3 className="text-2xl font-bold text-gray-800">{value}</h3>
+              <h3 className="text-2xl font-bold text-foreground">{value}</h3>
             )}
           </div>
         </div>

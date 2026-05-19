@@ -48,13 +48,13 @@ export default function SignInPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F3F4F2]">
-      <main className="flex-1 flex items-center justify-center px-4 py-12">
-        <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
+    <div className="min-h-screen bg-background text-foreground">
+      <main className="flex min-h-screen items-center justify-center px-4 py-12">
+        <div className="w-full max-w-md rounded-xl border border-border bg-card p-8 shadow-sm">
           <h2 className="text-2xl font-bold text-center mb-6">Sign In</h2>
 
           {message ? (
-            <div className="mb-4 text-sm text-center text-green-700">
+            <div className="mb-4 text-sm text-center text-emerald-600">
               {message}
             </div>
           ) : null}
@@ -63,7 +63,7 @@ export default function SignInPage() {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-foreground"
               >
                 Email
               </label>
@@ -74,14 +74,14 @@ export default function SignInPage() {
                 required
                 value={form.email}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2 border"
+                className="mt-1 block w-full rounded-md border border-input bg-background px-3 py-2 text-sm outline-none ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2"
               />
             </div>
 
             <div>
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-foreground"
               >
                 Password
               </label>
@@ -92,26 +92,26 @@ export default function SignInPage() {
                 required
                 value={form.password}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2 border"
+                className="mt-1 block w-full rounded-md border border-input bg-background px-3 py-2 text-sm outline-none ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2"
               />
             </div>
 
             {error ? (
-              <div className="text-red-600 text-sm text-center">{error}</div>
+              <div className="text-destructive text-sm text-center">{error}</div>
             ) : null}
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50 transition"
+              className="w-full rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition hover:opacity-90 disabled:opacity-50"
             >
               {loading ? "Signing in..." : "Sign In"}
             </button>
           </form>
 
-          <p className="mt-6 text-center text-sm text-gray-600">
+          <p className="mt-6 text-center text-sm text-muted-foreground">
             Don&apos;t have an account?{" "}
-            <Link href="/auth/signup" className="text-blue-600 hover:underline">
+            <Link href="/auth/signup" className="text-primary hover:underline">
               Sign up
             </Link>
           </p>
@@ -120,4 +120,3 @@ export default function SignInPage() {
     </div>
   );
 }
-
